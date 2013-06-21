@@ -38,6 +38,7 @@ typedef enum {
   DEVICE_SOL22_10_2_F_3_43,
   DEVICE_SONYTABLET_P_RELEASE5A,
   DEVICE_SONYTABLET_S_RELEASE5A,
+  DEVICE_LG_E975_V10e,
 } device_id_t;
 
 extern device_id_t detect_device(void);

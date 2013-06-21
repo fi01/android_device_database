@@ -49,6 +49,7 @@ static supported_device supported_devices[] = {
   { DEVICE_SOL22_10_2_F_3_43,       "SOL22",            "10.2.F.3.43"        },
   { DEVICE_SONYTABLET_P_RELEASE5A,  "Sony Tablet P",    "TISU0144"           },
   { DEVICE_SONYTABLET_S_RELEASE5A,  "Sony Tablet S",    "TISU0143"           },
+  { DEVICE_LG_E975_V10e,			"LG-E975",			"JZO54K",		"ro.build.version.incremental",	"E97510e.1366300274" },
 };
 
 static int n_supported_devices = sizeof(supported_devices) / sizeof(supported_devices[0]);
@@ -95,7 +96,7 @@ print_reason_device_not_supported(void)
   for (i = 0; i < n_supported_devices; i++) {
     if (!strcmp(device, supported_devices[i].device)) {
       char check_property_value[PROP_VALUE_MAX];
-
+	  
       if (!supported_devices[i].check_property_name) {
         break;
       }
