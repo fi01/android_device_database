@@ -40,8 +40,7 @@ static supported_device supported_devices[] = {
   { DEVICE_SOL21_9_1_D_0_395,       "SOL21",            "9.1.D.0.395"        },
   { DEVICE_SONYTABLET_P_RELEASE5A,  "Sony Tablet P",    "TISU0144"           },
   { DEVICE_SONYTABLET_S_RELEASE5A,  "Sony Tablet S",    "TISU0143"           },
-  { DEVICE_LG_E975,					"LG-E975",			"JZO54K"			 },
-
+  { DEVICE_LG_E975_V10e,			"LG-E975",			"JZO54K",		"ro.build.version.incremental",	"E97510e.1366300274" },
 };
 
 static int n_supported_devices = sizeof(supported_devices) / sizeof(supported_devices[0]);
