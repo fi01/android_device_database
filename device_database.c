@@ -24,6 +24,8 @@ static supported_device supported_devices[] = {
   { DEVICE_C6503_10_3_A_0_423, "C6503",		"10.3.A.0.423" }, //1266-7597
   { DEVICE_C6502_10_3_A_0_423, "C6502",	"10.3.A.0.423" },
   { DEVICE_C6506_10_3_A_0_423, "C6506",	"10.3.A.0.423" },
+  { DEVICE_F05D_V08R31C,            "F-05D",            "V08R31C"            },
+  { DEVICE_F05D_V11R40A,            "F-05D",            "V11R40A"            },
   { DEVICE_F10D_V21R48A,            "F-10D",            "V21R48A"            },
   { DEVICE_F11D_V24R40A,            "F-11D",            "V24R40A"            },
   { DEVICE_FJL21_V23R39X,           "FJL21",            "V23R39X"            },
@@ -33,6 +35,8 @@ static supported_device supported_devices[] = {
   { DEVICE_HTL22_1_07_970_4,        "HTL22",            "JZO54K"             "ro.aa.romver",                  "1.07.970.4" },
   { DEVICE_HTX21_1_20_971_1,        "HTX21",            "JRO03C"             "ro.aa.romver",                  "1.20.971.1" },
   { DEVICE_IS17SH_01_00_04,         "IS17SH",           "01.00.04"           },
+  { DEVICE_ISW11F_V25R45A,          "ISW11F",           "V25R45A"            },
+  { DEVICE_ISW11F_V27R47I,          "ISW11F",           "V27R47I"            },
   { DEVICE_ISW12K_010_0_3000,       "URBANO PROGRESSO", "010.0.3000"         },
   { DEVICE_ISW13F_V69R51I,          "ISW13F",           "V69R51I"            },
   { DEVICE_L01D_V20d,               "L-01D",            "IMM76D",            "ro.build.version.incremental",  "L01D-V20d.1e516ca5db" },
