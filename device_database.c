@@ -221,8 +221,9 @@ static supported_device supported_devices[] = {
   {
     .device_id = DEVICE_HTL21_1_29_970_1,
     .device = "HTL21",
-    .build_id = "JRO03Cro.aa.romver",
-    .check_property_name = "1.29.970.1",
+    .build_id = "JRO03C",
+    .check_property_name = "ro.aa.romver",
+    .check_property_value = "1.29.970.1",
 
     .prepare_kernel_cred_address = 0xc00ab9d8,
     .commit_creds_address = 0xc00ab4c4,
@@ -233,8 +234,9 @@ static supported_device supported_devices[] = {
   {
     .device_id = DEVICE_HTL22_1_07_970_4,
     .device = "HTL22",
-    .build_id = "JZO54Kro.aa.romver",
-    .check_property_name = "1.07.970.4",
+    .build_id = "JZO54K",
+    .check_property_name = "ro.aa.romver",
+    .check_property_value = "1.07.970.4",
 
     .prepare_kernel_cred_address = 0xc00b26a0,
     .commit_creds_address = 0xc00b218c,
@@ -245,8 +247,9 @@ static supported_device supported_devices[] = {
   {
     .device_id = DEVICE_HTL22_1_05_970_1,
     .device = "HTL22",
-    .build_id = "JZO54Kro.aa.romver",
-    .check_property_name = "1.05.970.1",
+    .build_id = "JZO54K",
+    .check_property_name = "ro.aa.romver",
+    .check_property_value = "1.05.970.1",
 
     .prepare_kernel_cred_address = 0xc00b2688,
     .commit_creds_address = 0xc00b2174,
@@ -257,8 +260,9 @@ static supported_device supported_devices[] = {
   {
     .device_id = DEVICE_HTX21_1_20_971_1,
     .device = "HTX21",
-    .build_id = "JRO03Cro.aa.romver",
-    .check_property_name = "1.20.971.1",
+    .build_id = "JRO03C",
+    .check_property_name = "ro.aa.romver",
+    .check_property_value = "1.20.971.1",
 
     .prepare_kernel_cred_address = 0xc00a6e54,
     .commit_creds_address = 0xc00a6940,
@@ -751,10 +755,6 @@ static supported_device supported_devices[] = {
     .build_id = "010.0.3000",
 
     .ptmx_fops_address = 0xc0dc0a10,
-  },
-
-  {
-    .device_id = DEVICE_NOT_SUPPORTED,
   },
 };
 
