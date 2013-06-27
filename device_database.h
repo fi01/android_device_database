@@ -74,5 +74,15 @@ typedef enum {
   DEVICE_NEXUS_JZO54K,
 } device_id_t;
 
+#define DEVICE_SYMBOL(name)     device_symbol_##name
+
+typedef enum {
+  DEVICE_SYMBOL(prepare_kernel_cred),
+  DEVICE_SYMBOL(commit_creds),
+  DEVICE_SYMBOL(remap_pfn_range),
+  DEVICE_SYMBOL(ptmx_fops),
+} device_symbol_t;
+
 extern device_id_t detect_device(void);
+extern unsigned long int device_get_symbol_address(device_symbol_t);
 extern void print_reason_device_not_supported(void);
