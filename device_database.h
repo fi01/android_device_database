@@ -77,6 +77,8 @@ typedef enum {
 #define DEVICE_SYMBOL(name)     device_symbol_##name
 
 typedef enum {
+  DEVICE_SYMBOL(kernel_physical_offset),
+
   DEVICE_SYMBOL(prepare_kernel_cred),
   DEVICE_SYMBOL(commit_creds),
   DEVICE_SYMBOL(remap_pfn_range),

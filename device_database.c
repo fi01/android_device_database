@@ -9,6 +9,8 @@ typedef struct _supported_device {
   const char *check_property_name;
   const char *check_property_value;
 
+  unsigned long int kernel_physical_offset_address;
+
   unsigned long int prepare_kernel_cred_address;
   unsigned long int commit_creds_address;
   unsigned long int remap_pfn_range_address;
@@ -594,6 +596,8 @@ static supported_device supported_devices[] = {
     .device = "SH-04E",
     .build_id = "01.00.02",
 
+    .kernel_physical_offset_address = 0x80208000,
+
     .prepare_kernel_cred_address = 0xc008d86c,
     .commit_creds_address = 0xc008d398,
     .remap_pfn_range_address = 0xc00e458c,
@@ -604,6 +608,8 @@ static supported_device supported_devices[] = {
     .device_id = DEVICE_SH04E_01_00_03,
     .device = "SH-04E",
     .build_id = "01.00.03",
+
+    .kernel_physical_offset_address = 0x80208000,
 
     .prepare_kernel_cred_address = 0xc008d99c,
     .commit_creds_address = 0xc008d4c8,
@@ -800,6 +806,9 @@ device_get_symbol_address(device_symbol_t symbol)
   for (i = 0; i < n_supported_devices; i++) {
     if (supported_devices[i].device_id == device_id) {
       switch (symbol) {
+      case DEVICE_SYMBOL(kernel_physical_offset):
+	return supported_devices[i].kernel_physical_offset_address;
+
       case DEVICE_SYMBOL(prepare_kernel_cred):
 	return supported_devices[i].prepare_kernel_cred_address;
 
