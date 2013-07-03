@@ -286,7 +286,9 @@ static supported_device supported_devices[] = {
   {
     .device_id = DEVICE_ISW11F_V25R45A,
     .device = "ISW11F",
-    .build_id = "V25R45A",
+    .build_id = "FIK700",
+    .check_property_name = "gsm.version.baseband",
+    .check_property_value = "V25R45A",
 
     .ptmx_fops_address = 0xc080e268,
   },
@@ -294,7 +296,9 @@ static supported_device supported_devices[] = {
   {
     .device_id = DEVICE_ISW11F_V27R47I,
     .device = "ISW11F",
-    .build_id = "V27R47I",
+    .build_id = "FIK700",
+    .check_property_name = "gsm.version.baseband",
+    .check_property_value = "V27R47I",
 
     .ptmx_fops_address = 0xc080e028,
   },
