@@ -315,32 +315,32 @@ static supported_device supported_devices[] = {
     .device_id = DEVICE_L01D_V20d,
     .device = "L-01D",
     .build_id = "IMM76D",
-    .check_property_name = "ro.build.version.incremental",
-    .check_property_value = "L01D-V20d.1e516ca5db",
+    .check_property_name = "ro.lge.swversion",
+    .check_property_value = "L01D-V20c-AUG-29-2012",
   },
 
   {
     .device_id = DEVICE_L02E_V10c,
     .device = "L-02E",
     .build_id = "IMM76L",
-    .check_property_name = "ro.build.version.incremental",
-    .check_property_value = "L02E10c.1354024955",
+    .check_property_name = "ro.lge.swversion",
+    .check_property_value = "L02E10c",
   },
 
   {
     .device_id = DEVICE_L02E_V10e,
     .device = "L-02E",
     .build_id = "IMM76L",
-    .check_property_name = "ro.build.version.incremental",
-    .check_property_value = "L02E10e.1366099439",
+    .check_property_name = "ro.lge.swversion",
+    .check_property_value = "L02E10e",
   },
 
   {
     .device_id = DEVICE_L06D_V10k,
     .device = "L-06D",
     .build_id = "IMM76D",
-    .check_property_name = "ro.build.version.incremental",
-    .check_property_value = "L06DV10k.4821c158",
+    .check_property_name = "ro.lge.swversion",
+    .check_property_value = "L06D-V10k-OCT-17-2012",
   },
 
   {
