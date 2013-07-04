@@ -674,6 +674,17 @@ static supported_device supported_devices[] = {
   },
 
   {
+    .device_id = DEVICE_SO04D_9_1_C_0_475,
+    .device = "SO-04D",
+    .build_id = "9.1.C.0.475",
+    
+    .prepare_kernel_cred_address = 0xc0095cb0,
+    .commit_creds_address = 0xc00957d4,
+    .remap_pfn_range_address = 0xc010aaf8,
+    .ptmx_fops_address = 0xc0d024a0,
+  },
+
+  {
     .device_id = DEVICE_SO04E_10_1_1_D_0_179,
     .device = "SO-04E",
     .build_id = "10.1.1.D.0.179",
@@ -685,10 +696,32 @@ static supported_device supported_devices[] = {
   },
 
   {
+    .device_id = DEVICE_SO04E_10_1_1_D_2_26,
+    .device = "SO-04E",
+    .build_id = "10.1.1.D.2.26",
+
+    .prepare_kernel_cred_address = 0xc009d510,
+    .commit_creds_address = 0xc009d034,
+    .remap_pfn_range_address = 0xc0112fd0,
+    .ptmx_fops_address = 0xc0f392d8,
+  },
+
+  {
     .device_id = DEVICE_SO05D_7_0_D_1_137,
     .device = "SO-05D",
     .build_id = "7.0.D.1.137",
 
+  },
+
+  {
+    .device_id = DEVICE_SO05D_9_1_C_0_475,
+    .device = "SO-05D",
+    .build_id = "9.1.C.0.475",
+    
+    .prepare_kernel_cred_address = 0xc00958ac,
+    .commit_creds_address = 0xc00953d0,
+    .remap_pfn_range_address = 0xc010a6f4,
+    .ptmx_fops_address = 0xc0d01e50,
   },
 
   {
