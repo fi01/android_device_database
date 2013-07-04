@@ -312,11 +312,19 @@ static supported_device supported_devices[] = {
   },
 
   {
-    .device_id = DEVICE_L01D_V20d,
+    .device_id = DEVICE_L01D_V20c,
     .device = "L-01D",
     .build_id = "IMM76D",
     .check_property_name = "ro.lge.swversion",
     .check_property_value = "L01D-V20c-AUG-29-2012",
+  },
+
+  {
+    .device_id = DEVICE_L01D_V20d,
+    .device = "L-01D",
+    .build_id = "IMM76D",
+    .check_property_name = "ro.lge.swversion",
+    .check_property_value = "L01D-V20d-FEB-15-2013",
   },
 
   {
