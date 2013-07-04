@@ -336,6 +336,22 @@ static supported_device supported_devices[] = {
   },
 
   {
+    .device_id = DEVICE_L02E_V20a,
+    .device = "L-02E",
+    .build_id = "JZO54K",
+    .check_property_name = "ro.lge.swversion",
+    .check_property_value = "L02E20a",
+  },
+
+  {
+    .device_id = DEVICE_L06D_V10h,
+    .device = "L-06D",
+    .build_id = "IMM76D",
+    .check_property_name = "ro.lge.swversion",
+    .check_property_value = "L06D-V10h-JUL-19-2012",
+  },
+
+  {
     .device_id = DEVICE_L06D_V10k,
     .device = "L-06D",
     .build_id = "IMM76D",
