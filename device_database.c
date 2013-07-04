@@ -273,6 +273,17 @@ static supported_device supported_devices[] = {
   },
 
   {
+    .device_id = DEVICE_IS15SH_01_00_04,
+    .device = "IS15SH",
+    .build_id = "01.00.04",
+
+    .prepare_kernel_cred_address = 0xc01c6178,
+    .commit_creds_address = 0xc01c643c,
+    .remap_pfn_range_address = 0xc0208980,
+    .ptmx_fops_address = 0xc0edaf90,
+  },
+
+  {
     .device_id = DEVICE_IS17SH_01_00_04,
     .device = "IS17SH",
     .build_id = "01.00.04",
