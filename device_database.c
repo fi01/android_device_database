@@ -501,6 +501,17 @@ static supported_device supported_devices[] = {
   },
 
   {
+    .device_id = DEVICE_LT28H_6_2_B_0_211,
+    .device = "LT28h",
+    .build_id = "6.2.B.0.211",
+
+    .prepare_kernel_cred_address = 0xc00c94f8,
+    .commit_creds_address = 0xc00c901c,
+    .remap_pfn_range_address = 0xc014d170,
+    .ptmx_fops_address = 0xc117e328,
+  },
+
+  {
     .device_id = DEVICE_LT26I_6_2_B_0_200,
     .device = "LT26i",
     .build_id = "6.2.B.0.200",
