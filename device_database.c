@@ -468,6 +468,17 @@ static supported_device supported_devices[] = {
   },
 
   {
+    .device_id = DEVICE_LT25I_9_1_A_1_145,
+    .device = "LT25i",
+    .build_id = "9.1.A.1.145",
+
+    .prepare_kernel_cred_address = 0xc0097de8,
+    .commit_creds_address = 0xc009790c,
+    .remap_pfn_range_address = 0xc010dbc4,
+    .ptmx_fops_address = 0xc0d032b8,
+  },
+
+  {
     .device_id = DEVICE_LT25I_9_1_A_1_142,
     .device = "LT25i",
     .build_id = "9.1.A.1.142",
