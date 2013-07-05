@@ -844,6 +844,17 @@ static supported_device supported_devices[] = {
   },
 
   {
+    .device_id = DEVICE_SOL21_9_1_D_0_401,
+    .device = "SOL21",
+    .build_id = "9.1.D.0.401",
+
+    .prepare_kernel_cred_address = 0xc0098594,
+    .commit_creds_address = 0xc00980b8,
+    .remap_pfn_range_address = 0xc010e34c,
+    .ptmx_fops_address = 0xc0d030c8,
+  },
+
+  {
     .device_id = DEVICE_SOL22_10_2_F_3_43,
     .device = "SOL22",
     .build_id = "10.2.F.3.43",
