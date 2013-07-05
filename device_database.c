@@ -18,6 +18,17 @@ typedef struct _supported_device {
 
 static supported_device supported_devices[] = {
   {
+    .device_id = DEVICE_C5302_12_0_A_1_211,
+    .device = "C5302",
+    .build_id = "12.0.A.1.211",
+
+    .prepare_kernel_cred_address = 0xc009ec08,
+    .commit_creds_address = 0xc009e72c,
+    .remap_pfn_range_address = 0xc011445c,
+    .ptmx_fops_address = 0xc0e3b8d0,
+  },
+
+  {
     .device_id = DEVICE_C5302_12_0_A_1_257,
     .device = "C5302",
     .build_id = "12.0.A.1.257",
@@ -40,6 +51,17 @@ static supported_device supported_devices[] = {
   },
 
   {
+    .device_id = DEVICE_C5303_12_0_A_1_211,
+    .device = "C5303",
+    .build_id = "12.0.A.1.211",
+
+    .prepare_kernel_cred_address = 0xc009ec08,
+    .commit_creds_address = 0xc009e72c,
+    .remap_pfn_range_address = 0xc011445c,
+    .ptmx_fops_address = 0xc0e3b8d0,
+  },
+
+  {
     .device_id = DEVICE_C5303_12_0_A_1_257,
     .device = "C5303",
     .build_id = "12.0.A.1.257",
@@ -59,6 +81,17 @@ static supported_device supported_devices[] = {
     .commit_creds_address = 0xc009e72c,
     .remap_pfn_range_address = 0xc011445c,
     .ptmx_fops_address = 0xc0e3bed8,
+  },
+
+  {
+    .device_id = DEVICE_C5306_12_0_A_1_211,
+    .device = "C5306",
+    .build_id = "12.0.A.1.211",
+
+    .prepare_kernel_cred_address = 0xc009ec08,
+    .commit_creds_address = 0xc009e72c,
+    .remap_pfn_range_address = 0xc011445c,
+    .ptmx_fops_address = 0xc0e3b8d0,
   },
 
   {
