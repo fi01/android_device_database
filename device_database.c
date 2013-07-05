@@ -62,6 +62,17 @@ static supported_device supported_devices[] = {
   },
 
   {
+    .device_id = DEVICE_C5306_12_0_A_1_257,
+    .device = "C5306",
+    .build_id = "12.0.A.1.257",
+
+    .prepare_kernel_cred_address = 0xc009ec08,
+    .commit_creds_address = 0xc009e72c,
+    .remap_pfn_range_address = 0xc011445c,
+    .ptmx_fops_address = 0xc0e3b890,
+  },
+
+  {
     .device_id = DEVICE_C5306_12_0_A_1_284,
     .device = "C5306",
     .build_id = "12.0.A.1.284",
