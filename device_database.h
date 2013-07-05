@@ -6,6 +6,8 @@ typedef enum {
   DEVICE_C5303_12_0_A_1_257,
   DEVICE_C5302_12_0_A_1_257,
   DEVICE_M35H_12_0_A_1_257,
+  DEVICE_C6603_10_3_A_0_423,
+  DEVICE_C6602_10_3_A_0_423,
   DEVICE_C6603_10_1_1_A_1_307,
   DEVICE_C6602_10_1_1_A_1_307,
   DEVICE_C6603_10_1_1_A_1_253,
@@ -91,7 +93,6 @@ typedef enum {
   DEVICE_SYMBOL(remap_pfn_range),
   DEVICE_SYMBOL(ptmx_fops),
 } device_symbol_t;
-
 extern device_id_t detect_device(void);
 extern unsigned long int device_get_symbol_address(device_symbol_t);
 extern void print_reason_device_not_supported(void);

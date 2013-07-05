@@ -8,7 +8,6 @@ typedef struct _supported_device {
   const char *build_id;
   const char *check_property_name;
   const char *check_property_value;
-
   unsigned long int kernel_physical_offset_address;
 
   unsigned long int prepare_kernel_cred_address;
@@ -104,6 +103,28 @@ static supported_device supported_devices[] = {
     .commit_creds_address = 0xc009a984,
     .remap_pfn_range_address = 0xc0112668,
     .ptmx_fops_address = 0xc0e46ce0,
+  },
+
+  {
+    .device_id = DEVICE_C6602_10_3_A_0_423,
+    .device = "C6602",
+    .build_id = "10.3.A.0.423",
+
+    .prepare_kernel_cred_address = 0xc009a740,
+    .commit_creds_address = 0xc009a264,
+    .remap_pfn_range_address = 0xc0111f48,
+    .ptmx_fops_address = 0xc0e46fd0,
+  },
+
+  {
+    .device_id = DEVICE_C6603_10_3_A_0_423,
+    .device = "C6603",
+    .build_id = "10.3.A.0.423",
+
+    .prepare_kernel_cred_address = 0xc009a740,
+    .commit_creds_address = 0xc009a264,
+    .remap_pfn_range_address = 0xc0111f48,
+    .ptmx_fops_address = 0xc0e46fd0,
   },
 
   {
