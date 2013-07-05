@@ -490,6 +490,17 @@ static supported_device supported_devices[] = {
   },
 
   {
+    .device_id = DEVICE_LT26I_6_2_B_0_200,
+    .device = "LT26i",
+    .build_id = "6.2.B.0.200",
+
+    .prepare_kernel_cred_address = 0xc00b19c8,
+    .commit_creds_address = 0xc00b14ec,
+    .remap_pfn_range_address = 0xc0135640,
+    .ptmx_fops_address = 0xc0cc37e8,
+  },
+
+  {
     .device_id = DEVICE_LT26I_6_2_B_0_211,
     .device = "LT26i",
     .build_id = "6.2.B.0.211",
