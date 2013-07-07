@@ -932,6 +932,28 @@ static supported_device supported_devices[] = {
   },
 
   {
+    .device_id = DEVICE_ST26A_11_2_A_0_21,
+    .device = "ST26a",
+    .build_id = "11.2.A.0.21",
+
+    .prepare_kernel_cred_address = 0xc00af59c,
+    .commit_creds_address = 0xc00af25c,
+    .remap_pfn_range_address = 0xc00fa38c,
+    .ptmx_fops_address = 0xc09b36dc,
+  },
+
+  {
+    .device_id = DEVICE_ST26I_11_2_A_0_21,
+    .device = "ST26i",
+    .build_id = "11.2.A.0.21",
+
+    .prepare_kernel_cred_address = 0xc00af59c,
+    .commit_creds_address = 0xc00af25c,
+    .remap_pfn_range_address = 0xc00fa38c,
+    .ptmx_fops_address = 0xc09b36dc,
+  },
+
+  {
     .device_id = DEVICE_SONYTABLET_P_RELEASE5A,
     .device = "Sony Tablet P",
     .build_id = "TISU0144",
