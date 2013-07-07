@@ -91,6 +91,7 @@ typedef enum {
   DEVICE_NEXUS_JZO54K,
   DEVICE_C5503_10_1_1_A_1_310,
   DEVICE_C5502_10_1_1_A_1_310,
+  DEVICE_M36H_10_1_1_A_1_310,
 } device_id_t;
 
 #define DEVICE_SYMBOL(name)     device_symbol_##name

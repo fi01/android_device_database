@@ -965,6 +965,17 @@ static supported_device supported_devices[] = {
     .remap_pfn_range_address = 0xc0109798,
     .ptmx_fops_address = 0xc0d37a98,
   },
+  
+  {
+    .device_id = DEVICE_M36H_10_1_1_A_1_310,
+    .device = "M36h",
+    .build_id = "10.1.1.A.1.310",
+
+    .prepare_kernel_cred_address = 0xc0093cd8,
+    .commit_creds_address = 0xc00937fc,
+    .remap_pfn_range_address = 0xc0109798,
+    .ptmx_fops_address = 0xc0d37a98,
+  },
 };
 
 static int n_supported_devices = sizeof(supported_devices) / sizeof(supported_devices[0]);
