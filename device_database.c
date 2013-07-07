@@ -117,6 +117,50 @@ static supported_device supported_devices[] = {
   },
 
   {
+    .device_id = DEVICE_C2104_15_0_A_1_31,
+    .device = "C2104",
+    .build_id = "15.0.A.1.31",
+
+    .prepare_kernel_cred_address = 0xc0092570,
+    .commit_creds_address = 0xc0092094,
+    .remap_pfn_range_address = 0xc00e8414,
+    .ptmx_fops_address = 0xc0f02640,
+  },
+
+  {
+    .device_id = DEVICE_C2105_15_0_A_1_31,
+    .device = "C2105",
+    .build_id = "15.0.A.1.31",
+
+    .prepare_kernel_cred_address = 0xc0092570,
+    .commit_creds_address = 0xc0092094,
+    .remap_pfn_range_address = 0xc00e8414,
+    .ptmx_fops_address = 0xc0f02640,
+  },
+
+  {
+    .device_id = DEVICE_C2104_15_0_A_1_36,
+    .device = "C2104",
+    .build_id = "15.0.A.1.36",
+
+    .prepare_kernel_cred_address = 0xc0092570,
+    .commit_creds_address = 0xc0092094,
+    .remap_pfn_range_address = 0xc00e8414,
+    .ptmx_fops_address = 0xc0f02640,
+  },
+
+  {
+    .device_id = DEVICE_C2105_15_0_A_1_36,
+    .device = "C2105",
+    .build_id = "15.0.A.1.36",
+
+    .prepare_kernel_cred_address = 0xc0092570,
+    .commit_creds_address = 0xc0092094,
+    .remap_pfn_range_address = 0xc00e8414,
+    .ptmx_fops_address = 0xc0f02640,
+  },
+
+  {
     .device_id = DEVICE_C6502_10_3_A_0_423,
     .device = "C6502",
     .build_id = "10.3.A.0.423",
