@@ -433,6 +433,19 @@ static supported_device supported_devices[] = {
   },
 
   {
+    .device_id = DEVICE_L05D_V20c,
+    .device = "L-05D",
+    .build_id = "JZO54K",
+    .check_property_name = "ro.lge.swversion",
+    .check_property_value = "L05D20c",
+
+    .prepare_kernel_cred_address = 0xc00a2278,
+    .commit_creds_address = 0xc00a1d18,
+    .remap_pfn_range_address = 0xc01268a4,
+    .ptmx_fops_address = 0xc0d885a8,
+  },
+
+  {
     .device_id = DEVICE_L06D_V10h,
     .device = "L-06D",
     .build_id = "IMM76D",
