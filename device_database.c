@@ -432,6 +432,14 @@ static supported_device supported_devices[] = {
   },
 
   {
+    .device_id = DEVICE_ISW13F_V75R58A,
+    .device = "ISW13F",
+    .build_id = "V75R58A",
+
+    .ptmx_fops_address = 0xc09fa200,
+  },
+
+  {
     .device_id = DEVICE_L01D_V20c,
     .device = "L-01D",
     .build_id = "IMM76D",
@@ -1039,6 +1047,14 @@ static supported_device supported_devices[] = {
     .device_id = DEVICE_ISW12K_010_0_3000,
     .device = "URBANO PROGRESSO",
     .build_id = "010.0.3000",
+
+    .ptmx_fops_address = 0xc0dc0a10,
+  },
+  
+  {
+    .device_id = DEVICE_ISW12K_011_0_3100,
+    .device = "URBANO PROGRESSO",
+    .build_id = "011.0.3100",
 
     .ptmx_fops_address = 0xc0dc0a10,
   },
