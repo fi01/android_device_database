@@ -194,6 +194,17 @@ static supported_device supported_devices[] = {
   },
 
   {
+    .device_id = DEVICE_C6606_10_1_1_B_0_166,
+    .device = "C6606",
+    .build_id = "10.1.1.B.0.166",
+
+    .prepare_kernel_cred_address = 0xc0093dd4,
+    .commit_creds_address = 0xc00938f8,
+    .remap_pfn_range_address = 0xc0109894,
+    .ptmx_fops_address = 0xc0d37488,
+  },
+
+  {
     .device_id = DEVICE_C6602_10_3_A_0_423,
     .device = "C6602",
     .build_id = "10.3.A.0.423",
@@ -1047,7 +1058,6 @@ static supported_device supported_devices[] = {
     .device_id = DEVICE_ISW12K_010_0_3000,
     .device = "URBANO PROGRESSO",
     .build_id = "010.0.3000",
-
     .ptmx_fops_address = 0xc0dc0a10,
   },
   
