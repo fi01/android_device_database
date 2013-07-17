@@ -117,6 +117,50 @@ static supported_device supported_devices[] = {
   },
 
   {
+    .device_id = DEVICE_C2104_15_0_A_1_31,
+    .device = "C2104",
+    .build_id = "15.0.A.1.31",
+
+    .prepare_kernel_cred_address = 0xc0092570,
+    .commit_creds_address = 0xc0092094,
+    .remap_pfn_range_address = 0xc00e8414,
+    .ptmx_fops_address = 0xc0f02640,
+  },
+
+  {
+    .device_id = DEVICE_C2105_15_0_A_1_31,
+    .device = "C2105",
+    .build_id = "15.0.A.1.31",
+
+    .prepare_kernel_cred_address = 0xc0092570,
+    .commit_creds_address = 0xc0092094,
+    .remap_pfn_range_address = 0xc00e8414,
+    .ptmx_fops_address = 0xc0f02640,
+  },
+
+  {
+    .device_id = DEVICE_C2104_15_0_A_1_36,
+    .device = "C2104",
+    .build_id = "15.0.A.1.36",
+
+    .prepare_kernel_cred_address = 0xc0092570,
+    .commit_creds_address = 0xc0092094,
+    .remap_pfn_range_address = 0xc00e8414,
+    .ptmx_fops_address = 0xc0f02640,
+  },
+
+  {
+    .device_id = DEVICE_C2105_15_0_A_1_36,
+    .device = "C2105",
+    .build_id = "15.0.A.1.36",
+
+    .prepare_kernel_cred_address = 0xc0092570,
+    .commit_creds_address = 0xc0092094,
+    .remap_pfn_range_address = 0xc00e8414,
+    .ptmx_fops_address = 0xc0f02640,
+  },
+
+  {
     .device_id = DEVICE_C6502_10_3_A_0_423,
     .device = "C6502",
     .build_id = "10.3.A.0.423",
@@ -147,6 +191,17 @@ static supported_device supported_devices[] = {
     .commit_creds_address = 0xc009a984,
     .remap_pfn_range_address = 0xc0112668,
     .ptmx_fops_address = 0xc0e46ce0,
+  },
+
+  {
+    .device_id = DEVICE_C6606_10_1_1_B_0_166,
+    .device = "C6606",
+    .build_id = "10.1.1.B.0.166",
+
+    .prepare_kernel_cred_address = 0xc0093dd4,
+    .commit_creds_address = 0xc00938f8,
+    .remap_pfn_range_address = 0xc0109894,
+    .ptmx_fops_address = 0xc0d37488,
   },
 
   {
@@ -388,6 +443,14 @@ static supported_device supported_devices[] = {
   },
 
   {
+    .device_id = DEVICE_ISW13F_V75R58A,
+    .device = "ISW13F",
+    .build_id = "V75R58A",
+
+    .ptmx_fops_address = 0xc09fa200,
+  },
+
+  {
     .device_id = DEVICE_L01D_V20c,
     .device = "L-01D",
     .build_id = "IMM76D",
@@ -548,6 +611,17 @@ static supported_device supported_devices[] = {
     .prepare_kernel_cred_address = 0xc00b19d8,
     .commit_creds_address = 0xc00b14fc,
     .remap_pfn_range_address = 0xc0135650,
+    .ptmx_fops_address = 0xc0cc37e8,
+  },
+
+  {
+    .device_id = DEVICE_LT26II_6_2_B_0_200,
+    .device = "LT26ii",
+    .build_id = "6.2.B.0.200",
+
+    .prepare_kernel_cred_address = 0xc00b19c8,
+    .commit_creds_address = 0xc00b14ec,
+    .remap_pfn_range_address = 0xc0135640,
     .ptmx_fops_address = 0xc0cc37e8,
   },
 
@@ -939,6 +1013,50 @@ static supported_device supported_devices[] = {
   },
 
   {
+    .device_id = DEVICE_ST26A_11_2_A_0_21,
+    .device = "ST26a",
+    .build_id = "11.2.A.0.21",
+
+    .prepare_kernel_cred_address = 0xc00af59c,
+    .commit_creds_address = 0xc00af25c,
+    .remap_pfn_range_address = 0xc00fa38c,
+    .ptmx_fops_address = 0xc09b36dc,
+  },
+
+  {
+    .device_id = DEVICE_ST26I_11_2_A_0_21,
+    .device = "ST26i",
+    .build_id = "11.2.A.0.21",
+
+    .prepare_kernel_cred_address = 0xc00af59c,
+    .commit_creds_address = 0xc00af25c,
+    .remap_pfn_range_address = 0xc00fa38c,
+    .ptmx_fops_address = 0xc09b36dc,
+  },
+
+  {
+    .device_id = DEVICE_ST26A_11_2_A_0_31,
+    .device = "ST26a",
+    .build_id = "11.2.A.0.31",
+
+    .prepare_kernel_cred_address = 0xc00af58c,
+    .commit_creds_address = 0xc00af24c,
+    .remap_pfn_range_address = 0xc00fa37c,
+    .ptmx_fops_address = 0xc098365c,
+  },
+
+  {
+    .device_id = DEVICE_ST26I_11_2_A_0_31,
+    .device = "ST26i",
+    .build_id = "11.2.A.0.31",
+
+    .prepare_kernel_cred_address = 0xc00af58c,
+    .commit_creds_address = 0xc00af24c,
+    .remap_pfn_range_address = 0xc00fa37c,
+    .ptmx_fops_address = 0xc098365c,
+  },
+
+  {
     .device_id = DEVICE_SONYTABLET_P_RELEASE5A,
     .device = "Sony Tablet P",
     .build_id = "TISU0144",
@@ -958,6 +1076,13 @@ static supported_device supported_devices[] = {
     .device_id = DEVICE_ISW12K_010_0_3000,
     .device = "URBANO PROGRESSO",
     .build_id = "010.0.3000",
+    .ptmx_fops_address = 0xc0dc0a10,
+  },
+  
+  {
+    .device_id = DEVICE_ISW12K_011_0_3100,
+    .device = "URBANO PROGRESSO",
+    .build_id = "011.0.3100",
 
     .ptmx_fops_address = 0xc0dc0a10,
   },
@@ -976,6 +1101,17 @@ static supported_device supported_devices[] = {
   {
     .device_id = DEVICE_C5502_10_1_1_A_1_310,
     .device = "C5502",
+    .build_id = "10.1.1.A.1.310",
+
+    .prepare_kernel_cred_address = 0xc0093cd8,
+    .commit_creds_address = 0xc00937fc,
+    .remap_pfn_range_address = 0xc0109798,
+    .ptmx_fops_address = 0xc0d37a98,
+  },
+  
+  {
+    .device_id = DEVICE_M36H_10_1_1_A_1_310,
+    .device = "M36h",
     .build_id = "10.1.1.A.1.310",
 
     .prepare_kernel_cred_address = 0xc0093cd8,
