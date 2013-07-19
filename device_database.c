@@ -283,6 +283,18 @@ static supported_device supported_devices[] = {
   },
 
   {
+    .device_id = DEVICE_F02E_V17R48A,
+    .device = "F-02E",
+    .build_id = "V17R48A",
+
+    .prepare_kernel_cred_address = 0xc00a0cf0,
+    .commit_creds_address = 0xc00a0674,
+    .remap_pfn_range_address = 0xc0112740,
+
+    .ptmx_fops_address = 0xc0ca1ca8,
+  },
+
+  {
     .device_id = DEVICE_F05D_V08R31C,
     .device = "F-05D",
     .build_id = "V08R31C",
