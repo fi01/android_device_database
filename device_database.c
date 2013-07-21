@@ -936,7 +936,7 @@ static supported_device supported_devices[] = {
     .device_id = DEVICE_SO04D_9_1_C_0_475,
     .device = "SO-04D",
     .build_id = "9.1.C.0.475",
-    
+
     .prepare_kernel_cred_address = 0xc0095cb0,
     .commit_creds_address = 0xc00957d4,
     .remap_pfn_range_address = 0xc010aaf8,
@@ -976,7 +976,7 @@ static supported_device supported_devices[] = {
     .device_id = DEVICE_SO05D_9_1_C_0_475,
     .device = "SO-05D",
     .build_id = "9.1.C.0.475",
-    
+
     .prepare_kernel_cred_address = 0xc00958ac,
     .commit_creds_address = 0xc00953d0,
     .remap_pfn_range_address = 0xc010a6f4,
@@ -1112,7 +1112,7 @@ static supported_device supported_devices[] = {
     .build_id = "010.0.3000",
     .ptmx_fops_address = 0xc0dc0a10,
   },
-  
+
   {
     .device_id = DEVICE_ISW12K_011_0_3100,
     .device = "URBANO PROGRESSO",
@@ -1120,7 +1120,7 @@ static supported_device supported_devices[] = {
 
     .ptmx_fops_address = 0xc0dc0a10,
   },
-  
+
   {
     .device_id = DEVICE_C5503_10_1_1_A_1_310,
     .device = "C5503",
@@ -1131,7 +1131,7 @@ static supported_device supported_devices[] = {
     .remap_pfn_range_address = 0xc0109798,
     .ptmx_fops_address = 0xc0d37a98,
   },
-  
+
   {
     .device_id = DEVICE_C5502_10_1_1_A_1_310,
     .device = "C5502",
@@ -1142,7 +1142,7 @@ static supported_device supported_devices[] = {
     .remap_pfn_range_address = 0xc0109798,
     .ptmx_fops_address = 0xc0d37a98,
   },
-  
+
   {
     .device_id = DEVICE_M36H_10_1_1_A_1_310,
     .device = "M36h",
@@ -1198,22 +1198,22 @@ device_get_symbol_address(device_symbol_t symbol)
     if (supported_devices[i].device_id == device_id) {
       switch (symbol) {
       case DEVICE_SYMBOL(kernel_physical_offset):
-	return supported_devices[i].kernel_physical_offset_address;
+        return supported_devices[i].kernel_physical_offset_address;
 
       case DEVICE_SYMBOL(prepare_kernel_cred):
-	return supported_devices[i].prepare_kernel_cred_address;
+        return supported_devices[i].prepare_kernel_cred_address;
 
       case DEVICE_SYMBOL(commit_creds):
-	return supported_devices[i].commit_creds_address;
+        return supported_devices[i].commit_creds_address;
 
       case DEVICE_SYMBOL(remap_pfn_range):
-	return supported_devices[i].remap_pfn_range_address;
+        return supported_devices[i].remap_pfn_range_address;
 
       case DEVICE_SYMBOL(ptmx_fops):
-	return supported_devices[i].ptmx_fops_address;
+        return supported_devices[i].ptmx_fops_address;
 
       default:
-	return 0;
+        return 0;
       }
     }
   }
