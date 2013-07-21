@@ -1153,6 +1153,17 @@ static supported_device supported_devices[] = {
     .remap_pfn_range_address = 0xc0109798,
     .ptmx_fops_address = 0xc0d37a98,
   },
+
+  {
+    .device_id = DEVICE_ASUS_TF300T_JRO03C_JP_EPAD_10_4_2_20,
+    .device = "ASUS Pad TF300T",
+    .build_id = "JRO03C.JP_epad-10.4.2.20-20121228",
+
+    .prepare_kernel_cred_address = 0xc0095f0c,
+    .commit_creds_address = 0xc0095bd8,
+    .remap_pfn_range_address = 0xc0100f68,
+    .ptmx_fops_address = 0xc0a706d8,
+  },
 };
 
 static int n_supported_devices = sizeof(supported_devices) / sizeof(supported_devices[0]);
