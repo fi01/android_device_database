@@ -295,6 +295,12 @@ static supported_device supported_devices[] = {
   },
 
   {
+    .device_id = DEVICE_F03D_V24R33Cc,
+    .device = "F-03D",
+    .build_id = "V24R33Cc",
+  },
+
+  {
     .device_id = DEVICE_F05D_V08R31C,
     .device = "F-05D",
     .build_id = "V08R31C",
@@ -327,11 +333,29 @@ static supported_device supported_devices[] = {
   },
 
   {
+    .device_id = DEVICE_F11D_V21R36A,
+    .device = "F-11D",
+    .build_id = "V21R36A",
+  },
+
+  {
     .device_id = DEVICE_F11D_V24R40A,
     .device = "F-11D",
     .build_id = "V24R40A",
 
     .ptmx_fops_address = 0xc1056998,
+  },
+
+  {
+    .device_id = DEVICE_F11D_V26R42B,
+    .device = "F-11D",
+    .build_id = "V26R42B",
+  },
+
+  {
+    .device_id = DEVICE_F12C_V21,
+    .device = "F-12C",
+    .build_id = "V21",
   },
 
   {
@@ -425,6 +449,12 @@ static supported_device supported_devices[] = {
   },
 
   {
+    .device_id = DEVICE_IS11N_GRJ90,
+    .device = "IS11N",
+    .build_id = "GRJ90",
+  },
+
+  {
     .device_id = DEVICE_IS15SH_01_00_04,
     .device = "IS15SH",
     .build_id = "01.00.04",
@@ -433,6 +463,12 @@ static supported_device supported_devices[] = {
     .commit_creds_address = 0xc01c643c,
     .remap_pfn_range_address = 0xc0208980,
     .ptmx_fops_address = 0xc0edaf90,
+  },
+
+  {
+    .device_id = DEVICE_IS17SH_01_00_03,
+    .device = "IS17SH",
+    .build_id = "01.00.03",
   },
 
   {
@@ -822,6 +858,12 @@ static supported_device supported_devices[] = {
   },
 
   {
+    .device_id = DEVICE_SC05D_LPL,
+    .device = "SC-05D",
+    .build_id = "IMM76D.OMLPL",
+  },
+
+  {
     .device_id = DEVICE_SCL21_LJD,
     .device = "SCL21",
     .build_id = "IMM76D.SCL21KDALJD",
@@ -987,6 +1029,12 @@ static supported_device supported_devices[] = {
   },
 
   {
+    .device_id = DEVICE_SO05D_7_0_D_1_117,
+    .device = "SO-05D",
+    .build_id = "7.0.D.1.117",
+  },
+
+  {
     .device_id = DEVICE_SO05D_7_0_D_1_137,
     .device = "SO-05D",
     .build_id = "7.0.D.1.137",
@@ -1125,6 +1173,12 @@ static supported_device supported_devices[] = {
     .build_id = "TISU0143",
 
     .ptmx_fops_address = 0xc06e4d18,
+  },
+
+  {
+    .device_id = DEVICE_ISW11K_145_0_0002,
+    .device = "ISW11K",
+    .build_id = "145.0.0002",
   },
 
   {
