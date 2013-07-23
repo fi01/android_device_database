@@ -319,6 +319,14 @@ static supported_device supported_devices[] = {
   },
 
   {
+    .device_id = DEVICE_F10D_V22R49C,
+    .device = "F-10D",
+    .build_id = "V22R49C",
+
+    .ptmx_fops_address = 0xc09a60bc,
+  },
+
+  {
     .device_id = DEVICE_F11D_V24R40A,
     .device = "F-11D",
     .build_id = "V24R40A",
