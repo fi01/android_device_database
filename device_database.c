@@ -905,6 +905,22 @@ static supported_device supported_devices[] = {
   },
 
   {
+    .device_id = DEVICE_SH02E_02_00_02,
+    .device = "SH-02E",
+    .build_id = "01.00.02",
+
+    .kernel_physical_offset_address = 0x80208000,
+  },
+
+  {
+    .device_id = DEVICE_SH02E_02_00_03,
+    .device = "SH-02E",
+    .build_id = "01.00.03",
+
+    .kernel_physical_offset_address = 0x80208000,
+  },
+
+  {
     .device_id = DEVICE_SH04E_01_00_02,
     .device = "SH-04E",
     .build_id = "01.00.02",
