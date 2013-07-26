@@ -929,7 +929,7 @@ static supported_device supported_devices[] = {
   {
     .device_id = DEVICE_SH02E_02_00_02,
     .device = "SH-02E",
-    .build_id = "01.00.02",
+    .build_id = "02.00.02",
 
     .kernel_physical_offset_address = 0x80208000,
   },
@@ -937,7 +937,7 @@ static supported_device supported_devices[] = {
   {
     .device_id = DEVICE_SH02E_02_00_03,
     .device = "SH-02E",
-    .build_id = "01.00.03",
+    .build_id = "02.00.03",
 
     .kernel_physical_offset_address = 0x80208000,
 
