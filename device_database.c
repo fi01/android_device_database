@@ -858,6 +858,28 @@ static supported_device supported_devices[] = {
   },
 
   {
+    .device_id = DEVICE_SC04E_MF2,
+    .device = "SC-04E",
+    .build_id = "JDQ39.SC04EOMUAMF2",
+
+    .prepare_kernel_cred_address = 0xc00960cc,
+    .commit_creds_address = 0xc0095bb8,
+    .ptmx_fops_address = 0xc1169848,
+    .remap_pfn_range_address = 0xc01138a0,
+  },
+
+  {
+    .device_id = DEVICE_SC04E_MG2,
+    .device = "SC-04E",
+    .build_id = "JDQ39.SC04EOMUAMG2",
+
+    .prepare_kernel_cred_address = 0xc00960cc,
+    .commit_creds_address = 0xc0095bb8,
+    .ptmx_fops_address = 0xc1169848,
+    .remap_pfn_range_address = 0xc01138a8,
+  },
+
+  {
     .device_id = DEVICE_SC05D_LPL,
     .device = "SC-05D",
     .build_id = "IMM76D.OMLPL",
