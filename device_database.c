@@ -954,10 +954,10 @@ static supported_device supported_devices[] = {
 
     .kernel_physical_offset_address = 0x80208000,
 
-    .prepare_kernel_cred_address = 0xc008d86c,
-    .commit_creds_address = 0xc008d398,
-    .remap_pfn_range_address = 0xc00e458c,
-    .ptmx_fops_address = 0xc0eed190,
+    .prepare_kernel_cred_address = 0xc008d60c,
+    .commit_creds_address = 0xc008d138,
+    .remap_pfn_range_address = 0xc00e433c,
+    .ptmx_fops_address = 0xc0ef62c0,
   },
 
   {
