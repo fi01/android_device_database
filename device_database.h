@@ -1,3 +1,6 @@
+#ifndef __ANDROID_DEVICE_DATABASE_H__
+#define __ANDROID_DEVICE_DATABASE_H__
+
 typedef enum {
   DEVICE_NOT_SUPPORTED = 0,
   DEVICE_C5302_12_0_A_1_284,
@@ -139,3 +142,5 @@ typedef enum {
 extern device_id_t detect_device(void);
 extern unsigned long int device_get_symbol_address(device_symbol_t);
 extern void print_reason_device_not_supported(void);
+
+#endif /* __ANDROID_DEVICE_DATABASE_H__ */
