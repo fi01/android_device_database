@@ -1340,6 +1340,16 @@ static supported_device supported_devices[] = {
     .remap_pfn_range_address = 0xc0100f68,
     .ptmx_fops_address = 0xc0a706d8,
   },
+  {
+    .device_id = DEVICE_SCH_I545_VZWAME7,
+    .device = "SCH-I545",
+    .build_id = "JDQ39.I545VRUAME7",
+
+    .prepare_kernel_cred_address = 0xc0095d1c,
+    .commit_creds_address = 0xc0095808,
+    .remap_pfn_range_address = 0xc011358c,
+    .ptmx_fops_address = 0xc1067b48,
+  },
 };
 
 static int n_supported_devices = sizeof(supported_devices) / sizeof(supported_devices[0]);
