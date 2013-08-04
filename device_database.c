@@ -817,6 +817,17 @@ static supported_device supported_devices[] = {
   },
 
   {
+    .device_id = DEVICE_LT30P_9_1_A_1_145,
+    .device = "LT30p",
+    .build_id = "9.1.A.1.145",
+
+    .prepare_kernel_cred_address = 0xc0094888,
+    .commit_creds_address = 0xc00943ac,
+    .remap_pfn_range_address = 0xc01096f4,
+    .ptmx_fops_address = 0xc0d02b00,
+  },
+
+  {
     .device_id = DEVICE_M35H_12_0_A_1_257,
     .device = "M35h",
     .build_id = "12.0.A.1.257",
