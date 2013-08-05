@@ -587,6 +587,18 @@ static supported_device supported_devices[] = {
   },
 
   {
+    .device_id = DEVICE_L01E_V20b,
+    .device = "L-01E",
+    .build_id = "JZO54K",
+    .check_property_name = "ro.lge.swversion",
+    .check_property_value = "L01E20b",
+    .prepare_kernel_cred_address = 0xc009c310,
+    .commit_creds_address = 0xc009beec,
+    .remap_pfn_range_address = 0xc0111c34,
+    .ptmx_fops_address = 0xc0fac580,
+  },
+
+  {
     .device_id = DEVICE_L02E_V20a,
     .device = "L-02E",
     .build_id = "JZO54K",
