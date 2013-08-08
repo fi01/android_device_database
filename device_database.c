@@ -1057,6 +1057,17 @@ static supported_device supported_devices[] = {
   },
 
   {
+    .device_id = DEVICE_SHL21_01_00_09,
+    .device = "SHL21",
+    .build_id = "01.00.09",
+
+    .prepare_kernel_cred_address = 0xc0197b94,
+    .commit_creds_address = 0xc0197448,
+    .ptmx_fops_address = 0xc0fe01b0,
+    .remap_pfn_range_address = 0xc01f18d0,
+  },
+
+  {
     .device_id = DEVICE_SO01E_9_1_C_0_473,
     .device = "SO-01E",
     .build_id = "9.1.C.0.473",
