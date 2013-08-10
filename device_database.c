@@ -851,6 +851,12 @@ static supported_device supported_devices[] = {
   },
 
   {
+    .device_id = DEVICE_N02E_A5000331,
+    .device = "N-02E",
+    .build_id = "A5000331",
+  },
+
+  {
     .device_id = DEVICE_N05E_A1000311,
     .device = "N05E",
     .build_id = "A1000311",
