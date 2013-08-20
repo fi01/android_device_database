@@ -18,6 +18,28 @@ typedef struct _supported_device {
 
 static supported_device supported_devices[] = {
   {
+    .device_id = DEVICE_C1505_11_3_A_0_47,
+    .device = "C1505",
+    .build_id = "11.3.A.0.47",
+
+    .prepare_kernel_cred_address = 0xc00adb98,
+    .commit_creds_address = 0xc00ad80c,
+    .remap_pfn_range_address = 0xc01028d8,
+    .ptmx_fops_address = 0xc093ee30,
+  },
+
+  {
+    .device_id = DEVICE_C1505_11_3_A_2_13,
+    .device = "C1505",
+    .build_id = "11.3.A.2.13",
+
+    .prepare_kernel_cred_address = 0xc00add90,
+    .commit_creds_address = 0xc00ada04,
+    .remap_pfn_range_address = 0xc0102ad0,
+    .ptmx_fops_address = 0xc093ed70,
+  },
+
+  {
     .device_id = DEVICE_C5302_12_0_A_1_211,
     .device = "C5302",
     .build_id = "12.0.A.1.211",
@@ -1240,6 +1262,28 @@ static supported_device supported_devices[] = {
     .commit_creds_address = 0xc009cf1c,
     .remap_pfn_range_address = 0xc0112230,
     .ptmx_fops_address = 0xc0e389b0,
+  },
+
+  {
+    .device_id = DEVICE_ST23I_11_0_A_5_5,
+    .device = "ST23i",
+    .build_id = "11.0.A.5.5",
+
+    .prepare_kernel_cred_address = 0xc00cd94c,
+    .commit_creds_address = 0xc00cda94,
+    .remap_pfn_range_address = 0xc01124bc,
+    .ptmx_fops_address = 0xc095a46c,
+  },
+
+  {
+    .device_id = DEVICE_ST23I_11_0_A_5_8,
+    .device = "ST23i",
+    .build_id = "11.0.A.5.8",
+
+    .prepare_kernel_cred_address = 0xc00cd94c,
+    .commit_creds_address = 0xc00cda94,
+    .remap_pfn_range_address = 0xc01124bc,
+    .ptmx_fops_address = 0xc095846c,
   },
 
   {
