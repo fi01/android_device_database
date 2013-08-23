@@ -397,6 +397,14 @@ static supported_device supported_devices[] = {
   },
 
   {
+    .device_id = DEVICE_FJL21_V39R48C,
+    .device = "FJL21",
+    .build_id = "V39R48C",
+
+    .ptmx_fops_address = 0xc0ee3378,
+  },
+
+  {
     .device_id = DEVICE_NEXUS_JOP40C,
     .device = "Galaxy Nexus",
     .build_id = "JOP40C",
