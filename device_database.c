@@ -216,6 +216,17 @@ static supported_device supported_devices[] = {
   },
 
   {
+    .device_id = DEVICE_C6616_10_1_1_A_1_319,
+    .device = "C6616",
+    .build_id = "10.1.1.A.1.319",
+
+    .prepare_kernel_cred_address = 0xc0093de4,
+    .commit_creds_address = 0xc0093908,
+    .remap_pfn_range_address = 0xc01098a4,
+    .ptmx_fops_address = 0xc0d37488,
+  },
+
+  {
     .device_id = DEVICE_C6606_10_1_1_B_0_166,
     .device = "C6606",
     .build_id = "10.1.1.B.0.166",
