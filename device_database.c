@@ -1227,6 +1227,17 @@ static supported_device supported_devices[] = {
   },
 
   {
+    .device_id = DEVICE_SO04D_9_1_C_1_103,
+    .device = "SO-04D",
+    .build_id = "9.1.C.1.103",
+
+    .prepare_kernel_cred_address = 0xc0095cc0,
+    .commit_creds_address = 0xc00957e4,
+    .remap_pfn_range_address = 0xc010ab3c,
+    .ptmx_fops_address = 0xc0d024a0,
+  },
+
+  {
     .device_id = DEVICE_SO04E_10_1_1_D_0_179,
     .device = "SO-04E",
     .build_id = "10.1.1.D.0.179",
