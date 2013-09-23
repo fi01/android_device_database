@@ -910,6 +910,28 @@ static supported_device supported_devices[] = {
   },
 
   {
+    .device_id = DEVICE_N03E_A7000241,
+    .device = "N-03E",
+    .build_id = "A7000241",
+
+    .prepare_kernel_cred_address = 0xc01ab578,
+    .commit_creds_address = 0xc01aadac,
+    .remap_pfn_range_address = 0xc020d990,
+    .ptmx_fops_address = 0xc0f702fc,
+  },
+
+  {
+    .device_id = DEVICE_N03E_A7001821,
+    .device = "N-03E",
+    .build_id = "A7001821",
+
+    .prepare_kernel_cred_address = 0xc01ab594,
+    .commit_creds_address = 0xc01aadc8,
+    .remap_pfn_range_address = 0xc020d9ac,
+    .ptmx_fops_address = 0xc0f702fc,
+  },
+
+  {
     .device_id = DEVICE_N05E_A1000311,
     .device = "N05E",
     .build_id = "A1000311",
