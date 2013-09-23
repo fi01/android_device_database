@@ -1175,6 +1175,17 @@ static supported_device supported_devices[] = {
   },
 
   {
+    .device_id = DEVICE_SO01E_9_1_C_1_103,
+    .device = "SO-01E",
+    .build_id = "9.1.C.1.103",
+
+    .prepare_kernel_cred_address = 0xc009844c,
+    .commit_creds_address = 0xc0097f70,
+    .remap_pfn_range_address = 0xc010e238,
+    .ptmx_fops_address = 0xc0d03288,
+  },
+
+  {
     .device_id = DEVICE_SO02E_10_1_D_0_343,
     .device = "SO-02E",
     .build_id = "10.1.D.0.343",
@@ -1281,6 +1292,17 @@ static supported_device supported_devices[] = {
     .commit_creds_address = 0xc00953d0,
     .remap_pfn_range_address = 0xc010a6f4,
     .ptmx_fops_address = 0xc0d01e50,
+  },
+
+  {
+    .device_id = DEVICE_SO05D_9_1_C_1_103,
+    .device = "SO-05D",
+    .build_id = "9.1.C.1.103",
+
+    .prepare_kernel_cred_address = 0xc00958bc,
+    .commit_creds_address = 0xc00953e0,
+    .remap_pfn_range_address = 0xc010a738,
+    .ptmx_fops_address = 0xc0d01e90,
   },
 
   {
