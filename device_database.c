@@ -1067,6 +1067,19 @@ static supported_device supported_devices[] = {
   },
 
   {
+    .device_id = DEVICE_SBM203SH_S0024,
+    .device = "SBM203SH",
+    .build_id = "S0024",
+
+    .kernel_physical_offset_address = 0x80208000,
+
+    .prepare_kernel_cred_address = 0xc008d5f8,
+    .commit_creds_address = 0xc008d124,
+    .remap_pfn_range_address = 0xc00e4320,
+    .ptmx_fops_address = 0xc0ef6580,
+  },
+
+  {
     .device_id = DEVICE_SH02E_02_00_02,
     .device = "SH-02E",
     .build_id = "02.00.02",
