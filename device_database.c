@@ -500,11 +500,11 @@ static supported_device supported_devices[] = {
   },
 
   {
-    .device_id = DEVICE_HTL22_1_05_970_1,
+    .device_id = DEVICE_HTL22_1_05_970_2,
     .device = "HTL22",
     .build_id = "JZO54K",
     .check_property_name = "ro.aa.romver",
-    .check_property_value = "1.05.970.1",
+    .check_property_value = "1.05.970.2",
 
     .prepare_kernel_cred_address = 0xc00b2688,
     .commit_creds_address = 0xc00b2174,
