@@ -1028,8 +1028,19 @@ static supported_device supported_devices[] = {
     .build_id = "10.0657",
 
     .prepare_kernel_cred_address = 0xc009b868,
-    .commit_creds_address = 0xc009b38c ,
+    .commit_creds_address = 0xc009b38c,
     .ptmx_fops_address = 0xc0f72ba4,
+  },
+
+  {
+    .device_id = DEVICE_P02E_10_0767,
+    .device = "P-02E",
+    .build_id = "10.0767",
+
+    .prepare_kernel_cred_address = 0xc009b888,
+    .commit_creds_address = 0xc009b3ac,
+    .remap_pfn_range_address = 0xc0110244,
+    .ptmx_fops_address = 0xc0f72be4,
   },
 
   {
