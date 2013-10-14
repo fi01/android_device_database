@@ -1044,6 +1044,17 @@ static supported_device supported_devices[] = {
   },
 
   {
+    .device_id = DEVICE_P02E_10_0798,
+    .device = "P-02E",
+    .build_id = "10.0798",
+
+    .prepare_kernel_cred_address = 0xc009b93c,
+    .commit_creds_address = 0xc009b460,
+    .remap_pfn_range_address = 0xc0110324,
+    .ptmx_fops_address = 0xc0f72ba4,
+  },
+
+  {
     .device_id = DEVICE_SC01E_LJ3,
     .device = "SC-01E",
     .build_id = "IMM76D.SC01EOMALJ3",
