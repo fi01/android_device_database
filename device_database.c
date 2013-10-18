@@ -1299,6 +1299,19 @@ static supported_device supported_devices[] = {
   },
 
   {
+    .device_id = DEVICE_SH06E_01_00_05,
+    .device = "SH-06E",
+    .build_id = "01.00.05",
+
+    .kernel_physical_offset_address = 0x80208000,
+
+    .prepare_kernel_cred_address = 0xc0099be0,
+    .commit_creds_address = 0xc009970c,
+    .remap_pfn_range_address = 0xc010d5d8,
+    .ptmx_fops_address = 0xc104f1c8,
+  },
+
+  {
     .device_id = DEVICE_SH06E_01_00_06,
     .device = "SH-06E",
     .build_id = "01.00.06",
