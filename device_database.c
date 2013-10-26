@@ -990,6 +990,17 @@ static supported_device supported_devices[] = {
   },
 
   {
+    .device_id = DEVICE_N03E_A7202201,
+    .device = "N-03E",
+    .build_id = "A7202201",
+
+    .prepare_kernel_cred_address = 0xc0093760,
+    .commit_creds_address = 0xc00931ec,
+    .remap_pfn_range_address = 0xc0106048,
+    .ptmx_fops_address = 0xc0f94d94,
+  },
+
+  {
     .device_id = DEVICE_N05E_A1000311,
     .device = "N05E",
     .build_id = "A1000311",
