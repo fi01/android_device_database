@@ -928,6 +928,18 @@ static supported_device supported_devices[] = {
   },
 
   {
+    .device_id = DEVICE_N02E_A3002501,
+    .device = "N-02E",
+    .build_id = "A3002501",
+  },
+
+  {
+    .device_id = DEVICE_N02E_A3002601,
+    .device = "N-02E",
+    .build_id = "A3002601",
+  },
+
+  {
     .device_id = DEVICE_N02E_A5000331,
     .device = "N-02E",
     .build_id = "A5000331",
