@@ -743,6 +743,14 @@ static supported_device supported_devices[] = {
   },
 
   {
+    .device_id = DEVICE_L06D_V10p,
+    .device = "L-06D",
+    .build_id = "IMM76D",
+    .check_property_name = "ro.lge.swversion",
+    .check_property_value = "L06D-V10p-OCT-09-2013",
+  },
+
+  {
     .device_id = DEVICE_LG_E975_V10e,
     .device = "LG-E975",
     .build_id = "JZO54K",
