@@ -487,6 +487,19 @@ static supported_device supported_devices[] = {
   },
 
   {
+    .device_id = DEVICE_HTL21_1_36_970_1,
+    .device = "HTL21",
+    .build_id = "JRO03C",
+    .check_property_name = "ro.aa.romver",
+    .check_property_value = "1.36.970.1",
+
+    .prepare_kernel_cred_address = 0xc00abd48,
+    .commit_creds_address = 0xc00ab834,
+    .remap_pfn_range_address = 0xc00ff6a4,
+    .ptmx_fops_address = 0xc0d1dec4,
+  },
+
+  {
     .device_id = DEVICE_HTL22_1_07_970_4,
     .device = "HTL22",
     .build_id = "JZO54K",
