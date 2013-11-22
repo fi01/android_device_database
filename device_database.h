@@ -191,6 +191,7 @@ typedef enum {
   DEVICE_SYMBOL(prepare_kernel_cred),
   DEVICE_SYMBOL(commit_creds),
   DEVICE_SYMBOL(remap_pfn_range),
+  DEVICE_SYMBOL(vmalloc_exec),
   DEVICE_SYMBOL(ptmx_fops),
 } device_symbol_t;
 extern device_id_t detect_device(void);

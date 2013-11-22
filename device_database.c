@@ -13,6 +13,7 @@ typedef struct _supported_device {
   unsigned long int prepare_kernel_cred_address;
   unsigned long int commit_creds_address;
   unsigned long int remap_pfn_range_address;
+  unsigned long int vmalloc_exec_address;
   unsigned long int ptmx_fops_address;
 } supported_device;
 
@@ -311,7 +312,6 @@ static supported_device supported_devices[] = {
     .prepare_kernel_cred_address = 0xc00a0cdc,
     .commit_creds_address = 0xc00a0660,
     .remap_pfn_range_address = 0xc011272c,
-
     .ptmx_fops_address = 0xc0ca1ca8,
   },
 
@@ -323,7 +323,6 @@ static supported_device supported_devices[] = {
     .prepare_kernel_cred_address = 0xc00a0cf0,
     .commit_creds_address = 0xc00a0674,
     .remap_pfn_range_address = 0xc0112740,
-
     .ptmx_fops_address = 0xc0ca1ca8,
   },
 
@@ -337,7 +336,6 @@ static supported_device supported_devices[] = {
     .device_id = DEVICE_F05D_V08R31C,
     .device = "F-05D",
     .build_id = "V08R31C",
-
     .ptmx_fops_address = 0xc07bc164,
   },
 
@@ -345,7 +343,6 @@ static supported_device supported_devices[] = {
     .device_id = DEVICE_F05D_V11R40A,
     .device = "F-05D",
     .build_id = "V11R40A",
-
     .ptmx_fops_address = 0xc07bbf44,
   },
 
@@ -357,7 +354,6 @@ static supported_device supported_devices[] = {
     .prepare_kernel_cred_address = 0xc00ab27c,
     .commit_creds_address = 0xc00aad54,
     .remap_pfn_range_address = 0xc012341c,
-
     .ptmx_fops_address = 0xc10d7774,
   },
 
@@ -369,7 +365,7 @@ static supported_device supported_devices[] = {
     .prepare_kernel_cred_address = 0xc00ab10c,
     .commit_creds_address = 0xc00aabe4,
     .remap_pfn_range_address = 0xc01232ac,
-
+    .vmalloc_exec_address = 0xc012fd64,
     .ptmx_fops_address = 0xc10d75b4,
   },
 
@@ -381,7 +377,7 @@ static supported_device supported_devices[] = {
     .prepare_kernel_cred_address = 0xc00ab12c,
     .commit_creds_address = 0xc00aac04,
     .remap_pfn_range_address = 0xc01232cc,
-
+    .vmalloc_exec_address = 0xc012fd84,
     .ptmx_fops_address = 0xc10d7634,
   },
 
@@ -393,7 +389,7 @@ static supported_device supported_devices[] = {
     .prepare_kernel_cred_address = 0xc00ab12c,
     .commit_creds_address = 0xc00aac04,
     .remap_pfn_range_address = 0xc01232cc,
-
+    .vmalloc_exec_address = 0xc012fd84,
     .ptmx_fops_address = 0xc10d7634,
   },
 
@@ -405,7 +401,7 @@ static supported_device supported_devices[] = {
     .prepare_kernel_cred_address = 0xc00927b0,
     .commit_creds_address = 0xc0092248,
     .remap_pfn_range_address = 0xc00e38e8,
-
+    .vmalloc_exec_address = 0xc00f0fe4,
     .ptmx_fops_address = 0xc0b7755c,
   },
 
@@ -507,6 +503,7 @@ static supported_device supported_devices[] = {
     .prepare_kernel_cred_address = 0xc00ab9d8,
     .commit_creds_address = 0xc00ab4c4,
     .remap_pfn_range_address = 0xc00ff32c,
+    .vmalloc_exec_address = 0xc010b728,
     .ptmx_fops_address = 0xc0d1d944,
   },
 
@@ -520,6 +517,7 @@ static supported_device supported_devices[] = {
     .prepare_kernel_cred_address = 0xc00abd48,
     .commit_creds_address = 0xc00ab834,
     .remap_pfn_range_address = 0xc00ff6a4,
+    .vmalloc_exec_address = 0xc010baa0,
     .ptmx_fops_address = 0xc0d1dec4,
   },
 
@@ -559,6 +557,7 @@ static supported_device supported_devices[] = {
     .prepare_kernel_cred_address = 0xc00b3664,
     .commit_creds_address = 0xc00b3150,
     .remap_pfn_range_address = 0xc012a37c,
+    .vmalloc_exec_address = 0xc0136854,
     .ptmx_fops_address = 0xc0ef7d44,
   },
 
@@ -625,9 +624,12 @@ static supported_device supported_devices[] = {
     .device = "IS17SH",
     .build_id = "01.00.04",
 
+    .kernel_physical_offset_address = 0x00208000,
+
     .prepare_kernel_cred_address = 0xc01c66a8,
     .commit_creds_address = 0xc01c5fd8,
     .remap_pfn_range_address = 0xc0208a34,
+    .vmalloc_exec_address = 0xc0212b70,
     .ptmx_fops_address = 0xc0edae90,
   },
 
@@ -637,7 +639,6 @@ static supported_device supported_devices[] = {
     .build_id = "FIK700",
     .check_property_name = "gsm.version.baseband",
     .check_property_value = "V25R45A",
-
     .ptmx_fops_address = 0xc080e268,
   },
 
@@ -647,7 +648,6 @@ static supported_device supported_devices[] = {
     .build_id = "FIK700",
     .check_property_name = "gsm.version.baseband",
     .check_property_value = "V27R47I",
-
     .ptmx_fops_address = 0xc080e028,
   },
 
@@ -655,7 +655,6 @@ static supported_device supported_devices[] = {
     .device_id = DEVICE_ISW13F_V69R51I,
     .device = "ISW13F",
     .build_id = "V69R51I",
-
     .ptmx_fops_address = 0xc09fc600,
   },
 
@@ -663,7 +662,6 @@ static supported_device supported_devices[] = {
     .device_id = DEVICE_ISW13F_V75R58A,
     .device = "ISW13F",
     .build_id = "V75R58A",
-
     .ptmx_fops_address = 0xc09fa200,
   },
 
@@ -718,6 +716,7 @@ static supported_device supported_devices[] = {
     .build_id = "IMM76L",
     .check_property_name = "ro.lge.swversion",
     .check_property_value = "L01E10c",
+
     .prepare_kernel_cred_address = 0xc01aa40c,
     .commit_creds_address = 0xc01aa570,
     .remap_pfn_range_address = 0xc020d08c,
@@ -730,9 +729,11 @@ static supported_device supported_devices[] = {
     .build_id = "JDQ39B",
     .check_property_name = "ro.lge.swversion",
     .check_property_value = "L01F10c",
+
     .prepare_kernel_cred_address = 0xc00c37a8,
     .commit_creds_address = 0xc00c329c,
     .remap_pfn_range_address = 0xc0144c20,
+    .vmalloc_exec_address = 0xc01521dc,
     .ptmx_fops_address = 0xc101c490,
   },
 
@@ -750,9 +751,11 @@ static supported_device supported_devices[] = {
     .build_id = "JZO54K",
     .check_property_name = "ro.lge.swversion",
     .check_property_value = "L01E20b",
+
     .prepare_kernel_cred_address = 0xc009c310,
     .commit_creds_address = 0xc009beec,
     .remap_pfn_range_address = 0xc0111c34,
+    .vmalloc_exec_address = 0xc011e860,
     .ptmx_fops_address = 0xc0fac580,
   },
 
@@ -762,9 +765,11 @@ static supported_device supported_devices[] = {
     .build_id = "JZO54K",
     .check_property_name = "ro.lge.swversion",
     .check_property_value = "L02E20a",
+
     .prepare_kernel_cred_address = 0xc00a2258,
     .commit_creds_address = 0xc00a1cf8,
     .remap_pfn_range_address = 0xc01269e0,
+    .vmalloc_exec_address = 0xc01344fc,
     .ptmx_fops_address = 0xc0d926e0,
   },
 
@@ -947,6 +952,7 @@ static supported_device supported_devices[] = {
     .prepare_kernel_cred_address = 0xc00b261c,
     .commit_creds_address = 0xc00b2140,
     .remap_pfn_range_address = 0xc0136294,
+    .vmalloc_exec_address = 0xc0143f98,
     .ptmx_fops_address = 0xc0cc3dc0,
   },
 
@@ -958,6 +964,7 @@ static supported_device supported_devices[] = {
     .prepare_kernel_cred_address = 0xc0095dec,
     .commit_creds_address = 0xc0095910,
     .remap_pfn_range_address = 0xc010ac30,
+    .vmalloc_exec_address = 0xc01177e0,
     .ptmx_fops_address = 0xc0d01f60,
   },
 
@@ -1087,6 +1094,7 @@ static supported_device supported_devices[] = {
     .prepare_kernel_cred_address = 0xc0093760,
     .commit_creds_address = 0xc00931ec,
     .remap_pfn_range_address = 0xc0106048,
+    .vmalloc_exec_address = 0xc0112694,
     .ptmx_fops_address = 0xc0f94d94,
   },
 
@@ -1098,6 +1106,7 @@ static supported_device supported_devices[] = {
     .prepare_kernel_cred_address = 0xc0093760,
     .commit_creds_address = 0xc00931ec,
     .remap_pfn_range_address = 0xc0106048,
+    .vmalloc_exec_address = 0xc0112694,
     .ptmx_fops_address = 0xc0f94d94,
   },
 
@@ -1142,6 +1151,7 @@ static supported_device supported_devices[] = {
     .prepare_kernel_cred_address = 0xc009b868,
     .commit_creds_address = 0xc009b38c,
     .remap_pfn_range_address = 0xc0110224,
+    .vmalloc_exec_address = 0xc011c6c8,
     .ptmx_fops_address = 0xc0f72ba4,
   },
 
@@ -1153,6 +1163,7 @@ static supported_device supported_devices[] = {
     .prepare_kernel_cred_address = 0xc009b868,
     .commit_creds_address = 0xc009b38c,
     .remap_pfn_range_address = 0xc0110224,
+    .vmalloc_exec_address = 0xc011c6c8,
     .ptmx_fops_address = 0xc0f72ba4,
   },
 
@@ -1164,6 +1175,7 @@ static supported_device supported_devices[] = {
     .prepare_kernel_cred_address = 0xc009b868,
     .commit_creds_address = 0xc009b38c,
     .remap_pfn_range_address = 0xc0110224,
+    .vmalloc_exec_address = 0xc011c6c8,
     .ptmx_fops_address = 0xc0f72ba4,
   },
 
@@ -1175,6 +1187,7 @@ static supported_device supported_devices[] = {
     .prepare_kernel_cred_address = 0xc009b878,
     .commit_creds_address = 0xc009b39c,
     .remap_pfn_range_address = 0xc0110234,
+    .vmalloc_exec_address = 0xc011c6d8,
     .ptmx_fops_address = 0xc0f72ba4,
   },
 
@@ -1186,6 +1199,7 @@ static supported_device supported_devices[] = {
     .prepare_kernel_cred_address = 0xc009b888,
     .commit_creds_address = 0xc009b3ac,
     .remap_pfn_range_address = 0xc0110244,
+    .vmalloc_exec_address = 0xc011c6e8,
     .ptmx_fops_address = 0xc0f72be4,
   },
 
@@ -1197,6 +1211,7 @@ static supported_device supported_devices[] = {
     .prepare_kernel_cred_address = 0xc009b93c,
     .commit_creds_address = 0xc009b460,
     .remap_pfn_range_address = 0xc0110324,
+    .vmalloc_exec_address = 0xc011c7c8,
     .ptmx_fops_address = 0xc0f72ba4,
   },
 
@@ -1230,6 +1245,7 @@ static supported_device supported_devices[] = {
     .prepare_kernel_cred_address = 0xc0096068,
     .commit_creds_address = 0xc0095b54,
     .remap_pfn_range_address = 0xc011383c,
+    .vmalloc_exec_address = 0xc01206d8,
     .ptmx_fops_address = 0xc1169808,
   },
 
@@ -1241,6 +1257,7 @@ static supported_device supported_devices[] = {
     .prepare_kernel_cred_address = 0xc00960d0,
     .commit_creds_address = 0xc0095bbc,
     .remap_pfn_range_address = 0xc01138a4,
+    .vmalloc_exec_address = 0xc0120740,
     .ptmx_fops_address = 0xc1169848,
   },
 
@@ -1252,6 +1269,7 @@ static supported_device supported_devices[] = {
     .prepare_kernel_cred_address = 0xc00960cc,
     .commit_creds_address = 0xc0095bb8,
     .ptmx_fops_address = 0xc1169848,
+    .vmalloc_exec_address = 0xc012073c,
     .remap_pfn_range_address = 0xc01138a0,
   },
 
@@ -1263,6 +1281,7 @@ static supported_device supported_devices[] = {
     .prepare_kernel_cred_address = 0xc00960cc,
     .commit_creds_address = 0xc0095bb8,
     .ptmx_fops_address = 0xc1169848,
+    .vmalloc_exec_address = 0xc0120744,
     .remap_pfn_range_address = 0xc01138a8,
   },
 
@@ -1323,6 +1342,7 @@ static supported_device supported_devices[] = {
     .prepare_kernel_cred_address = 0xc008d5f8,
     .commit_creds_address = 0xc008d124,
     .remap_pfn_range_address = 0xc00e4320,
+    .vmalloc_exec_address = 0xc00f0e68,
     .ptmx_fops_address = 0xc0ef6580,
   },
 
@@ -1344,6 +1364,7 @@ static supported_device supported_devices[] = {
     .prepare_kernel_cred_address = 0xc008d60c,
     .commit_creds_address = 0xc008d138,
     .remap_pfn_range_address = 0xc00e433c,
+    .vmalloc_exec_address = 0xc00f0e84,
     .ptmx_fops_address = 0xc0ef62c0,
   },
 
@@ -1357,6 +1378,7 @@ static supported_device supported_devices[] = {
     .prepare_kernel_cred_address = 0xc008d86c,
     .commit_creds_address = 0xc008d398,
     .remap_pfn_range_address = 0xc00e458c,
+    .vmalloc_exec_address = 0xc00f10d4,
     .ptmx_fops_address = 0xc0eed190,
   },
 
@@ -1370,6 +1392,7 @@ static supported_device supported_devices[] = {
     .prepare_kernel_cred_address = 0xc008d99c,
     .commit_creds_address = 0xc008d4c8,
     .remap_pfn_range_address = 0xc00e46bc,
+    .vmalloc_exec_address = 0xc00f1204,
     .ptmx_fops_address = 0xc0eed190,
   },
 
@@ -1383,6 +1406,7 @@ static supported_device supported_devices[] = {
     .prepare_kernel_cred_address = 0xc008d9ac,
     .commit_creds_address = 0xc008d4d8,
     .remap_pfn_range_address = 0xc00e46d4,
+    .vmalloc_exec_address = 0xc00f121c,
     .ptmx_fops_address = 0xc0eed150,
   },
 
@@ -1391,9 +1415,12 @@ static supported_device supported_devices[] = {
     .device = "SH-05E",
     .build_id = "01.00.05",
 
+    .kernel_physical_offset_address =  0x80208000,
+
     .prepare_kernel_cred_address = 0xc01932f4,
     .commit_creds_address = 0xc0192ba8,
     .remap_pfn_range_address = 0xc01f29c0,
+    .vmalloc_exec_address = 0xc01fd520,
     .ptmx_fops_address = 0xc0d95870,
   },
 
@@ -1402,9 +1429,12 @@ static supported_device supported_devices[] = {
     .device = "SH-05E",
     .build_id = "01.00.06",
 
+    .kernel_physical_offset_address =  0x80208000,
+
     .prepare_kernel_cred_address = 0xc019330c,
     .commit_creds_address = 0xc0192bc0,
     .remap_pfn_range_address = 0xc01f29fc,
+    .vmalloc_exec_address = 0xc01fd55c,
     .ptmx_fops_address = 0xc0d95870,
   },
 
@@ -1418,6 +1448,7 @@ static supported_device supported_devices[] = {
     .prepare_kernel_cred_address = 0xc0099c08,
     .commit_creds_address = 0xc0099734,
     .remap_pfn_range_address = 0xc010d5f8,
+    .vmalloc_exec_address = 0xc011a190,
     .ptmx_fops_address = 0xc104e6c8,
   },
 
@@ -1431,6 +1462,7 @@ static supported_device supported_devices[] = {
     .prepare_kernel_cred_address = 0xc0099be0,
     .commit_creds_address = 0xc009970c,
     .remap_pfn_range_address = 0xc010d5d8,
+    .vmalloc_exec_address = 0xc011a170,
     .ptmx_fops_address = 0xc104f1c8,
   },
 
@@ -1444,6 +1476,7 @@ static supported_device supported_devices[] = {
     .prepare_kernel_cred_address = 0xc0099bf0,
     .commit_creds_address = 0xc009971c,
     .remap_pfn_range_address = 0xc010d5e8,
+    .vmalloc_exec_address = 0xc011a180,
     .ptmx_fops_address = 0xc1050090,
   },
 
@@ -1457,6 +1490,7 @@ static supported_device supported_devices[] = {
     .prepare_kernel_cred_address = 0xc0099bdc,
     .commit_creds_address = 0xc0099708,
     .remap_pfn_range_address = 0xc010d5d4,
+    .vmalloc_exec_address = 0xc011a1d4,
     .ptmx_fops_address = 0xc1050090,
   },
 
@@ -1470,6 +1504,7 @@ static supported_device supported_devices[] = {
     .prepare_kernel_cred_address = 0xc0099e0c,
     .commit_creds_address = 0xc0099938,
     .remap_pfn_range_address = 0xc010d804,
+    .vmalloc_exec_address = 0xc011a39c,
     .ptmx_fops_address = 0xc0f33508,
   },
 
@@ -1483,6 +1518,7 @@ static supported_device supported_devices[] = {
     .prepare_kernel_cred_address = 0xc008bab4,
     .commit_creds_address = 0xc008b5e0,
     .remap_pfn_range_address = 0xc00e25e0,
+    .vmalloc_exec_address = 0xc00ef128,
     .ptmx_fops_address = 0xc0dd5e58,
   },
 
@@ -1491,9 +1527,12 @@ static supported_device supported_devices[] = {
     .device = "SHL21",
     .build_id = "01.00.09",
 
+    .kernel_physical_offset_address =  0x80208000,
+
     .prepare_kernel_cred_address = 0xc0197b94,
     .commit_creds_address = 0xc0197448,
     .ptmx_fops_address = 0xc0fe01b0,
+    .vmalloc_exec_address = 0xc01fc498,
     .remap_pfn_range_address = 0xc01f18d0,
   },
 
@@ -1507,6 +1546,7 @@ static supported_device supported_devices[] = {
     .prepare_kernel_cred_address = 0xc008be38,
     .commit_creds_address = 0xc008b964,
     .ptmx_fops_address = 0xc0dd8810,
+    .vmalloc_exec_address = 0xc00ef528,
     .remap_pfn_range_address = 0xc00e29e0,
   },
 
@@ -1668,6 +1708,7 @@ static supported_device supported_devices[] = {
     .prepare_kernel_cred_address = 0xc0098584,
     .commit_creds_address = 0xc00980a8,
     .remap_pfn_range_address = 0xc010e33c,
+    .vmalloc_exec_address = 0xc011aeec,
     .ptmx_fops_address = 0xc0d030c8,
   },
 
@@ -1926,6 +1967,9 @@ device_get_symbol_address(device_symbol_t symbol)
 
       case DEVICE_SYMBOL(remap_pfn_range):
         return supported_devices[i].remap_pfn_range_address;
+
+      case DEVICE_SYMBOL(vmalloc_exec):
+        return supported_devices[i].vmalloc_exec_address;
 
       case DEVICE_SYMBOL(ptmx_fops):
         return supported_devices[i].ptmx_fops_address;
