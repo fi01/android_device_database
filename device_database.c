@@ -1735,6 +1735,17 @@ static supported_device supported_devices[] = {
   },
 
   {
+    .device_id = DEVICE_SOL22_10_2_F_3_81,
+    .device = "SOL22",
+    .build_id = "10.2.F.3.81",
+
+    .prepare_kernel_cred_address = 0xc009d408,
+    .commit_creds_address = 0xc009cf2c,
+    .remap_pfn_range_address = 0xc0112248,
+    .ptmx_fops_address = 0xc0e389b0,
+  },
+
+  {
     .device_id = DEVICE_ST23I_11_0_A_5_5,
     .device = "ST23i",
     .build_id = "11.0.A.5.5",
