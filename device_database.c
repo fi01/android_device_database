@@ -1863,6 +1863,18 @@ static supported_device supported_devices[] = {
   },
 
   {
+    .device_id = DEVICE_T02D_V10R36A,
+    .device = "T-02D",
+    .build_id = "V10R36A",
+
+    .prepare_kernel_cred_address = 0xc009c72c,
+    .commit_creds_address = 0xc009c1b4,
+    .remap_pfn_range_address = 0xc0115e48,
+    .vmalloc_exec_address = 0xc0122e08,
+    .ptmx_fops_address = 0xc121b61c,
+  },
+
+  {
     .device_id = DEVICE_ISW11K_145_0_0002,
     .device = "ISW11K",
     .build_id = "145.0.0002",
