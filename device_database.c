@@ -494,6 +494,20 @@ static supported_device supported_devices[] = {
   },
 
   {
+    .device_id = DEVICE_HTCONEMAXVZW_1_11_605_4,
+    .device = "HTC6600LVW",
+    .build_id = "JSS15J",
+    .check_property_name = "ro.aa.romver",
+    .check_property_value = "1.11.605.4",
+
+    .prepare_kernel_cred_address = 0xc00c3638,
+    .commit_creds_address = 0xc00c3100,
+    .remap_pfn_range_address = 0xc0144664,
+    .vmalloc_exec_address = 0xc0150cc8,
+    .ptmx_fops_address = 0xc0f1d834,
+  },
+
+  {
     .device_id = DEVICE_HTL21_1_29_970_1,
     .device = "HTL21",
     .build_id = "JRO03C",
