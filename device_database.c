@@ -333,6 +333,18 @@ static supported_device supported_devices[] = {
   },
 
   {
+    .device_id = DEVICE_F04E_V08R39A,
+    .device = "F-04E",
+    .build_id = "V08R39A",
+
+    .prepare_kernel_cred_address = 0xc0092758,
+    .commit_creds_address = 0xc0092114,
+    .remap_pfn_range_address = 0xc00e3a44,
+    .vmalloc_exec_address = 0xc00f1140,
+    .ptmx_fops_address = 0xc0b955f4,
+  },
+
+  {
     .device_id = DEVICE_F05D_V08R31C,
     .device = "F-05D",
     .build_id = "V08R31C",
