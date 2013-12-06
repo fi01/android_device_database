@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <sys/system_properties.h>
-#include "sqlite3.h"
+#include "../libsqlite/sqlite3.h"
 #include "device_database.h"
 
 #define DEVICE_DATABASE_FILE    "device.db"
