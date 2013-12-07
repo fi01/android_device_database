@@ -217,6 +217,8 @@ insert into supported_devices(device_id, device, build_id, check_property_name, 
   insert into device_address(device_id, name, value) values(37, 'remap_pfn_range', 3222418124);
   insert into device_address(device_id, name, value) values(37, 'vmalloc_exec', 3222470020);
   insert into device_address(device_id, name, value) values(37, 'ptmx_fops', 3238884916);
+  insert into device_address(device_id, name, value) values(37, 'security_remap_pfn_range', 3223842536);
+  insert into device_address(device_id, name, value) values(37, 'remap_pfn_range_end_op', 3237378348);
 
 insert into supported_devices(device_id, device, build_id, check_property_name, check_property_value) values(38, 'F-07E', 'V21R40B', null, null);
   insert into device_address(device_id, name, value) values(38, 'prepare_kernel_cred', 3221926188);
@@ -224,6 +226,8 @@ insert into supported_devices(device_id, device, build_id, check_property_name, 
   insert into device_address(device_id, name, value) values(38, 'remap_pfn_range', 3222418124);
   insert into device_address(device_id, name, value) values(38, 'vmalloc_exec', 3222470020);
   insert into device_address(device_id, name, value) values(38, 'ptmx_fops', 3238884916);
+  insert into device_address(device_id, name, value) values(38, 'security_remap_pfn_range', 3223842536);
+  insert into device_address(device_id, name, value) values(38, 'remap_pfn_range_end_op', 3237378348);
 
 insert into supported_devices(device_id, device, build_id, check_property_name, check_property_value) values(39, 'F-10D', 'V10R42A', null, null);
   insert into device_address(device_id, name, value) values(39, 'prepare_kernel_cred', 3221825456);

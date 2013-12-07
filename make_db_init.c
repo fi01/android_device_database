@@ -109,6 +109,9 @@ int main(void)
     WRITE_SQL_INSERT_DEVICE_ADDRESS(device, vmalloc_exec)
     WRITE_SQL_INSERT_DEVICE_ADDRESS(device, ptmx_fops)
 
+    WRITE_SQL_INSERT_DEVICE_ADDRESS(device, security_remap_pfn_range)
+    WRITE_SQL_INSERT_DEVICE_ADDRESS(device, remap_pfn_range_end_op)
+
     printf("\n");
   }
 

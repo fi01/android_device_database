@@ -13,6 +13,9 @@ typedef struct _supported_device {
   unsigned long int remap_pfn_range_address;
   unsigned long int vmalloc_exec_address;
   unsigned long int ptmx_fops_address;
+
+  unsigned long int security_remap_pfn_range_address;
+  unsigned long int remap_pfn_range_end_op_address;
 } supported_device;
 
 static supported_device supported_devices[] = {
@@ -401,6 +404,9 @@ static supported_device supported_devices[] = {
     .remap_pfn_range_address = 0xc01232cc,
     .vmalloc_exec_address = 0xc012fd84,
     .ptmx_fops_address = 0xc10d7634,
+
+    .security_remap_pfn_range_address = 0xc027eee8,
+    .remap_pfn_range_end_op_address = 0xc0f6792c,
   },
 
   {
@@ -413,6 +419,9 @@ static supported_device supported_devices[] = {
     .remap_pfn_range_address = 0xc01232cc,
     .vmalloc_exec_address = 0xc012fd84,
     .ptmx_fops_address = 0xc10d7634,
+
+    .security_remap_pfn_range_address = 0xc027eee8,
+    .remap_pfn_range_end_op_address = 0xc0f6792c,
   },
 
   {
