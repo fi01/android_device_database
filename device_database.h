@@ -1,6 +1,8 @@
 #ifndef __ANDROID_DEVICE_DATABASE_H__
 #define __ANDROID_DEVICE_DATABASE_H__
 
+#include <stdbool.h>
+
 typedef enum {
   DEVICE_NOT_SUPPORTED = 0,
   DEVICE_C1505_11_3_A_0_47,
@@ -193,8 +195,11 @@ typedef enum {
 
 typedef const char *device_symbol_t;
 
+#define HAS_SET_SYMBOL_ADDRESS	1
+
 extern device_id_t detect_device(void);
 extern unsigned long int device_get_symbol_address(device_symbol_t);
+extern bool device_set_symbol_address(device_symbol_t, unsigned long int);
 extern void print_reason_device_not_supported(void);
 
 #endif /* __ANDROID_DEVICE_DATABASE_H__ */

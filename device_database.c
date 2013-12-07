@@ -6,14 +6,27 @@
 #include "../libsqlite/sqlite3.h"
 #include "device_database.h"
 
-#define DEVICE_DATABASE_FILE    "device.db"
+#define DEVICE_DATABASE_FILE            "device.db"
 
-#define SQL_SELECT_DEVICE_SUPPORTED_DEVICES \
-  "select device_id, check_property_name, check_property_value from supported_devices " \
-  "where (device = ?) and (build_id = ?);"
+#define DEVICE_ID_REGISTER_START        10000
+#define SLEEP_UTIME_FOR_BUSY            10000
 
-#define SQL_SELECT_DEVICE_ADDRESS \
+#define SQL_QUERY_DEVICE \
+  "select device_id, check_property_name, check_property_value from supported_devices" \
+  " where (device = ?) and (build_id = ?);"
+
+#define SQL_QUERY_DEVICE_ADDRESS \
   "select value from device_address where (device_id = ?) and (name = ?);"
+
+#define SQL_QUERY_LAST_DEVICE_ID \
+  "select device_id from supported_devices order by device_id desc;"
+
+#define SQL_REGISTER_DEVICE \
+  "insert into supported_devices(device_id, device, build_id, check_property_name, check_property_value)" \
+  " values(?, ?, ?, ?, ?);"
+
+#define SQL_REGISTER_DEVICE_ADDRESS \
+  "insert into device_address(device_id, name, value) values(?, ?, ?);"
 
 #define IS_SQL_ERROR(rc) ((rc) != SQLITE_OK && (rc) != SQLITE_DONE && (rc) != SQLITE_ROW)
 
@@ -34,7 +47,7 @@ close_database(void)
     rc = sqlite3_close(db);
 
     if (rc == SQLITE_BUSY) {
-      usleep(10000);
+      usleep(SLEEP_UTIME_FOR_BUSY);
       continue;
     }
 
@@ -88,6 +101,7 @@ execute_sql(sqlite3_stmt *st)
     }
 
     if (rc == SQLITE_BUSY) {
+      usleep(SLEEP_UTIME_FOR_BUSY);
       continue;
     }
 
@@ -101,12 +115,109 @@ execute_sql(sqlite3_stmt *st)
   return rc;
 }
 
-device_id_t
-detect_device(void)
+
+static device_id_t
+register_device_id(const char *property_name)
+{
+  char device[PROP_VALUE_MAX];
+  char build_id[PROP_VALUE_MAX];
+  char buf[PROP_VALUE_MAX];
+  const char *property_value;
+  sqlite3_stmt *st;
+  int rc;
+
+  device_id_t device_id;
+
+  if (!init_database()) {
+    return DEVICE_NOT_SUPPORTED;
+  }
+
+  __system_property_get("ro.product.model", device);
+  __system_property_get("ro.build.display.id", build_id);
+
+  device_id = DEVICE_NOT_SUPPORTED;
+  property_value = NULL;
+
+  if (property_name) {
+    __system_property_get(property_name, buf);
+    property_value = buf;
+  }
+
+  rc = sqlite3_prepare(db, SQL_QUERY_LAST_DEVICE_ID, -1, &st, NULL);
+
+  if (!IS_SQL_ERROR(rc)) {
+    rc = sqlite3_reset(st);
+  }
+
+  if (!IS_SQL_ERROR(rc)) {
+    for (rc = execute_sql(st); rc == SQLITE_ROW; rc = execute_sql(st)) {
+      device_id = sqlite3_column_int(st, 0) + 1;
+      if (device_id <= DEVICE_ID_REGISTER_START) {
+        device_id = DEVICE_ID_REGISTER_START;
+      }
+
+      break;
+    }
+  }
+
+  if (IS_SQL_ERROR(rc)) {
+    printf("%s(%d)\n", sqlite3_errmsg(db), sqlite3_errcode(db));
+    sqlite3_finalize(st);
+
+    return DEVICE_NOT_SUPPORTED;
+  }
+
+  sqlite3_finalize(st);
+
+  rc = sqlite3_prepare(db, SQL_REGISTER_DEVICE, -1, &st, NULL);
+
+  if (!IS_SQL_ERROR(rc)) {
+    rc = sqlite3_reset(st);
+  }
+
+  if (!IS_SQL_ERROR(rc)) {
+    rc = sqlite3_bind_int(st, 1, device_id);
+  }
+
+  if (!IS_SQL_ERROR(rc)) {
+    rc = sqlite3_bind_text(st, 2, device, -1, SQLITE_STATIC);
+  }
+
+  if (!IS_SQL_ERROR(rc)) {
+    rc = sqlite3_bind_text(st, 3, build_id, -1, SQLITE_STATIC);
+  }
+
+  if (!IS_SQL_ERROR(rc)) {
+    rc = sqlite3_bind_text(st, 4, property_name, -1, SQLITE_STATIC);
+  }
+
+  if (!IS_SQL_ERROR(rc)) {
+    rc = sqlite3_bind_text(st, 5, property_value, -1, SQLITE_STATIC);
+  }
+
+  if (!IS_SQL_ERROR(rc)) {
+    rc = execute_sql(st);
+  }
+
+  if (IS_SQL_ERROR(rc)) {
+    printf("%s(%d)\n", sqlite3_errmsg(db), sqlite3_errcode(db));
+    sqlite3_finalize(st);
+
+    return DEVICE_NOT_SUPPORTED;
+  }
+
+  sqlite3_finalize(st);
+
+  return device_id;
+}
+
+static device_id_t
+get_device_id(bool do_regist)
 {
   char device[PROP_VALUE_MAX];
   char build_id[PROP_VALUE_MAX];
   device_id_t device_id;
+  const char *check_name;
   sqlite3_stmt *st;
   int rc;
   int i;
@@ -119,8 +230,9 @@ detect_device(void)
   __system_property_get("ro.build.display.id", build_id);
 
   device_id = DEVICE_NOT_SUPPORTED;
+  check_name = NULL;
 
-  rc = sqlite3_prepare(db, SQL_SELECT_DEVICE_SUPPORTED_DEVICES , -1, &st, NULL);
+  rc = sqlite3_prepare(db, SQL_QUERY_DEVICE, -1, &st, NULL);
 
   if (!IS_SQL_ERROR(rc)) {
     rc = sqlite3_reset(st);
@@ -136,7 +248,6 @@ detect_device(void)
 
   if (!IS_SQL_ERROR(rc)) {
     for (rc = execute_sql(st); rc == SQLITE_ROW; rc = execute_sql(st)) {
-      const char *check_name;
       const char *check_value;
 
       device_id = sqlite3_column_int(st, 0);
@@ -163,13 +274,25 @@ detect_device(void)
 
   if (IS_SQL_ERROR(rc)) {
     printf("%s(%d)\n", sqlite3_errmsg(db), sqlite3_errcode(db));
+
     sqlite3_finalize(st);
 
     return device_id;
   }
 
   sqlite3_finalize(st);
-  return device_id;
+
+  if (!do_regist || device_id != DEVICE_NOT_SUPPORTED) {
+    return device_id;
+  }
+
+  return register_device_id(check_name);
+}
+
+device_id_t
+detect_device(void)
+{
+  return get_device_id(false);
 }
 
 unsigned long int
@@ -187,7 +310,7 @@ device_get_symbol_address(device_symbol_t symbol)
 
   value = 0;
 
-  rc = sqlite3_prepare(db, SQL_SELECT_DEVICE_ADDRESS , -1, &st, NULL);
+  rc = sqlite3_prepare(db, SQL_QUERY_DEVICE_ADDRESS, -1, &st, NULL);
 
   if (!IS_SQL_ERROR(rc)) {
     rc = sqlite3_reset(st);
@@ -218,6 +341,64 @@ device_get_symbol_address(device_symbol_t symbol)
   return value;
 }
 
+bool
+device_set_symbol_address(device_symbol_t symbol, unsigned long int address)
+{
+  device_id_t device_id;
+  unsigned long int old;
+  sqlite3_stmt *st;
+  int rc;
+
+  if (address == 0) {
+    return false;
+  }
+
+  old = device_get_symbol_address(symbol);
+  if (old == address) {
+    return true;
+  }
+
+  if (old) {
+    printf("Duplicate symbol \"%s\": old = 0x%08x, new = 0x%08x\n", symbol, old, address);
+    return false;
+  }
+
+  device_id = get_device_id(true);
+
+  rc = sqlite3_prepare(db, SQL_REGISTER_DEVICE_ADDRESS, -1, &st, NULL);
+
+  if (!IS_SQL_ERROR(rc)) {
+    rc = sqlite3_reset(st);
+  }
+
+  if (!IS_SQL_ERROR(rc)) {
+    rc = sqlite3_bind_int(st, 1, device_id);
+  }
+
+  if (!IS_SQL_ERROR(rc)) {
+    rc = sqlite3_bind_text(st, 2, symbol, -1, SQLITE_STATIC);
+  }
+
+  if (!IS_SQL_ERROR(rc)) {
+    rc = sqlite3_bind_int(st, 3, address);
+  }
+
+  if (!IS_SQL_ERROR(rc)) {
+    rc = execute_sql(st);
+  }
+
+  if (IS_SQL_ERROR(rc)) {
+    printf("%s(%d)\n", sqlite3_errmsg(db), sqlite3_errcode(db));
+    sqlite3_finalize(st);
+
+    return false;
+  }
+
+  sqlite3_finalize(st);
+
+  return true;
+}
+
 void
 print_reason_device_not_supported(void)
 {
@@ -235,7 +416,9 @@ print_reason_device_not_supported(void)
   __system_property_get("ro.product.model", device);
   __system_property_get("ro.build.display.id", build_id);
 
-  rc = sqlite3_prepare(db, SQL_SELECT_DEVICE_SUPPORTED_DEVICES , -1, &st, NULL);
+  check_name = NULL;
+
+  rc = sqlite3_prepare(db, SQL_QUERY_DEVICE, -1, &st, NULL);
 
   if (!IS_SQL_ERROR(rc)) {
     rc = sqlite3_reset(st);
