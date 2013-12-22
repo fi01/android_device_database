@@ -621,6 +621,20 @@ static supported_device supported_devices[] = {
   },
 
   {
+    .device_id = DEVICE_HTL22_2_21_970_2,
+    .device = "HTL22",
+    .build_id = "JDQ39",
+    .check_property_name = "ro.aa.romver",
+    .check_property_value = "2.21.970.2",
+
+    .prepare_kernel_cred_address = 0xc00b40b0,
+    .commit_creds_address = 0xc00b3b9c,
+    .remap_pfn_range_address = 0xc012afc0,
+    .vmalloc_exec_address = 0xc0137498,
+    .ptmx_fops_address = 0xc0efc244,
+  },
+
+  {
     .device_id = DEVICE_HTX21_1_20_971_1,
     .device = "HTX21",
     .build_id = "JRO03C",
