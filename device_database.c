@@ -218,6 +218,7 @@ get_device_id(bool do_regist)
   char build_id[PROP_VALUE_MAX];
   device_id_t device_id;
   const char *check_name;
+  char name_buf[PROP_NAME_MAX];
   sqlite3_stmt *st;
   int rc;
   int i;
@@ -266,6 +267,11 @@ get_device_id(bool do_regist)
 	if (strcmp(property_value, check_value) == 0) {
 	  break;
 	}
+
+	strncpy(name_buf, check_name, sizeof (name_buf) - 1);
+	name_buf[sizeof (name_buf) - 1] = '\0';
+
+	check_name = name_buf;
       }
 
       device_id = DEVICE_NOT_SUPPORTED;
