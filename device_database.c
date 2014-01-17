@@ -6,7 +6,14 @@
 #include "../libsqlite/sqlite3.h"
 #include "device_database.h"
 
+#define ARRAY_SIZE(n)	(sizeof (n) / sizeof (*(n)))
+
 #define DEVICE_DATABASE_FILE            "device.db"
+
+static const char *device_database_file_paths[] = {
+  DEVICE_DATABASE_FILE,
+  "/data/local/tmp/" DEVICE_DATABASE_FILE,
+};
 
 #define DEVICE_ID_REGISTER_START        10000
 #define SLEEP_UTIME_FOR_BUSY            10000
@@ -64,19 +71,30 @@ close_database(void)
 static bool
 init_database(void)
 {
+  int i;
   int rc;
 
   if (db != NULL) {
     return true;
   }
 
-  if (access(DEVICE_DATABASE_FILE, R_OK | W_OK)) {
-    printf("FATAL ERROR: DB file open failed.\n");
+  for (i = 0; i < ARRAY_SIZE(device_database_file_paths); i++) {
+    if (access(device_database_file_paths[i], R_OK | W_OK) == 0) {
+      break;
+    }
+  }
+
+  if (i == ARRAY_SIZE(device_database_file_paths)) {
+    for (i = 0; i < ARRAY_SIZE(device_database_file_paths); i++) {
+      printf("access failed: \"%s\"\n", device_database_file_paths[i]);
+    }
+
+    printf("\nFATAL ERROR: DB file open failed.\n");
     printf("Make sure install \"" DEVICE_DATABASE_FILE "\" from device_database!\n");
     exit(1);
   }
 
-  rc = sqlite3_open(DEVICE_DATABASE_FILE, &db);
+  rc = sqlite3_open(device_database_file_paths[i], &db);
   if (rc) {
     printf("Error = %d: sqlite3_open(): failed\n", rc);
 
