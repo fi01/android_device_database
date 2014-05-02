@@ -81,6 +81,7 @@ int main(void)
 
   qsort(supported_devices, n_supported_devices, sizeof (supported_devices[0]), cmp);
 
+  printf("BEGIN TRANSACTION;\n");
   printf("%s\n\n", SQL_CREATE_SUPPORTED_DEVICES);
   printf("%s\n\n", SQL_CREATE_DEVICES_ADDRESS);
 
@@ -114,6 +115,7 @@ int main(void)
 
     printf("\n");
   }
+  printf("COMMIT;\n");
 
   return 0;
 }
