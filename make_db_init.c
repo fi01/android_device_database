@@ -82,6 +82,8 @@ int main(void)
   qsort(supported_devices, n_supported_devices, sizeof (supported_devices[0]), cmp);
 
   printf("BEGIN TRANSACTION;\n");
+  printf("DROP TABLE IF EXISTS supported_devices;\n");
+  printf("DROP TABLE IF EXISTS device_address;\n");
   printf("%s\n\n", SQL_CREATE_SUPPORTED_DEVICES);
   printf("%s\n\n", SQL_CREATE_DEVICES_ADDRESS);
 
