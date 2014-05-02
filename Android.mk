@@ -7,7 +7,10 @@ LOCAL_SRC_FILES := \
 
 LOCAL_MODULE := libdevice_database
 LOCAL_MODULE_TAGS := optional
+LOCAL_C_INCLUDES += $(LOCAL_PATH)/libsqlite
 
 LOCAL_STATIC_LIBRARIES += libsqlite
 
 include $(BUILD_STATIC_LIBRARY)
+
+include $(LOCAL_PATH)/libsqlite/Android.mk
