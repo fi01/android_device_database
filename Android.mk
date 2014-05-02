@@ -1,4 +1,6 @@
-LOCAL_PATH := $(call my-dir)
+MY_LOCAL_PATH := $(call my-dir)
+
+LOCAL_PATH := $(MY_LOCAL_PATH)
 
 include $(CLEAR_VARS)
 
@@ -13,4 +15,4 @@ LOCAL_STATIC_LIBRARIES += libsqlite
 
 include $(BUILD_STATIC_LIBRARY)
 
-include $(LOCAL_PATH)/libsqlite/Android.mk
+include $(MY_LOCAL_PATH)/libsqlite/Android.mk
