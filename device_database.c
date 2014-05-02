@@ -353,7 +353,19 @@ device_get_symbol_address(device_symbol_t symbol)
   }
 
   if (!IS_SQL_ERROR(rc)) {
-    value = sqlite3_column_int(st, 0);
+    sqlite3_value *value_object;
+    int value_type;
+    value_object = sqlite3_column_value(st, 0);
+    value_type = sqlite3_value_type(value_object);
+    if (value_type == SQLITE_INTEGER) {
+      value = sqlite3_value_int(value_object);
+    } else {
+      const unsigned char *value_text;
+      value_text = sqlite3_value_text(value_object);
+      if (value_text) {
+        sscanf(value_text, "%lx", &value);
+      }
+    }
   }
 
   if (IS_SQL_ERROR(rc)) {
@@ -404,7 +416,9 @@ device_set_symbol_address(device_symbol_t symbol, unsigned long int address)
   }
 
   if (!IS_SQL_ERROR(rc)) {
-    rc = sqlite3_bind_int(st, 3, address);
+    char hex_address[20] = { 0 };
+    int length = snprintf(hex_address, sizeof(hex_address), "0x%08lx", address);
+    rc = sqlite3_bind_text(st, 3, hex_address, length, SQLITE_STATIC);
   }
 
   if (!IS_SQL_ERROR(rc)) {

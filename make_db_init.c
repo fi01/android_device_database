@@ -18,7 +18,7 @@
   "CREATE TABLE device_address(" \
     "device_id INTEGER NOT NULL, " \
     "name TEXT NOT NULL, " \
-    "value INTEGER NOT NULL, " \
+    "value TEXT NOT NULL, " \
     "PRIMARY KEY(device_id, name));" \
 
 #define SQL_INSERT_SUPPORTED_DEVICES \
@@ -57,7 +57,7 @@
   "VALUES(" \
     "%d, " \
     "'%s', " \
-    "%u);"
+    "'0x%08lx');"
 
 #define WRITE_SQL_INSERT_DEVICE_ADDRESS(device,key) \
     if (device->key## _address) { \
