@@ -21,4 +21,4 @@ device.db:
 	rm -f device.db
 	sqlite3 $(DEVICE_DATABASE_LOCAL_PATH)/device.db < $(DEVICE_DATABASE_LOCAL_PATH)/db_init.sql
 
-WANTED_INSTALLED_MODULES += device.db
+#WANTED_INSTALLED_MODULES += device.db
