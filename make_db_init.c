@@ -63,8 +63,8 @@
     if (device->key## _address) { \
       printf("  " SQL_INSERT_DEVICES_ADDRESS "\n", \
              device->device_id, \
-	     #key, \
-	     device->key## _address); \
+             #key, \
+             device->key## _address); \
     }
 
 static int cmp(const void *a, const void *b)

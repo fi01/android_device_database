@@ -278,18 +278,18 @@ get_device_id(bool do_regist)
       }
 
       if (check_name && check_value) {
-	char property_value[PROP_VALUE_MAX];
+        char property_value[PROP_VALUE_MAX];
 
-	__system_property_get(check_name, property_value);
+        __system_property_get(check_name, property_value);
 
-	if (strcmp(property_value, check_value) == 0) {
-	  break;
-	}
+        if (strcmp(property_value, check_value) == 0) {
+          break;
+        }
 
-	strncpy(name_buf, check_name, sizeof (name_buf) - 1);
-	name_buf[sizeof (name_buf) - 1] = '\0';
+        strncpy(name_buf, check_name, sizeof (name_buf) - 1);
+        name_buf[sizeof (name_buf) - 1] = '\0';
 
-	check_name = name_buf;
+        check_name = name_buf;
       }
 
       device_id = DEVICE_NOT_SUPPORTED;
