@@ -19,21 +19,21 @@ static const char *device_database_file_paths[] = {
 #define SLEEP_UTIME_FOR_BUSY            10000
 
 #define SQL_QUERY_DEVICE \
-  "select device_id, check_property_name, check_property_value from supported_devices" \
-  " where (device = ?) and (build_id = ?);"
+  "SELECT device_id, check_property_name, check_property_value FROM supported_devices" \
+  " WHERE (device = ?) AND (build_id = ?);"
 
 #define SQL_QUERY_DEVICE_ADDRESS \
-  "select value from device_address where (device_id = ?) and (name = ?);"
+  "SELECT value FROM device_address WHERE (device_id = ?) AND (name = ?);"
 
 #define SQL_QUERY_LAST_DEVICE_ID \
-  "select device_id from supported_devices order by device_id desc;"
+  "SELECT device_id FROM supported_devices ORDER BY device_id DESC;"
 
 #define SQL_REGISTER_DEVICE \
-  "insert into supported_devices(device_id, device, build_id, check_property_name, check_property_value)" \
-  " values(?, ?, ?, ?, ?);"
+  "INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value)" \
+  " VALUES(?, ?, ?, ?, ?);"
 
 #define SQL_REGISTER_DEVICE_ADDRESS \
-  "insert into device_address(device_id, name, value) values(?, ?, ?);"
+  "INSERT INTO device_address(device_id, name, value) VALUES(?, ?, ?);"
 
 #define IS_SQL_ERROR(rc) ((rc) != SQLITE_OK && (rc) != SQLITE_DONE && (rc) != SQLITE_ROW)
 
