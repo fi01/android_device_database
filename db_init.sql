@@ -1065,4 +1065,11 @@ INSERT INTO supported_devices(device_id, device, build_id, check_property_name, 
   INSERT INTO device_address(device_id, name, value) VALUES(190, 'vmalloc_exec', '0xc01522cc');
   INSERT INTO device_address(device_id, name, value) VALUES(190, 'ptmx_fops', '0xc101a7a0');
 
+INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(191, 'LGL22', 'JDQ39B', 'ro.lge.swversion', 'LGL2210b');
+  INSERT INTO device_address(device_id, name, value) VALUES(191, 'prepare_kernel_cred', '0xc00c3adc');
+  INSERT INTO device_address(device_id, name, value) VALUES(191, 'commit_creds', '0xc00c35d0');
+  INSERT INTO device_address(device_id, name, value) VALUES(191, 'remap_pfn_range', '0xc0145038');
+  INSERT INTO device_address(device_id, name, value) VALUES(191, 'vmalloc_exec', '0xc01525f4');
+  INSERT INTO device_address(device_id, name, value) VALUES(191, 'ptmx_fops', '0xc101a7a0');
+
 COMMIT;
