@@ -192,6 +192,7 @@ typedef enum {
   DEVICE_M36H_10_1_1_A_1_310,
   DEVICE_ASUS_TF300T_JRO03C_JP_EPAD_10_4_2_20,
   DEVICE_SCH_I545_VZWAME7,
+  DEVICE_HTL21_1_39_970_3,
 } device_id_t;
 
 #define DEVICE_SYMBOL(name)     #name
