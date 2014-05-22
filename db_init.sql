@@ -187,8 +187,7 @@ INSERT INTO supported_devices(device_id, device, build_id, check_property_name, 
   INSERT INTO device_address(device_id, name, value) VALUES(30, 'ptmx_fops', '0xc0ca1d28');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(31, 'F-03D', 'V24R33Cc', NULL, NULL);
-  INSERT INTO device_address(device_id, name, value) VALUES(31, 'delayed_rsp_id_address', '0xc0777dd0');
-
+  INSERT INTO device_address(device_id, name, value) VALUES(31, 'delayed_rsp_id', '0xc0777dd0');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(32, 'F-04E', 'V08R39A', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(32, 'prepare_kernel_cred', '0xc0092758');
@@ -248,17 +247,17 @@ INSERT INTO supported_devices(device_id, device, build_id, check_property_name, 
   INSERT INTO device_address(device_id, name, value) VALUES(41, 'ptmx_fops', '0xc09a60bc');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(42, 'F-11D', 'V21R36A', NULL, NULL);
-  INSERT INTO device_address(device_id, name, value) VALUES(42, 'delayed_rsp_id_address', '0xc092f1a4');
-  
+  INSERT INTO device_address(device_id, name, value) VALUES(42, 'delayed_rsp_id', '0xc092f1a4');
+
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(43, 'F-11D', 'V24R40A', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(43, 'ptmx_fops', '0xc1056998');
-  INSERT INTO device_address(device_id, name, value) VALUES(43, 'delayed_rsp_id_address', '0xc091bf8c');
+  INSERT INTO device_address(device_id, name, value) VALUES(43, 'delayed_rsp_id', '0xc091bf8c');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(44, 'F-11D', 'V26R42B', NULL, NULL);
-  INSERT INTO device_address(device_id, name, value) VALUES(44, 'delayed_rsp_id_address', '0xc091bf8c');
+  INSERT INTO device_address(device_id, name, value) VALUES(44, 'delayed_rsp_id', '0xc091bf8c');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(45, 'F-12C', 'V21', NULL, NULL);
-  INSERT INTO device_address(device_id, name, value) VALUES(45, 'delayed_rsp_id_address', '0xc075aca4');
+  INSERT INTO device_address(device_id, name, value) VALUES(45, 'delayed_rsp_id', '0xc075aca4');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(46, 'FJL21', 'V23R39X', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(46, 'ptmx_fops', '0xc0ee31f8');
@@ -336,7 +335,7 @@ INSERT INTO supported_devices(device_id, device, build_id, check_property_name, 
   INSERT INTO device_address(device_id, name, value) VALUES(58, 'ptmx_fops', '0xc0ccc134');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(59, 'IS11N', 'GRJ90', NULL, NULL);
-  INSERT INTO device_address(device_id, name, value) VALUES(59, 'delayed_rsp_id_address', '0xc0835758');
+  INSERT INTO device_address(device_id, name, value) VALUES(59, 'delayed_rsp_id', '0xc0835758');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(60, 'IS12S', '6.1.D.1.91', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(60, 'prepare_kernel_cred', '0xc01b6a40');
@@ -357,7 +356,7 @@ INSERT INTO supported_devices(device_id, device, build_id, check_property_name, 
   INSERT INTO device_address(device_id, name, value) VALUES(62, 'ptmx_fops', '0xc0edaf90');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(63, 'IS17SH', '01.00.03', NULL, NULL);
-  INSERT INTO device_address(device_id, name, value) VALUES(63, 'delayed_rsp_id_address', '0xc0a546fc');
+  INSERT INTO device_address(device_id, name, value) VALUES(63, 'delayed_rsp_id', '0xc0a546fc');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(64, 'IS17SH', '01.00.04', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(64, 'kernel_physical_offset', '0x00208000');
@@ -374,11 +373,11 @@ INSERT INTO supported_devices(device_id, device, build_id, check_property_name, 
   INSERT INTO device_address(device_id, name, value) VALUES(66, 'ptmx_fops', '0xc080e028');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(67, 'ISW11K', '145.0.0002', NULL, NULL);
-  INSERT INTO device_address(device_id, name, value) VALUES(67, 'delayed_rsp_id_address', '0xc07f93a4');
+  INSERT INTO device_address(device_id, name, value) VALUES(67, 'delayed_rsp_id', '0xc07f93a4');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(68, 'URBANO PROGRESSO', '010.0.3000', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(68, 'ptmx_fops', '0xc0dc0a10');
-  INSERT INTO device_address(device_id, name, value) VALUES(68, 'delayed_rsp_id_address', '0xc0935104');
+  INSERT INTO device_address(device_id, name, value) VALUES(68, 'delayed_rsp_id', '0xc0935104');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(69, 'URBANO PROGRESSO', '011.0.3100', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(69, 'ptmx_fops', '0xc0dc0a10');
@@ -655,7 +654,7 @@ INSERT INTO supported_devices(device_id, device, build_id, check_property_name, 
   INSERT INTO device_address(device_id, name, value) VALUES(122, 'commit_creds', '0xc0123d6c');
   INSERT INTO device_address(device_id, name, value) VALUES(122, 'remap_pfn_range', '0xc0192124');
   INSERT INTO device_address(device_id, name, value) VALUES(122, 'ptmx_fops', '0xc10a5a48');
-  INSERT INTO device_address(device_id, name, value) VALUES(122, 'delayed_rsp_id_address', '0xc0bdfae0');
+  INSERT INTO device_address(device_id, name, value) VALUES(122, 'delayed_rsp_id', '0xc0bdfae0');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(123, 'SC-01E', 'IMM76D.SC01EOMAMF2', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(123, 'prepare_kernel_cred', '0xc01244d0');
@@ -692,11 +691,11 @@ INSERT INTO supported_devices(device_id, device, build_id, check_property_name, 
   INSERT INTO device_address(device_id, name, value) VALUES(127, 'ptmx_fops', '0xc1169848');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(128, 'SC-05D', 'IMM76D.OMLPL', NULL, NULL);
-  INSERT INTO device_address(device_id, name, value) VALUES(128, 'delayed_rsp_id_address', '0xc0cb0924');
+  INSERT INTO device_address(device_id, name, value) VALUES(128, 'delayed_rsp_id', '0xc0cb0924');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(129, 'SCL21', 'IMM76D.SCL21KDALJD', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(129, 'ptmx_fops', '0xc0c71dc0');
-  INSERT INTO device_address(device_id, name, value) VALUES(129, 'delayed_rsp_id_address', '0xc0b96128');
+  INSERT INTO device_address(device_id, name, value) VALUES(129, 'delayed_rsp_id', '0xc0b96128');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(130, 'SGP321', '10.1.1.A.1.307', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(130, 'prepare_kernel_cred', '0xc0094124');
@@ -946,7 +945,7 @@ INSERT INTO supported_devices(device_id, device, build_id, check_property_name, 
   INSERT INTO device_address(device_id, name, value) VALUES(166, 'ptmx_fops', '0xc0f392d8');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(167, 'SO-05D', '7.0.D.1.117', NULL, NULL);
-  INSERT INTO device_address(device_id, name, value) VALUES(167, 'delayed_rsp_id_address', '0xc0b8840c');
+  INSERT INTO device_address(device_id, name, value) VALUES(167, 'delayed_rsp_id', '0xc0b8840c');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(168, 'SO-05D', '7.0.D.1.137', NULL, NULL);
 
