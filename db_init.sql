@@ -323,6 +323,12 @@ INSERT INTO supported_devices(device_id, device, build_id, check_property_name, 
   INSERT INTO device_address(device_id, name, value) VALUES(51, 'remap_pfn_range', '0xc00ff6a4');
   INSERT INTO device_address(device_id, name, value) VALUES(51, 'vmalloc_exec', '0xc010baa0');
   INSERT INTO device_address(device_id, name, value) VALUES(51, 'ptmx_fops', '0xc0d1dec4');
+  INSERT INTO device_address(device_id, name, value) VALUES(51, 'msm_acdb.value_pos', 100);
+  INSERT INTO device_address(device_id, name, value) VALUES(51, 'msm_acdb.address_pos', 112);
+  INSERT INTO device_address(device_id, name, value) VALUES(51, 'msm_acdb.pc1.pos', 116);
+  INSERT INTO device_address(device_id, name, value) VALUES(51, 'msm_acdb.pc1.value', '0xc01e27a4');
+  INSERT INTO device_address(device_id, name, value) VALUES(51, 'msm_acdb.pc2.pos', 148);
+  INSERT INTO device_address(device_id, name, value) VALUES(51, 'msm_acdb.pc2.value', '0xc000dd0c');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(52, 'HTL21', 'JRO03C', 'ro.aa.romver', '1.39.970.1');
   INSERT INTO device_address(device_id, name, value) VALUES(52, 'prepare_kernel_cred', '0xc00abdd8');
@@ -351,6 +357,12 @@ INSERT INTO supported_devices(device_id, device, build_id, check_property_name, 
   INSERT INTO device_address(device_id, name, value) VALUES(55, 'remap_pfn_range', '0xc012a37c');
   INSERT INTO device_address(device_id, name, value) VALUES(55, 'vmalloc_exec', '0xc0136854');
   INSERT INTO device_address(device_id, name, value) VALUES(55, 'ptmx_fops', '0xc0ef7d44');
+  INSERT INTO device_address(device_id, name, value) VALUES(55, 'msm_acdb.value_pos', 100);
+  INSERT INTO device_address(device_id, name, value) VALUES(55, 'msm_acdb.address_pos', 112);
+  INSERT INTO device_address(device_id, name, value) VALUES(55, 'msm_acdb.pc1.pos', 116);
+  INSERT INTO device_address(device_id, name, value) VALUES(55, 'msm_acdb.pc1.value', '0xc022acb8');
+  INSERT INTO device_address(device_id, name, value) VALUES(55, 'msm_acdb.pc2.pos', 148);
+  INSERT INTO device_address(device_id, name, value) VALUES(55, 'msm_acdb.pc2.value', '0xc000ddac');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(56, 'HTL22', 'JDQ39', 'ro.aa.romver', '2.21.970.2');
   INSERT INTO device_address(device_id, name, value) VALUES(56, 'prepare_kernel_cred', '0xc00b40b0');
@@ -358,6 +370,12 @@ INSERT INTO supported_devices(device_id, device, build_id, check_property_name, 
   INSERT INTO device_address(device_id, name, value) VALUES(56, 'remap_pfn_range', '0xc012afc0');
   INSERT INTO device_address(device_id, name, value) VALUES(56, 'vmalloc_exec', '0xc0137498');
   INSERT INTO device_address(device_id, name, value) VALUES(56, 'ptmx_fops', '0xc0efc244');
+  INSERT INTO device_address(device_id, name, value) VALUES(56, 'msm_acdb.value_pos', 100);
+  INSERT INTO device_address(device_id, name, value) VALUES(56, 'msm_acdb.address_pos', 112);
+  INSERT INTO device_address(device_id, name, value) VALUES(56, 'msm_acdb.pc1.pos', 116);
+  INSERT INTO device_address(device_id, name, value) VALUES(56, 'msm_acdb.pc1.value', '0xc022bcd8');
+  INSERT INTO device_address(device_id, name, value) VALUES(56, 'msm_acdb.pc2.pos', 148);
+  INSERT INTO device_address(device_id, name, value) VALUES(56, 'msm_acdb.pc2.value', '0xc000ddbc');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(57, 'HTX21', 'JRO03C', 'ro.aa.romver', '1.20.971.1');
   INSERT INTO device_address(device_id, name, value) VALUES(57, 'prepare_kernel_cred', '0xc00a6e54');
@@ -445,8 +463,20 @@ INSERT INTO supported_devices(device_id, device, build_id, check_property_name, 
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(74, 'L-01D', 'IMM76D', 'ro.lge.swversion', 'L01D-V20d-FEB-15-2013');
   INSERT INTO device_address(device_id, name, value) VALUES(74, 'perf_swevent_enabled', '0xc1140768');
+  INSERT INTO device_address(device_id, name, value) VALUES(74, 'msm_acdb.value_pos', 104);
+  INSERT INTO device_address(device_id, name, value) VALUES(74, 'msm_acdb.address_pos', 120);
+  INSERT INTO device_address(device_id, name, value) VALUES(74, 'msm_acdb.pc1.pos', 132);
+  INSERT INTO device_address(device_id, name, value) VALUES(74, 'msm_acdb.pc1.value', '0xc0417b30');
+  INSERT INTO device_address(device_id, name, value) VALUES(74, 'msm_acdb.pc2.pos', 164);
+  INSERT INTO device_address(device_id, name, value) VALUES(74, 'msm_acdb.pc2.value', '0xc0381064');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(75, 'L-01D', 'IMM76D', 'ro.lge.swversion', 'L01D-V20e-OCT-22-2013');
+  INSERT INTO device_address(device_id, name, value) VALUES(75, 'msm_acdb.value_pos', 104);
+  INSERT INTO device_address(device_id, name, value) VALUES(75, 'msm_acdb.address_pos', 120);
+  INSERT INTO device_address(device_id, name, value) VALUES(75, 'msm_acdb.pc1.pos', 132);
+  INSERT INTO device_address(device_id, name, value) VALUES(75, 'msm_acdb.pc1.value', '0xc0417bf0');
+  INSERT INTO device_address(device_id, name, value) VALUES(75, 'msm_acdb.pc2.pos', 164);
+  INSERT INTO device_address(device_id, name, value) VALUES(75, 'msm_acdb.pc2.value', '0xc03810ac');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(76, 'L-01E', 'IMM76L', 'ro.lge.swversion', 'L01E10c');
   INSERT INTO device_address(device_id, name, value) VALUES(76, 'prepare_kernel_cred', '0xc01aa40c');
@@ -464,9 +494,21 @@ INSERT INTO supported_devices(device_id, device, build_id, check_property_name, 
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(78, 'L-02E', 'IMM76L', 'ro.lge.swversion', 'L02E10c');
   INSERT INTO device_address(device_id, name, value) VALUES(78, 'perf_swevent_enabled', '0xc0c61038');
+  INSERT INTO device_address(device_id, name, value) VALUES(78, 'msm_acdb.value_pos', 124);
+  INSERT INTO device_address(device_id, name, value) VALUES(78, 'msm_acdb.address_pos', 140);
+  INSERT INTO device_address(device_id, name, value) VALUES(78, 'msm_acdb.pc1.pos', 148);
+  INSERT INTO device_address(device_id, name, value) VALUES(78, 'msm_acdb.pc1.value', '0xc02dc8c4');
+  INSERT INTO device_address(device_id, name, value) VALUES(78, 'msm_acdb.pc2.pos', 180);
+  INSERT INTO device_address(device_id, name, value) VALUES(78, 'msm_acdb.pc2.value', '0xc018fd58');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(79, 'L-02E', 'IMM76L', 'ro.lge.swversion', 'L02E10e');
   INSERT INTO device_address(device_id, name, value) VALUES(79, 'perf_swevent_enabled', '0xc0c61038');
+  INSERT INTO device_address(device_id, name, value) VALUES(79, 'msm_acdb.value_pos', 124);
+  INSERT INTO device_address(device_id, name, value) VALUES(79, 'msm_acdb.address_pos', 140);
+  INSERT INTO device_address(device_id, name, value) VALUES(79, 'msm_acdb.pc1.pos', 148);
+  INSERT INTO device_address(device_id, name, value) VALUES(79, 'msm_acdb.pc1.value', '0xc02dc984');
+  INSERT INTO device_address(device_id, name, value) VALUES(79, 'msm_acdb.pc2.pos', 180);
+  INSERT INTO device_address(device_id, name, value) VALUES(79, 'msm_acdb.pc2.value', '0xc018fd6c');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(80, 'L-01E', 'JZO54K', 'ro.lge.swversion', 'L01E20b');
   INSERT INTO device_address(device_id, name, value) VALUES(80, 'prepare_kernel_cred', '0xc009c310');
@@ -494,8 +536,20 @@ INSERT INTO supported_devices(device_id, device, build_id, check_property_name, 
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(84, 'L-06D', 'IMM76D', 'ro.lge.swversion', 'L06D-V10k-OCT-17-2012');
   INSERT INTO device_address(device_id, name, value) VALUES(84, 'perf_swevent_enabled', '0xc12f00e8');
+  INSERT INTO device_address(device_id, name, value) VALUES(84, 'msm_acdb.value_pos', 104);
+  INSERT INTO device_address(device_id, name, value) VALUES(84, 'msm_acdb.address_pos', 120);
+  INSERT INTO device_address(device_id, name, value) VALUES(84, 'msm_acdb.pc1.pos', 132);
+  INSERT INTO device_address(device_id, name, value) VALUES(84, 'msm_acdb.pc1.value', '0xc041c690');
+  INSERT INTO device_address(device_id, name, value) VALUES(84, 'msm_acdb.pc2.pos', 164);
+  INSERT INTO device_address(device_id, name, value) VALUES(84, 'msm_acdb.pc2.value', '0xc038c240');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(85, 'L-06D', 'IMM76D', 'ro.lge.swversion', 'L06D-V10p-OCT-09-2013');
+  INSERT INTO device_address(device_id, name, value) VALUES(85, 'msm_acdb.value_pos', 104);
+  INSERT INTO device_address(device_id, name, value) VALUES(85, 'msm_acdb.address_pos', 120);
+  INSERT INTO device_address(device_id, name, value) VALUES(85, 'msm_acdb.pc1.pos', 132);
+  INSERT INTO device_address(device_id, name, value) VALUES(85, 'msm_acdb.pc1.value', '0xc041c770');
+  INSERT INTO device_address(device_id, name, value) VALUES(85, 'msm_acdb.pc2.pos', 164);
+  INSERT INTO device_address(device_id, name, value) VALUES(85, 'msm_acdb.pc2.value', '0xc01031bc');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(86, 'LG-E975', 'JZO54K', 'ro.build.version.incremental', 'E97510e.1366300274');
   INSERT INTO device_address(device_id, name, value) VALUES(86, 'prepare_kernel_cred', '0xc00a0f90');
@@ -674,15 +728,39 @@ INSERT INTO supported_devices(device_id, device, build_id, check_property_name, 
   INSERT INTO device_address(device_id, name, value) VALUES(110, 'perf_swevent_enabled', '0xc097c1d0');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(111, 'N-02E', 'A3002501', NULL, NULL);
+  INSERT INTO device_address(device_id, name, value) VALUES(111, 'msm_acdb.value_pos', 148);
+  INSERT INTO device_address(device_id, name, value) VALUES(111, 'msm_acdb.address_pos', 164);
+  INSERT INTO device_address(device_id, name, value) VALUES(111, 'msm_acdb.pc1.pos', 168);
+  INSERT INTO device_address(device_id, name, value) VALUES(111, 'msm_acdb.pc1.value', '0xc0395460');
+  INSERT INTO device_address(device_id, name, value) VALUES(111, 'msm_acdb.pc2.pos', 200);
+  INSERT INTO device_address(device_id, name, value) VALUES(111, 'msm_acdb.pc2.value', '0xc024a3b4');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(112, 'N-02E', 'A3002601', NULL, NULL);
+  INSERT INTO device_address(device_id, name, value) VALUES(112, 'msm_acdb.value_pos', 148);
+  INSERT INTO device_address(device_id, name, value) VALUES(112, 'msm_acdb.address_pos', 164);
+  INSERT INTO device_address(device_id, name, value) VALUES(112, 'msm_acdb.pc1.pos', 168);
+  INSERT INTO device_address(device_id, name, value) VALUES(112, 'msm_acdb.pc1.value', '0xc03953a0');
+  INSERT INTO device_address(device_id, name, value) VALUES(112, 'msm_acdb.pc2.pos', 200);
+  INSERT INTO device_address(device_id, name, value) VALUES(112, 'msm_acdb.pc2.value', '0xc024a2fc');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(113, 'N-02E', 'A5000331', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(113, 'perf_swevent_enabled', '0xc0f3d3a0');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(114, 'N-02E', 'A5002501', NULL, NULL);
+  INSERT INTO device_address(device_id, name, value) VALUES(114, 'msm_acdb.value_pos', 148);
+  INSERT INTO device_address(device_id, name, value) VALUES(114, 'msm_acdb.address_pos', 164);
+  INSERT INTO device_address(device_id, name, value) VALUES(114, 'msm_acdb.pc1.pos', 168);
+  INSERT INTO device_address(device_id, name, value) VALUES(114, 'msm_acdb.pc1.value', '0xc0395460');
+  INSERT INTO device_address(device_id, name, value) VALUES(114, 'msm_acdb.pc2.pos', 200);
+  INSERT INTO device_address(device_id, name, value) VALUES(114, 'msm_acdb.pc2.value', '0xc024a3b4');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(115, 'N-02E', 'A5002601', NULL, NULL);
+  INSERT INTO device_address(device_id, name, value) VALUES(115, 'msm_acdb.value_pos', 148);
+  INSERT INTO device_address(device_id, name, value) VALUES(115, 'msm_acdb.address_pos', 164);
+  INSERT INTO device_address(device_id, name, value) VALUES(115, 'msm_acdb.pc1.pos', 168);
+  INSERT INTO device_address(device_id, name, value) VALUES(115, 'msm_acdb.pc1.value', '0xc03953a0');
+  INSERT INTO device_address(device_id, name, value) VALUES(115, 'msm_acdb.pc2.pos', 200);
+  INSERT INTO device_address(device_id, name, value) VALUES(115, 'msm_acdb.pc2.value', '0xc024a2fc');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(116, 'N-03E', 'A7000241', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(116, 'prepare_kernel_cred', '0xc01ab578');
@@ -696,12 +774,24 @@ INSERT INTO supported_devices(device_id, device, build_id, check_property_name, 
   INSERT INTO device_address(device_id, name, value) VALUES(117, 'remap_pfn_range', '0xc020d9ac');
   INSERT INTO device_address(device_id, name, value) VALUES(117, 'ptmx_fops', '0xc0f702fc');
   INSERT INTO device_address(device_id, name, value) VALUES(117, 'perf_swevent_enabled', '0xc0f619c4');
+  INSERT INTO device_address(device_id, name, value) VALUES(117, 'msm_acdb.value_pos', 148);
+  INSERT INTO device_address(device_id, name, value) VALUES(117, 'msm_acdb.address_pos', 164);
+  INSERT INTO device_address(device_id, name, value) VALUES(117, 'msm_acdb.pc1.pos', 168);
+  INSERT INTO device_address(device_id, name, value) VALUES(117, 'msm_acdb.pc1.value', '0xc0397cbc');
+  INSERT INTO device_address(device_id, name, value) VALUES(117, 'msm_acdb.pc2.pos', 200);
+  INSERT INTO device_address(device_id, name, value) VALUES(117, 'msm_acdb.pc2.value', '0xc024ba58');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(118, 'N-03E', 'A7002001', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(118, 'prepare_kernel_cred', '0xc01ab5b8');
   INSERT INTO device_address(device_id, name, value) VALUES(118, 'commit_creds', '0xc01aadec');
   INSERT INTO device_address(device_id, name, value) VALUES(118, 'remap_pfn_range', '0xc020d9f4');
   INSERT INTO device_address(device_id, name, value) VALUES(118, 'ptmx_fops', '0xc0f702fc');
+  INSERT INTO device_address(device_id, name, value) VALUES(118, 'msm_acdb.value_pos', 148);
+  INSERT INTO device_address(device_id, name, value) VALUES(118, 'msm_acdb.address_pos', 164);
+  INSERT INTO device_address(device_id, name, value) VALUES(118, 'msm_acdb.pc1.pos', 168);
+  INSERT INTO device_address(device_id, name, value) VALUES(118, 'msm_acdb.pc1.value', '0xc0397ddc');
+  INSERT INTO device_address(device_id, name, value) VALUES(118, 'msm_acdb.pc2.pos', 200);
+  INSERT INTO device_address(device_id, name, value) VALUES(118, 'msm_acdb.pc2.value', '0xc024bb00');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(119, 'N-03E', 'A7202001', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(119, 'prepare_kernel_cred', '0xc0093760');
@@ -709,6 +799,12 @@ INSERT INTO supported_devices(device_id, device, build_id, check_property_name, 
   INSERT INTO device_address(device_id, name, value) VALUES(119, 'remap_pfn_range', '0xc0106048');
   INSERT INTO device_address(device_id, name, value) VALUES(119, 'vmalloc_exec', '0xc0112694');
   INSERT INTO device_address(device_id, name, value) VALUES(119, 'ptmx_fops', '0xc0f94d94');
+  INSERT INTO device_address(device_id, name, value) VALUES(119, 'msm_acdb.value_pos', 124);
+  INSERT INTO device_address(device_id, name, value) VALUES(119, 'msm_acdb.address_pos', 136);
+  INSERT INTO device_address(device_id, name, value) VALUES(119, 'msm_acdb.pc1.pos', 140);
+  INSERT INTO device_address(device_id, name, value) VALUES(119, 'msm_acdb.pc1.value', '0xc0297e1c');
+  INSERT INTO device_address(device_id, name, value) VALUES(119, 'msm_acdb.pc2.pos', 172);
+  INSERT INTO device_address(device_id, name, value) VALUES(119, 'msm_acdb.pc2.value', '0xc024be10');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(120, 'N-03E', 'A7202201', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(120, 'prepare_kernel_cred', '0xc0093760');
@@ -716,6 +812,12 @@ INSERT INTO supported_devices(device_id, device, build_id, check_property_name, 
   INSERT INTO device_address(device_id, name, value) VALUES(120, 'remap_pfn_range', '0xc0106048');
   INSERT INTO device_address(device_id, name, value) VALUES(120, 'vmalloc_exec', '0xc0112694');
   INSERT INTO device_address(device_id, name, value) VALUES(120, 'ptmx_fops', '0xc0f94d94');
+  INSERT INTO device_address(device_id, name, value) VALUES(120, 'msm_acdb.value_pos', 124);
+  INSERT INTO device_address(device_id, name, value) VALUES(120, 'msm_acdb.address_pos', 136);
+  INSERT INTO device_address(device_id, name, value) VALUES(120, 'msm_acdb.pc1.pos', 140);
+  INSERT INTO device_address(device_id, name, value) VALUES(120, 'msm_acdb.pc1.value', '0xc0297e1c');
+  INSERT INTO device_address(device_id, name, value) VALUES(120, 'msm_acdb.pc2.pos', 172);
+  INSERT INTO device_address(device_id, name, value) VALUES(120, 'msm_acdb.pc2.value', '0xc024be10');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(121, 'N05E', 'A1000311', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(121, 'prepare_kernel_cred', '0xc0094430');
@@ -862,6 +964,12 @@ INSERT INTO supported_devices(device_id, device, build_id, check_property_name, 
   INSERT INTO device_address(device_id, name, value) VALUES(141, 'remap_pfn_range', '0xc00e4320');
   INSERT INTO device_address(device_id, name, value) VALUES(141, 'vmalloc_exec', '0xc00f0e68');
   INSERT INTO device_address(device_id, name, value) VALUES(141, 'ptmx_fops', '0xc0ef6580');
+  INSERT INTO device_address(device_id, name, value) VALUES(141, 'msm_acdb.value_pos', 124);
+  INSERT INTO device_address(device_id, name, value) VALUES(141, 'msm_acdb.address_pos', 136);
+  INSERT INTO device_address(device_id, name, value) VALUES(141, 'msm_acdb.pc1.pos', 140);
+  INSERT INTO device_address(device_id, name, value) VALUES(141, 'msm_acdb.pc1.value', '0xc0247500');
+  INSERT INTO device_address(device_id, name, value) VALUES(141, 'msm_acdb.pc2.pos', 172);
+  INSERT INTO device_address(device_id, name, value) VALUES(141, 'msm_acdb.pc2.value', '0xc0230ab0');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(142, 'SH-02E', '02.00.02', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(142, 'kernel_physical_offset', '0x80208000');
@@ -873,6 +981,12 @@ INSERT INTO supported_devices(device_id, device, build_id, check_property_name, 
   INSERT INTO device_address(device_id, name, value) VALUES(143, 'remap_pfn_range', '0xc00e433c');
   INSERT INTO device_address(device_id, name, value) VALUES(143, 'vmalloc_exec', '0xc00f0e84');
   INSERT INTO device_address(device_id, name, value) VALUES(143, 'ptmx_fops', '0xc0ef62c0');
+  INSERT INTO device_address(device_id, name, value) VALUES(143, 'msm_acdb.value_pos', 124);
+  INSERT INTO device_address(device_id, name, value) VALUES(143, 'msm_acdb.address_pos', 136);
+  INSERT INTO device_address(device_id, name, value) VALUES(143, 'msm_acdb.pc1.pos', 140);
+  INSERT INTO device_address(device_id, name, value) VALUES(143, 'msm_acdb.pc1.value', '0xc0247520');
+  INSERT INTO device_address(device_id, name, value) VALUES(143, 'msm_acdb.pc2.pos', 172);
+  INSERT INTO device_address(device_id, name, value) VALUES(143, 'msm_acdb.pc2.value', '0xc02498d8');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(144, 'SH-04E', '01.00.02', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(144, 'kernel_physical_offset', '0x80208000');
@@ -882,6 +996,12 @@ INSERT INTO supported_devices(device_id, device, build_id, check_property_name, 
   INSERT INTO device_address(device_id, name, value) VALUES(144, 'vmalloc_exec', '0xc00f10d4');
   INSERT INTO device_address(device_id, name, value) VALUES(144, 'ptmx_fops', '0xc0eed190');
   INSERT INTO device_address(device_id, name, value) VALUES(144, 'perf_swevent_enabled', '0xc0ed41ec');
+  INSERT INTO device_address(device_id, name, value) VALUES(144, 'msm_acdb.value_pos', 124);
+  INSERT INTO device_address(device_id, name, value) VALUES(144, 'msm_acdb.address_pos', 136);
+  INSERT INTO device_address(device_id, name, value) VALUES(144, 'msm_acdb.pc1.pos', 140);
+  INSERT INTO device_address(device_id, name, value) VALUES(144, 'msm_acdb.pc1.value', '0xc02498e0');
+  INSERT INTO device_address(device_id, name, value) VALUES(144, 'msm_acdb.pc2.pos', 172);
+  INSERT INTO device_address(device_id, name, value) VALUES(144, 'msm_acdb.pc2.value', '0xc000dd1c');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(145, 'SH-04E', '01.00.03', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(145, 'kernel_physical_offset', '0x80208000');
@@ -891,6 +1011,12 @@ INSERT INTO supported_devices(device_id, device, build_id, check_property_name, 
   INSERT INTO device_address(device_id, name, value) VALUES(145, 'vmalloc_exec', '0xc00f1204');
   INSERT INTO device_address(device_id, name, value) VALUES(145, 'ptmx_fops', '0xc0eed190');
   INSERT INTO device_address(device_id, name, value) VALUES(145, 'perf_swevent_enabled', '0xc0ed41ec');
+  INSERT INTO device_address(device_id, name, value) VALUES(145, 'msm_acdb.value_pos', 124);
+  INSERT INTO device_address(device_id, name, value) VALUES(145, 'msm_acdb.address_pos', 136);
+  INSERT INTO device_address(device_id, name, value) VALUES(145, 'msm_acdb.pc1.pos', 140);
+  INSERT INTO device_address(device_id, name, value) VALUES(145, 'msm_acdb.pc1.value', '0xc0249a20');
+  INSERT INTO device_address(device_id, name, value) VALUES(145, 'msm_acdb.pc2.pos', 172);
+  INSERT INTO device_address(device_id, name, value) VALUES(145, 'msm_acdb.pc2.value', '0xc024bdd8');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(146, 'SH-04E', '01.00.04', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(146, 'kernel_physical_offset', '0x80208000');
@@ -899,6 +1025,12 @@ INSERT INTO supported_devices(device_id, device, build_id, check_property_name, 
   INSERT INTO device_address(device_id, name, value) VALUES(146, 'remap_pfn_range', '0xc00e46d4');
   INSERT INTO device_address(device_id, name, value) VALUES(146, 'vmalloc_exec', '0xc00f121c');
   INSERT INTO device_address(device_id, name, value) VALUES(146, 'ptmx_fops', '0xc0eed150');
+  INSERT INTO device_address(device_id, name, value) VALUES(146, 'msm_acdb.value_pos', 124);
+  INSERT INTO device_address(device_id, name, value) VALUES(146, 'msm_acdb.address_pos', 136);
+  INSERT INTO device_address(device_id, name, value) VALUES(146, 'msm_acdb.pc1.pos', 140);
+  INSERT INTO device_address(device_id, name, value) VALUES(146, 'msm_acdb.pc1.value', '0xc0249a20');
+  INSERT INTO device_address(device_id, name, value) VALUES(146, 'msm_acdb.pc2.pos', 172);
+  INSERT INTO device_address(device_id, name, value) VALUES(146, 'msm_acdb.pc2.value', '0xc024bdd8');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(147, 'SH-05E', '01.00.05', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(147, 'kernel_physical_offset', '0x80208000');
@@ -907,6 +1039,12 @@ INSERT INTO supported_devices(device_id, device, build_id, check_property_name, 
   INSERT INTO device_address(device_id, name, value) VALUES(147, 'remap_pfn_range', '0xc01f29c0');
   INSERT INTO device_address(device_id, name, value) VALUES(147, 'vmalloc_exec', '0xc01fd520');
   INSERT INTO device_address(device_id, name, value) VALUES(147, 'ptmx_fops', '0xc0d95870');
+  INSERT INTO device_address(device_id, name, value) VALUES(147, 'msm_acdb.value_pos', 128);
+  INSERT INTO device_address(device_id, name, value) VALUES(147, 'msm_acdb.address_pos', 144);
+  INSERT INTO device_address(device_id, name, value) VALUES(147, 'msm_acdb.pc1.pos', 156);
+  INSERT INTO device_address(device_id, name, value) VALUES(147, 'msm_acdb.pc1.value', '0xc0381b98');
+  INSERT INTO device_address(device_id, name, value) VALUES(147, 'msm_acdb.pc2.pos', 188);
+  INSERT INTO device_address(device_id, name, value) VALUES(147, 'msm_acdb.pc2.value', '0xc0231b98');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(148, 'SH-05E', '01.00.06', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(148, 'kernel_physical_offset', '0x80208000');
@@ -915,6 +1053,12 @@ INSERT INTO supported_devices(device_id, device, build_id, check_property_name, 
   INSERT INTO device_address(device_id, name, value) VALUES(148, 'remap_pfn_range', '0xc01f29fc');
   INSERT INTO device_address(device_id, name, value) VALUES(148, 'vmalloc_exec', '0xc01fd55c');
   INSERT INTO device_address(device_id, name, value) VALUES(148, 'ptmx_fops', '0xc0d95870');
+  INSERT INTO device_address(device_id, name, value) VALUES(148, 'msm_acdb.value_pos', 128);
+  INSERT INTO device_address(device_id, name, value) VALUES(148, 'msm_acdb.address_pos', 144);
+  INSERT INTO device_address(device_id, name, value) VALUES(148, 'msm_acdb.pc1.pos', 156);
+  INSERT INTO device_address(device_id, name, value) VALUES(148, 'msm_acdb.pc1.value', '0xc0381c58');
+  INSERT INTO device_address(device_id, name, value) VALUES(148, 'msm_acdb.pc2.pos', 188);
+  INSERT INTO device_address(device_id, name, value) VALUES(148, 'msm_acdb.pc2.value', '0xc0231bd4');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(149, 'SH-06E', '01.00.01', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(149, 'kernel_physical_offset', '0x80208000');
@@ -923,6 +1067,12 @@ INSERT INTO supported_devices(device_id, device, build_id, check_property_name, 
   INSERT INTO device_address(device_id, name, value) VALUES(149, 'remap_pfn_range', '0xc010d5f8');
   INSERT INTO device_address(device_id, name, value) VALUES(149, 'vmalloc_exec', '0xc011a190');
   INSERT INTO device_address(device_id, name, value) VALUES(149, 'ptmx_fops', '0xc104e6c8');
+  INSERT INTO device_address(device_id, name, value) VALUES(149, 'msm_acdb.value_pos', 124);
+  INSERT INTO device_address(device_id, name, value) VALUES(149, 'msm_acdb.address_pos', 136);
+  INSERT INTO device_address(device_id, name, value) VALUES(149, 'msm_acdb.pc1.pos', 140);
+  INSERT INTO device_address(device_id, name, value) VALUES(149, 'msm_acdb.pc1.value', '0xc02944b4');
+  INSERT INTO device_address(device_id, name, value) VALUES(149, 'msm_acdb.pc2.pos', 172);
+  INSERT INTO device_address(device_id, name, value) VALUES(149, 'msm_acdb.pc2.value', '0xc000ddac');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(150, 'SH-06E', '01.00.05', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(150, 'kernel_physical_offset', '0x80208000');
@@ -931,6 +1081,12 @@ INSERT INTO supported_devices(device_id, device, build_id, check_property_name, 
   INSERT INTO device_address(device_id, name, value) VALUES(150, 'remap_pfn_range', '0xc010d5d8');
   INSERT INTO device_address(device_id, name, value) VALUES(150, 'vmalloc_exec', '0xc011a170');
   INSERT INTO device_address(device_id, name, value) VALUES(150, 'ptmx_fops', '0xc104f1c8');
+  INSERT INTO device_address(device_id, name, value) VALUES(150, 'msm_acdb.value_pos', 124);
+  INSERT INTO device_address(device_id, name, value) VALUES(150, 'msm_acdb.address_pos', 136);
+  INSERT INTO device_address(device_id, name, value) VALUES(150, 'msm_acdb.pc1.pos', 140);
+  INSERT INTO device_address(device_id, name, value) VALUES(150, 'msm_acdb.pc1.value', '0xc0294494');
+  INSERT INTO device_address(device_id, name, value) VALUES(150, 'msm_acdb.pc2.pos', 172);
+  INSERT INTO device_address(device_id, name, value) VALUES(150, 'msm_acdb.pc2.value', '0xc000ddac');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(151, 'SH-06E', '01.00.06', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(151, 'kernel_physical_offset', '0x80208000');
@@ -939,6 +1095,12 @@ INSERT INTO supported_devices(device_id, device, build_id, check_property_name, 
   INSERT INTO device_address(device_id, name, value) VALUES(151, 'remap_pfn_range', '0xc010d5e8');
   INSERT INTO device_address(device_id, name, value) VALUES(151, 'vmalloc_exec', '0xc011a180');
   INSERT INTO device_address(device_id, name, value) VALUES(151, 'ptmx_fops', '0xc1050090');
+  INSERT INTO device_address(device_id, name, value) VALUES(151, 'msm_acdb.value_pos', 124);
+  INSERT INTO device_address(device_id, name, value) VALUES(151, 'msm_acdb.address_pos', 136);
+  INSERT INTO device_address(device_id, name, value) VALUES(151, 'msm_acdb.pc1.pos', 140);
+  INSERT INTO device_address(device_id, name, value) VALUES(151, 'msm_acdb.pc1.value', '0xc02944b4');
+  INSERT INTO device_address(device_id, name, value) VALUES(151, 'msm_acdb.pc2.pos', 172);
+  INSERT INTO device_address(device_id, name, value) VALUES(151, 'msm_acdb.pc2.value', '0xc000ddac');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(152, 'SH-06E', '01.00.07', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(152, 'kernel_physical_offset', '0x80208000');
@@ -947,6 +1109,12 @@ INSERT INTO supported_devices(device_id, device, build_id, check_property_name, 
   INSERT INTO device_address(device_id, name, value) VALUES(152, 'remap_pfn_range', '0xc010d5d4');
   INSERT INTO device_address(device_id, name, value) VALUES(152, 'vmalloc_exec', '0xc011a1d4');
   INSERT INTO device_address(device_id, name, value) VALUES(152, 'ptmx_fops', '0xc1050090');
+  INSERT INTO device_address(device_id, name, value) VALUES(152, 'msm_acdb.value_pos', 124);
+  INSERT INTO device_address(device_id, name, value) VALUES(152, 'msm_acdb.address_pos', 136);
+  INSERT INTO device_address(device_id, name, value) VALUES(152, 'msm_acdb.pc1.pos', 140);
+  INSERT INTO device_address(device_id, name, value) VALUES(152, 'msm_acdb.pc1.value', '0xc02944f4');
+  INSERT INTO device_address(device_id, name, value) VALUES(152, 'msm_acdb.pc2.pos', 172);
+  INSERT INTO device_address(device_id, name, value) VALUES(152, 'msm_acdb.pc2.value', '0xc000ddac');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(153, 'SH-07E', '01.00.03', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(153, 'kernel_physical_offset', '0x80208000');
@@ -955,6 +1123,12 @@ INSERT INTO supported_devices(device_id, device, build_id, check_property_name, 
   INSERT INTO device_address(device_id, name, value) VALUES(153, 'remap_pfn_range', '0xc010d804');
   INSERT INTO device_address(device_id, name, value) VALUES(153, 'vmalloc_exec', '0xc011a39c');
   INSERT INTO device_address(device_id, name, value) VALUES(153, 'ptmx_fops', '0xc0f33508');
+  INSERT INTO device_address(device_id, name, value) VALUES(153, 'msm_acdb.value_pos', 124);
+  INSERT INTO device_address(device_id, name, value) VALUES(153, 'msm_acdb.address_pos', 136);
+  INSERT INTO device_address(device_id, name, value) VALUES(153, 'msm_acdb.pc1.pos', 140);
+  INSERT INTO device_address(device_id, name, value) VALUES(153, 'msm_acdb.pc1.value', '0xc02946d4');
+  INSERT INTO device_address(device_id, name, value) VALUES(153, 'msm_acdb.pc2.pos', 172);
+  INSERT INTO device_address(device_id, name, value) VALUES(153, 'msm_acdb.pc2.value', '0xc022729c');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(154, 'SH-09D', '02.00.03', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(154, 'kernel_physical_offset', '0x80208000');
@@ -963,6 +1137,12 @@ INSERT INTO supported_devices(device_id, device, build_id, check_property_name, 
   INSERT INTO device_address(device_id, name, value) VALUES(154, 'remap_pfn_range', '0xc00e25e0');
   INSERT INTO device_address(device_id, name, value) VALUES(154, 'vmalloc_exec', '0xc00ef128');
   INSERT INTO device_address(device_id, name, value) VALUES(154, 'ptmx_fops', '0xc0dd5e58');
+  INSERT INTO device_address(device_id, name, value) VALUES(154, 'msm_acdb.value_pos', 124);
+  INSERT INTO device_address(device_id, name, value) VALUES(154, 'msm_acdb.address_pos', 136);
+  INSERT INTO device_address(device_id, name, value) VALUES(154, 'msm_acdb.pc1.pos', 140);
+  INSERT INTO device_address(device_id, name, value) VALUES(154, 'msm_acdb.pc1.value', '0xc0245740');
+  INSERT INTO device_address(device_id, name, value) VALUES(154, 'msm_acdb.pc2.pos', 172);
+  INSERT INTO device_address(device_id, name, value) VALUES(154, 'msm_acdb.pc2.value', '0xc0238d14');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(155, 'SHL21', '01.00.09', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(155, 'kernel_physical_offset', '0x80208000');
@@ -971,6 +1151,12 @@ INSERT INTO supported_devices(device_id, device, build_id, check_property_name, 
   INSERT INTO device_address(device_id, name, value) VALUES(155, 'remap_pfn_range', '0xc01f18d0');
   INSERT INTO device_address(device_id, name, value) VALUES(155, 'vmalloc_exec', '0xc01fc498');
   INSERT INTO device_address(device_id, name, value) VALUES(155, 'ptmx_fops', '0xc0fe01b0');
+  INSERT INTO device_address(device_id, name, value) VALUES(155, 'msm_acdb.value_pos', 124);
+  INSERT INTO device_address(device_id, name, value) VALUES(155, 'msm_acdb.address_pos', 140);
+  INSERT INTO device_address(device_id, name, value) VALUES(155, 'msm_acdb.pc1.pos', 144);
+  INSERT INTO device_address(device_id, name, value) VALUES(155, 'msm_acdb.pc1.value', '0xc0380240');
+  INSERT INTO device_address(device_id, name, value) VALUES(155, 'msm_acdb.pc2.pos', 176);
+  INSERT INTO device_address(device_id, name, value) VALUES(155, 'msm_acdb.pc2.value', '0xc02304a8');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(156, 'SHL21', '01.01.02', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(156, 'kernel_physical_offset', '0x80208000');
@@ -980,6 +1166,12 @@ INSERT INTO supported_devices(device_id, device, build_id, check_property_name, 
   INSERT INTO device_address(device_id, name, value) VALUES(156, 'vmalloc_exec', '0xc00ef528');
   INSERT INTO device_address(device_id, name, value) VALUES(156, 'ptmx_fops', '0xc0dd8810');
   INSERT INTO device_address(device_id, name, value) VALUES(156, 'perf_swevent_enabled', '0xc0dbc96c');
+  INSERT INTO device_address(device_id, name, value) VALUES(156, 'msm_acdb.value_pos', 124);
+  INSERT INTO device_address(device_id, name, value) VALUES(156, 'msm_acdb.address_pos', 136);
+  INSERT INTO device_address(device_id, name, value) VALUES(156, 'msm_acdb.pc1.pos', 140);
+  INSERT INTO device_address(device_id, name, value) VALUES(156, 'msm_acdb.pc1.value', '0xc0246100');
+  INSERT INTO device_address(device_id, name, value) VALUES(156, 'msm_acdb.pc2.pos', 172);
+  INSERT INTO device_address(device_id, name, value) VALUES(156, 'msm_acdb.pc2.value', '0xc02484b8');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(157, 'SO-01E', '9.1.C.0.473', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(157, 'prepare_kernel_cred', '0xc009843c');
@@ -1019,6 +1211,12 @@ INSERT INTO supported_devices(device_id, device, build_id, check_property_name, 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(162, 'SO-04D', '7.0.D.1.137', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(162, 'ptmx_fops', '0xc0c9d8a0');
   INSERT INTO device_address(device_id, name, value) VALUES(162, 'perf_swevent_enabled', '0xc0c91ea0');
+  INSERT INTO device_address(device_id, name, value) VALUES(162, 'msm_acdb.value_pos', 128);
+  INSERT INTO device_address(device_id, name, value) VALUES(162, 'msm_acdb.address_pos', 144);
+  INSERT INTO device_address(device_id, name, value) VALUES(162, 'msm_acdb.pc1.pos', 156);
+  INSERT INTO device_address(device_id, name, value) VALUES(162, 'msm_acdb.pc1.value', '0xc0326a38');
+  INSERT INTO device_address(device_id, name, value) VALUES(162, 'msm_acdb.pc2.pos', 188);
+  INSERT INTO device_address(device_id, name, value) VALUES(162, 'msm_acdb.pc2.value', '0xc0526964');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(163, 'SO-04D', '9.1.C.0.475', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(163, 'prepare_kernel_cred', '0xc0095cb0');
@@ -1033,6 +1231,12 @@ INSERT INTO supported_devices(device_id, device, build_id, check_property_name, 
   INSERT INTO device_address(device_id, name, value) VALUES(164, 'remap_pfn_range', '0xc010ab3c');
   INSERT INTO device_address(device_id, name, value) VALUES(164, 'ptmx_fops', '0xc0d024a0');
   INSERT INTO device_address(device_id, name, value) VALUES(164, 'perf_swevent_enabled', '0xc0ced2b4');
+  INSERT INTO device_address(device_id, name, value) VALUES(164, 'msm_acdb.value_pos', 124);
+  INSERT INTO device_address(device_id, name, value) VALUES(164, 'msm_acdb.address_pos', 136);
+  INSERT INTO device_address(device_id, name, value) VALUES(164, 'msm_acdb.pc1.pos', 140);
+  INSERT INTO device_address(device_id, name, value) VALUES(164, 'msm_acdb.pc1.value', '0xc0240958');
+  INSERT INTO device_address(device_id, name, value) VALUES(164, 'msm_acdb.pc2.pos', 172);
+  INSERT INTO device_address(device_id, name, value) VALUES(164, 'msm_acdb.pc2.value', '0xc003dfd0');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(165, 'SO-04E', '10.1.1.D.0.179', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(165, 'prepare_kernel_cred', '0xc009d500');
@@ -1052,6 +1256,12 @@ INSERT INTO supported_devices(device_id, device, build_id, check_property_name, 
   INSERT INTO device_address(device_id, name, value) VALUES(167, 'delayed_rsp_id', '0xc0b8840c');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(168, 'SO-05D', '7.0.D.1.137', NULL, NULL);
+  INSERT INTO device_address(device_id, name, value) VALUES(168, 'msm_acdb.value_pos', 128);
+  INSERT INTO device_address(device_id, name, value) VALUES(168, 'msm_acdb.address_pos', 144);
+  INSERT INTO device_address(device_id, name, value) VALUES(168, 'msm_acdb.pc1.pos', 156);
+  INSERT INTO device_address(device_id, name, value) VALUES(168, 'msm_acdb.pc1.value', '0xc03265d8');
+  INSERT INTO device_address(device_id, name, value) VALUES(168, 'msm_acdb.pc2.pos', 188);
+  INSERT INTO device_address(device_id, name, value) VALUES(168, 'msm_acdb.pc2.value', '0xc0524d84');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(169, 'SO-05D', '9.1.C.0.475', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(169, 'prepare_kernel_cred', '0xc00958ac');
@@ -1078,6 +1288,12 @@ INSERT INTO supported_devices(device_id, device, build_id, check_property_name, 
   INSERT INTO device_address(device_id, name, value) VALUES(172, 'vmalloc_exec', '0xc011aeec');
   INSERT INTO device_address(device_id, name, value) VALUES(172, 'ptmx_fops', '0xc0d030c8');
   INSERT INTO device_address(device_id, name, value) VALUES(172, 'perf_swevent_enabled', '0xc0cedfb4');
+  INSERT INTO device_address(device_id, name, value) VALUES(172, 'msm_acdb.value_pos', 124);
+  INSERT INTO device_address(device_id, name, value) VALUES(172, 'msm_acdb.address_pos', 136);
+  INSERT INTO device_address(device_id, name, value) VALUES(172, 'msm_acdb.pc1.pos', 140);
+  INSERT INTO device_address(device_id, name, value) VALUES(172, 'msm_acdb.pc1.value', '0xc0244778');
+  INSERT INTO device_address(device_id, name, value) VALUES(172, 'msm_acdb.pc2.pos', 172);
+  INSERT INTO device_address(device_id, name, value) VALUES(172, 'msm_acdb.pc2.value', '0xc000dd24');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(173, 'SOL21', '9.1.D.0.401', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(173, 'prepare_kernel_cred', '0xc0098594');
