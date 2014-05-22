@@ -10,174 +10,203 @@ INSERT INTO supported_devices(device_id, device, build_id, check_property_name, 
   INSERT INTO device_address(device_id, name, value) VALUES(1, 'commit_creds', '0xc00ad80c');
   INSERT INTO device_address(device_id, name, value) VALUES(1, 'remap_pfn_range', '0xc01028d8');
   INSERT INTO device_address(device_id, name, value) VALUES(1, 'ptmx_fops', '0xc093ee30');
+  INSERT INTO device_address(device_id, name, value) VALUES(1, 'perf_swevent_enabled', '0xc093762c');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(2, 'C1505', '11.3.A.2.13', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(2, 'prepare_kernel_cred', '0xc00add90');
   INSERT INTO device_address(device_id, name, value) VALUES(2, 'commit_creds', '0xc00ada04');
   INSERT INTO device_address(device_id, name, value) VALUES(2, 'remap_pfn_range', '0xc0102ad0');
   INSERT INTO device_address(device_id, name, value) VALUES(2, 'ptmx_fops', '0xc093ed70');
+  INSERT INTO device_address(device_id, name, value) VALUES(2, 'perf_swevent_enabled', '0xc093756c');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(3, 'C5302', '12.0.A.1.284', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(3, 'prepare_kernel_cred', '0xc009ec08');
   INSERT INTO device_address(device_id, name, value) VALUES(3, 'commit_creds', '0xc009e72c');
   INSERT INTO device_address(device_id, name, value) VALUES(3, 'remap_pfn_range', '0xc011445c');
   INSERT INTO device_address(device_id, name, value) VALUES(3, 'ptmx_fops', '0xc0e3bed8');
+  INSERT INTO device_address(device_id, name, value) VALUES(3, 'perf_swevent_enabled', '0xc0e219b4');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(4, 'C5303', '12.0.A.1.284', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(4, 'prepare_kernel_cred', '0xc009ec08');
   INSERT INTO device_address(device_id, name, value) VALUES(4, 'commit_creds', '0xc009e72c');
   INSERT INTO device_address(device_id, name, value) VALUES(4, 'remap_pfn_range', '0xc011445c');
   INSERT INTO device_address(device_id, name, value) VALUES(4, 'ptmx_fops', '0xc0e3bed8');
+  INSERT INTO device_address(device_id, name, value) VALUES(4, 'perf_swevent_enabled', '0xc0e219b4');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(5, 'C5306', '12.0.A.1.284', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(5, 'prepare_kernel_cred', '0xc009ec08');
   INSERT INTO device_address(device_id, name, value) VALUES(5, 'commit_creds', '0xc009e72c');
   INSERT INTO device_address(device_id, name, value) VALUES(5, 'remap_pfn_range', '0xc011445c');
   INSERT INTO device_address(device_id, name, value) VALUES(5, 'ptmx_fops', '0xc0e3bed8');
+  INSERT INTO device_address(device_id, name, value) VALUES(5, 'perf_swevent_enabled', '0xc0e219b4');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(6, 'C5306', '12.0.A.1.257', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(6, 'prepare_kernel_cred', '0xc009ec08');
   INSERT INTO device_address(device_id, name, value) VALUES(6, 'commit_creds', '0xc009e72c');
   INSERT INTO device_address(device_id, name, value) VALUES(6, 'remap_pfn_range', '0xc011445c');
   INSERT INTO device_address(device_id, name, value) VALUES(6, 'ptmx_fops', '0xc0e3b890');
+  INSERT INTO device_address(device_id, name, value) VALUES(6, 'perf_swevent_enabled', '0xc0e21374');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(7, 'C5303', '12.0.A.1.257', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(7, 'prepare_kernel_cred', '0xc009ec08');
   INSERT INTO device_address(device_id, name, value) VALUES(7, 'commit_creds', '0xc009e72c');
   INSERT INTO device_address(device_id, name, value) VALUES(7, 'remap_pfn_range', '0xc011445c');
   INSERT INTO device_address(device_id, name, value) VALUES(7, 'ptmx_fops', '0xc0e3b890');
+  INSERT INTO device_address(device_id, name, value) VALUES(7, 'perf_swevent_enabled', '0xc0e21374');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(8, 'C5302', '12.0.A.1.257', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(8, 'prepare_kernel_cred', '0xc009ec08');
   INSERT INTO device_address(device_id, name, value) VALUES(8, 'commit_creds', '0xc009e72c');
   INSERT INTO device_address(device_id, name, value) VALUES(8, 'remap_pfn_range', '0xc011445c');
   INSERT INTO device_address(device_id, name, value) VALUES(8, 'ptmx_fops', '0xc0e3b890');
+  INSERT INTO device_address(device_id, name, value) VALUES(8, 'perf_swevent_enabled', '0xc0e21374');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(9, 'C5306', '12.0.A.1.211', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(9, 'prepare_kernel_cred', '0xc009ec08');
   INSERT INTO device_address(device_id, name, value) VALUES(9, 'commit_creds', '0xc009e72c');
   INSERT INTO device_address(device_id, name, value) VALUES(9, 'remap_pfn_range', '0xc011445c');
   INSERT INTO device_address(device_id, name, value) VALUES(9, 'ptmx_fops', '0xc0e3b8d0');
+  INSERT INTO device_address(device_id, name, value) VALUES(9, 'perf_swevent_enabled', '0xc0e213b4');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(10, 'C5303', '12.0.A.1.211', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(10, 'prepare_kernel_cred', '0xc009ec08');
   INSERT INTO device_address(device_id, name, value) VALUES(10, 'commit_creds', '0xc009e72c');
   INSERT INTO device_address(device_id, name, value) VALUES(10, 'remap_pfn_range', '0xc011445c');
   INSERT INTO device_address(device_id, name, value) VALUES(10, 'ptmx_fops', '0xc0e3b8d0');
+  INSERT INTO device_address(device_id, name, value) VALUES(10, 'perf_swevent_enabled', '0xc0e213b4');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(11, 'C5302', '12.0.A.1.211', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(11, 'prepare_kernel_cred', '0xc009ec08');
   INSERT INTO device_address(device_id, name, value) VALUES(11, 'commit_creds', '0xc009e72c');
   INSERT INTO device_address(device_id, name, value) VALUES(11, 'remap_pfn_range', '0xc011445c');
   INSERT INTO device_address(device_id, name, value) VALUES(11, 'ptmx_fops', '0xc0e3b8d0');
+  INSERT INTO device_address(device_id, name, value) VALUES(11, 'perf_swevent_enabled', '0xc0e213b4');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(12, 'M35h', '12.0.A.1.257', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(12, 'prepare_kernel_cred', '0xc009ec08');
   INSERT INTO device_address(device_id, name, value) VALUES(12, 'commit_creds', '0xc009e72c');
   INSERT INTO device_address(device_id, name, value) VALUES(12, 'remap_pfn_range', '0xc011445c');
   INSERT INTO device_address(device_id, name, value) VALUES(12, 'ptmx_fops', '0xc0e3b890');
+  INSERT INTO device_address(device_id, name, value) VALUES(12, 'perf_swevent_enabled', '0xc0e21374');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(13, 'C2104', '15.0.A.1.31', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(13, 'prepare_kernel_cred', '0xc0092570');
   INSERT INTO device_address(device_id, name, value) VALUES(13, 'commit_creds', '0xc0092094');
   INSERT INTO device_address(device_id, name, value) VALUES(13, 'remap_pfn_range', '0xc00e8414');
   INSERT INTO device_address(device_id, name, value) VALUES(13, 'ptmx_fops', '0xc0f02640');
+  INSERT INTO device_address(device_id, name, value) VALUES(13, 'perf_swevent_enabled', '0xc0eece2c');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(14, 'C2105', '15.0.A.1.31', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(14, 'prepare_kernel_cred', '0xc0092570');
   INSERT INTO device_address(device_id, name, value) VALUES(14, 'commit_creds', '0xc0092094');
   INSERT INTO device_address(device_id, name, value) VALUES(14, 'remap_pfn_range', '0xc00e8414');
   INSERT INTO device_address(device_id, name, value) VALUES(14, 'ptmx_fops', '0xc0f02640');
+  INSERT INTO device_address(device_id, name, value) VALUES(14, 'perf_swevent_enabled', '0xc0eece2c');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(15, 'C2104', '15.0.A.1.36', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(15, 'prepare_kernel_cred', '0xc0092570');
   INSERT INTO device_address(device_id, name, value) VALUES(15, 'commit_creds', '0xc0092094');
   INSERT INTO device_address(device_id, name, value) VALUES(15, 'remap_pfn_range', '0xc00e8414');
   INSERT INTO device_address(device_id, name, value) VALUES(15, 'ptmx_fops', '0xc0f02640');
+  INSERT INTO device_address(device_id, name, value) VALUES(15, 'perf_swevent_enabled', '0xc0eece2c');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(16, 'C2105', '15.0.A.1.36', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(16, 'prepare_kernel_cred', '0xc0092570');
   INSERT INTO device_address(device_id, name, value) VALUES(16, 'commit_creds', '0xc0092094');
   INSERT INTO device_address(device_id, name, value) VALUES(16, 'remap_pfn_range', '0xc00e8414');
   INSERT INTO device_address(device_id, name, value) VALUES(16, 'ptmx_fops', '0xc0f02640');
+  INSERT INTO device_address(device_id, name, value) VALUES(16, 'perf_swevent_enabled', '0xc0eece2c');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(17, 'C6616', '10.1.1.A.1.319', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(17, 'prepare_kernel_cred', '0xc0093de4');
   INSERT INTO device_address(device_id, name, value) VALUES(17, 'commit_creds', '0xc0093908');
   INSERT INTO device_address(device_id, name, value) VALUES(17, 'remap_pfn_range', '0xc01098a4');
   INSERT INTO device_address(device_id, name, value) VALUES(17, 'ptmx_fops', '0xc0d37488');
+  INSERT INTO device_address(device_id, name, value) VALUES(17, 'perf_swevent_enabled', '0xc0d1fcb4');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(18, 'C6606', '10.1.1.B.0.166', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(18, 'prepare_kernel_cred', '0xc0093dd4');
   INSERT INTO device_address(device_id, name, value) VALUES(18, 'commit_creds', '0xc00938f8');
   INSERT INTO device_address(device_id, name, value) VALUES(18, 'remap_pfn_range', '0xc0109894');
   INSERT INTO device_address(device_id, name, value) VALUES(18, 'ptmx_fops', '0xc0d37488');
+  INSERT INTO device_address(device_id, name, value) VALUES(18, 'perf_swevent_enabled', '0xc0d1fcb4');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(19, 'C6603', '10.3.A.0.423', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(19, 'prepare_kernel_cred', '0xc009a740');
   INSERT INTO device_address(device_id, name, value) VALUES(19, 'commit_creds', '0xc009a264');
   INSERT INTO device_address(device_id, name, value) VALUES(19, 'remap_pfn_range', '0xc0111f48');
   INSERT INTO device_address(device_id, name, value) VALUES(19, 'ptmx_fops', '0xc0e46fd0');
+  INSERT INTO device_address(device_id, name, value) VALUES(19, 'perf_swevent_enabled', '0xc0e27e74');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(20, 'C6602', '10.3.A.0.423', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(20, 'prepare_kernel_cred', '0xc009a740');
   INSERT INTO device_address(device_id, name, value) VALUES(20, 'commit_creds', '0xc009a264');
   INSERT INTO device_address(device_id, name, value) VALUES(20, 'remap_pfn_range', '0xc0111f48');
   INSERT INTO device_address(device_id, name, value) VALUES(20, 'ptmx_fops', '0xc0e46fd0');
+  INSERT INTO device_address(device_id, name, value) VALUES(20, 'perf_swevent_enabled', '0xc0e27e74');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(21, 'C6603', '10.1.1.A.1.307', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(21, 'prepare_kernel_cred', '0xc0093dd4');
   INSERT INTO device_address(device_id, name, value) VALUES(21, 'commit_creds', '0xc00938f8');
   INSERT INTO device_address(device_id, name, value) VALUES(21, 'remap_pfn_range', '0xc0109894');
   INSERT INTO device_address(device_id, name, value) VALUES(21, 'ptmx_fops', '0xc0d37488');
+  INSERT INTO device_address(device_id, name, value) VALUES(21, 'perf_swevent_enabled', '0xc0d1fcb4');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(22, 'C6602', '10.1.1.A.1.307', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(22, 'prepare_kernel_cred', '0xc0093dd4');
   INSERT INTO device_address(device_id, name, value) VALUES(22, 'commit_creds', '0xc00938f8');
   INSERT INTO device_address(device_id, name, value) VALUES(22, 'remap_pfn_range', '0xc0109894');
   INSERT INTO device_address(device_id, name, value) VALUES(22, 'ptmx_fops', '0xc0d37488');
+  INSERT INTO device_address(device_id, name, value) VALUES(22, 'perf_swevent_enabled', '0xc0d1fcb4');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(23, 'C6603', '10.1.1.A.1.253', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(23, 'prepare_kernel_cred', '0xc0093dd4');
   INSERT INTO device_address(device_id, name, value) VALUES(23, 'commit_creds', '0xc00938f8');
   INSERT INTO device_address(device_id, name, value) VALUES(23, 'remap_pfn_range', '0xc0109894');
   INSERT INTO device_address(device_id, name, value) VALUES(23, 'ptmx_fops', '0xc0d37488');
+  INSERT INTO device_address(device_id, name, value) VALUES(23, 'perf_swevent_enabled', '0xc0d1fcb4');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(24, 'C6602', '10.1.1.A.1.253', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(24, 'prepare_kernel_cred', '0xc0093dd4');
   INSERT INTO device_address(device_id, name, value) VALUES(24, 'commit_creds', '0xc00938f8');
   INSERT INTO device_address(device_id, name, value) VALUES(24, 'remap_pfn_range', '0xc0109894');
   INSERT INTO device_address(device_id, name, value) VALUES(24, 'ptmx_fops', '0xc0d37488');
+  INSERT INTO device_address(device_id, name, value) VALUES(24, 'perf_swevent_enabled', '0xc0d1fcb4');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(25, 'C6503', '10.3.A.0.423', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(25, 'prepare_kernel_cred', '0xc009ae60');
   INSERT INTO device_address(device_id, name, value) VALUES(25, 'commit_creds', '0xc009a984');
   INSERT INTO device_address(device_id, name, value) VALUES(25, 'remap_pfn_range', '0xc0112668');
   INSERT INTO device_address(device_id, name, value) VALUES(25, 'ptmx_fops', '0xc0e46ce0');
+  INSERT INTO device_address(device_id, name, value) VALUES(25, 'perf_swevent_enabled', '0xc0e27c74');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(26, 'C6502', '10.3.A.0.423', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(26, 'prepare_kernel_cred', '0xc009ae60');
   INSERT INTO device_address(device_id, name, value) VALUES(26, 'commit_creds', '0xc009a984');
   INSERT INTO device_address(device_id, name, value) VALUES(26, 'remap_pfn_range', '0xc0112668');
   INSERT INTO device_address(device_id, name, value) VALUES(26, 'ptmx_fops', '0xc0e46ce0');
+  INSERT INTO device_address(device_id, name, value) VALUES(26, 'perf_swevent_enabled', '0xc0e27c74');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(27, 'C6506', '10.3.A.0.423', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(27, 'prepare_kernel_cred', '0xc009ae60');
   INSERT INTO device_address(device_id, name, value) VALUES(27, 'commit_creds', '0xc009a984');
   INSERT INTO device_address(device_id, name, value) VALUES(27, 'remap_pfn_range', '0xc0112668');
   INSERT INTO device_address(device_id, name, value) VALUES(27, 'ptmx_fops', '0xc0e46ce0');
+  INSERT INTO device_address(device_id, name, value) VALUES(27, 'perf_swevent_enabled', '0xc0e27c74');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(28, 'F-02E', 'V16R46A', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(28, 'prepare_kernel_cred', '0xc00a0cdc');
   INSERT INTO device_address(device_id, name, value) VALUES(28, 'commit_creds', '0xc00a0660');
   INSERT INTO device_address(device_id, name, value) VALUES(28, 'remap_pfn_range', '0xc011272c');
   INSERT INTO device_address(device_id, name, value) VALUES(28, 'ptmx_fops', '0xc0ca1ca8');
+  INSERT INTO device_address(device_id, name, value) VALUES(28, 'perf_swevent_enabled', '0xc0c8411c');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(29, 'F-02E', 'V17R48A', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(29, 'prepare_kernel_cred', '0xc00a0cf0');
   INSERT INTO device_address(device_id, name, value) VALUES(29, 'commit_creds', '0xc00a0674');
   INSERT INTO device_address(device_id, name, value) VALUES(29, 'remap_pfn_range', '0xc0112740');
   INSERT INTO device_address(device_id, name, value) VALUES(29, 'ptmx_fops', '0xc0ca1ca8');
+  INSERT INTO device_address(device_id, name, value) VALUES(29, 'perf_swevent_enabled', '0xc0c8411c');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(30, 'F-02E', 'V19R50D', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(30, 'prepare_kernel_cred', '0xc00a0cec');
@@ -242,6 +271,7 @@ INSERT INTO supported_devices(device_id, device, build_id, check_property_name, 
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(40, 'F-10D', 'V21R48A', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(40, 'ptmx_fops', '0xc09a60e0');
+  INSERT INTO device_address(device_id, name, value) VALUES(40, 'perf_swevent_enabled', '0xc09882f4');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(41, 'F-10D', 'V22R49C', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(41, 'ptmx_fops', '0xc09a60bc');
@@ -252,6 +282,7 @@ INSERT INTO supported_devices(device_id, device, build_id, check_property_name, 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(43, 'F-11D', 'V24R40A', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(43, 'ptmx_fops', '0xc1056998');
   INSERT INTO device_address(device_id, name, value) VALUES(43, 'delayed_rsp_id', '0xc091bf8c');
+  INSERT INTO device_address(device_id, name, value) VALUES(43, 'perf_swevent_enabled', '0xc104cf1c');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(44, 'F-11D', 'V26R42B', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(44, 'delayed_rsp_id', '0xc091bf8c');
@@ -261,12 +292,15 @@ INSERT INTO supported_devices(device_id, device, build_id, check_property_name, 
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(46, 'FJL21', 'V23R39X', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(46, 'ptmx_fops', '0xc0ee31f8');
+  INSERT INTO device_address(device_id, name, value) VALUES(46, 'perf_swevent_enabled', '0xc0ec1da0');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(47, 'FJL21', 'V37R47A', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(47, 'ptmx_fops', '0xc0ee3378');
+  INSERT INTO device_address(device_id, name, value) VALUES(47, 'perf_swevent_enabled', '0xc0ec1f20');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(48, 'FJL21', 'V39R48C', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(48, 'ptmx_fops', '0xc0ee3378');
+  INSERT INTO device_address(device_id, name, value) VALUES(48, 'perf_swevent_enabled', '0xc0ec1f20');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(49, 'HTC6600LVW', 'JSS15J', 'ro.aa.romver', '1.11.605.4');
   INSERT INTO device_address(device_id, name, value) VALUES(49, 'prepare_kernel_cred', '0xc00c3638');
@@ -281,6 +315,7 @@ INSERT INTO supported_devices(device_id, device, build_id, check_property_name, 
   INSERT INTO device_address(device_id, name, value) VALUES(50, 'remap_pfn_range', '0xc00ff32c');
   INSERT INTO device_address(device_id, name, value) VALUES(50, 'vmalloc_exec', '0xc010b728');
   INSERT INTO device_address(device_id, name, value) VALUES(50, 'ptmx_fops', '0xc0d1d944');
+  INSERT INTO device_address(device_id, name, value) VALUES(50, 'perf_swevent_enabled', '0xc0d07a7c');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(51, 'HTL21', 'JRO03C', 'ro.aa.romver', '1.36.970.1');
   INSERT INTO device_address(device_id, name, value) VALUES(51, 'prepare_kernel_cred', '0xc00abd48');
@@ -301,12 +336,14 @@ INSERT INTO supported_devices(device_id, device, build_id, check_property_name, 
   INSERT INTO device_address(device_id, name, value) VALUES(53, 'commit_creds', '0xc00b2174');
   INSERT INTO device_address(device_id, name, value) VALUES(53, 'remap_pfn_range', '0xc0128b10');
   INSERT INTO device_address(device_id, name, value) VALUES(53, 'ptmx_fops', '0xc0df467c');
+  INSERT INTO device_address(device_id, name, value) VALUES(53, 'perf_swevent_enabled', '0xc0ddd7a4');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(54, 'HTL22', 'JZO54K', 'ro.aa.romver', '1.07.970.4');
   INSERT INTO device_address(device_id, name, value) VALUES(54, 'prepare_kernel_cred', '0xc00b26a0');
   INSERT INTO device_address(device_id, name, value) VALUES(54, 'commit_creds', '0xc00b218c');
   INSERT INTO device_address(device_id, name, value) VALUES(54, 'remap_pfn_range', '0xc0128b28');
   INSERT INTO device_address(device_id, name, value) VALUES(54, 'ptmx_fops', '0xc0df52bc');
+  INSERT INTO device_address(device_id, name, value) VALUES(54, 'perf_swevent_enabled', '0xc0dde3e4');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(55, 'HTL22', 'JDQ39', 'ro.aa.romver', '2.15.970.1');
   INSERT INTO device_address(device_id, name, value) VALUES(55, 'prepare_kernel_cred', '0xc00b3664');
@@ -327,6 +364,7 @@ INSERT INTO supported_devices(device_id, device, build_id, check_property_name, 
   INSERT INTO device_address(device_id, name, value) VALUES(57, 'commit_creds', '0xc00a6940');
   INSERT INTO device_address(device_id, name, value) VALUES(57, 'remap_pfn_range', '0xc00fa8b0');
   INSERT INTO device_address(device_id, name, value) VALUES(57, 'ptmx_fops', '0xc0ccc0b4');
+  INSERT INTO device_address(device_id, name, value) VALUES(57, 'perf_swevent_enabled', '0xc0cb513c');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(58, 'HTX21', 'JRO03C', 'ro.aa.romver', '1.25.971.1');
   INSERT INTO device_address(device_id, name, value) VALUES(58, 'prepare_kernel_cred', '0xc00a7460');
@@ -342,6 +380,7 @@ INSERT INTO supported_devices(device_id, device, build_id, check_property_name, 
   INSERT INTO device_address(device_id, name, value) VALUES(60, 'commit_creds', '0xc01b6348');
   INSERT INTO device_address(device_id, name, value) VALUES(60, 'remap_pfn_range', '0xc02259c4');
   INSERT INTO device_address(device_id, name, value) VALUES(60, 'ptmx_fops', '0xc0c9b7c0');
+  INSERT INTO device_address(device_id, name, value) VALUES(60, 'perf_swevent_enabled', '0xc0c902e8');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(61, 'IS12S', '6.1.D.1.103', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(61, 'prepare_kernel_cred', '0xc01b6a58');
@@ -354,6 +393,7 @@ INSERT INTO supported_devices(device_id, device, build_id, check_property_name, 
   INSERT INTO device_address(device_id, name, value) VALUES(62, 'commit_creds', '0xc01c643c');
   INSERT INTO device_address(device_id, name, value) VALUES(62, 'remap_pfn_range', '0xc0208980');
   INSERT INTO device_address(device_id, name, value) VALUES(62, 'ptmx_fops', '0xc0edaf90');
+  INSERT INTO device_address(device_id, name, value) VALUES(62, 'perf_swevent_enabled', '0xc0ecc17c');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(63, 'IS17SH', '01.00.03', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(63, 'delayed_rsp_id', '0xc0a546fc');
@@ -365,6 +405,7 @@ INSERT INTO supported_devices(device_id, device, build_id, check_property_name, 
   INSERT INTO device_address(device_id, name, value) VALUES(64, 'remap_pfn_range', '0xc0208a34');
   INSERT INTO device_address(device_id, name, value) VALUES(64, 'vmalloc_exec', '0xc0212b70');
   INSERT INTO device_address(device_id, name, value) VALUES(64, 'ptmx_fops', '0xc0edae90');
+  INSERT INTO device_address(device_id, name, value) VALUES(64, 'perf_swevent_enabled', '0xc0ecbebc');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(65, 'ISW11F', 'FIK700', 'gsm.version.baseband', 'V25R45A');
   INSERT INTO device_address(device_id, name, value) VALUES(65, 'ptmx_fops', '0xc080e268');
@@ -378,25 +419,32 @@ INSERT INTO supported_devices(device_id, device, build_id, check_property_name, 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(68, 'URBANO PROGRESSO', '010.0.3000', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(68, 'ptmx_fops', '0xc0dc0a10');
   INSERT INTO device_address(device_id, name, value) VALUES(68, 'delayed_rsp_id', '0xc0935104');
+  INSERT INTO device_address(device_id, name, value) VALUES(68, 'perf_swevent_enabled', '0xc0db6244');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(69, 'URBANO PROGRESSO', '011.0.3100', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(69, 'ptmx_fops', '0xc0dc0a10');
+  INSERT INTO device_address(device_id, name, value) VALUES(69, 'perf_swevent_enabled', '0xc0db6244');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(70, 'ISW13F', 'V69R51I', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(70, 'ptmx_fops', '0xc09fc600');
+  INSERT INTO device_address(device_id, name, value) VALUES(70, 'perf_swevent_enabled', '0xc09de374');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(71, 'ISW13F', 'V75R58A', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(71, 'ptmx_fops', '0xc09fa200');
+  INSERT INTO device_address(device_id, name, value) VALUES(71, 'perf_swevent_enabled', '0xc09dbf74');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(72, 'ISW13HT', 'IMM76D', 'ro.aa.romver', '2.06.970.4');
   INSERT INTO device_address(device_id, name, value) VALUES(72, 'prepare_kernel_cred', '0xc01a3be0');
   INSERT INTO device_address(device_id, name, value) VALUES(72, 'commit_creds', '0xc01a3494');
   INSERT INTO device_address(device_id, name, value) VALUES(72, 'remap_pfn_range', '0xc0205c80');
   INSERT INTO device_address(device_id, name, value) VALUES(72, 'ptmx_fops', '0xc127a8b0');
+  INSERT INTO device_address(device_id, name, value) VALUES(72, 'perf_swevent_enabled', '0xc126e608');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(73, 'L-01D', 'IMM76D', 'ro.lge.swversion', 'L01D-V20c-AUG-29-2012');
+  INSERT INTO device_address(device_id, name, value) VALUES(73, 'perf_swevent_enabled', '0xc1140768');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(74, 'L-01D', 'IMM76D', 'ro.lge.swversion', 'L01D-V20d-FEB-15-2013');
+  INSERT INTO device_address(device_id, name, value) VALUES(74, 'perf_swevent_enabled', '0xc1140768');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(75, 'L-01D', 'IMM76D', 'ro.lge.swversion', 'L01D-V20e-OCT-22-2013');
 
@@ -405,6 +453,7 @@ INSERT INTO supported_devices(device_id, device, build_id, check_property_name, 
   INSERT INTO device_address(device_id, name, value) VALUES(76, 'commit_creds', '0xc01aa570');
   INSERT INTO device_address(device_id, name, value) VALUES(76, 'remap_pfn_range', '0xc020d08c');
   INSERT INTO device_address(device_id, name, value) VALUES(76, 'ptmx_fops', '0xc0e715c8');
+  INSERT INTO device_address(device_id, name, value) VALUES(76, 'perf_swevent_enabled', '0xc0e59920');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(77, 'L-01F', 'JDQ39B', 'ro.lge.swversion', 'L01F10c');
   INSERT INTO device_address(device_id, name, value) VALUES(77, 'prepare_kernel_cred', '0xc00c37a8');
@@ -414,8 +463,10 @@ INSERT INTO supported_devices(device_id, device, build_id, check_property_name, 
   INSERT INTO device_address(device_id, name, value) VALUES(77, 'ptmx_fops', '0xc101c490');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(78, 'L-02E', 'IMM76L', 'ro.lge.swversion', 'L02E10c');
+  INSERT INTO device_address(device_id, name, value) VALUES(78, 'perf_swevent_enabled', '0xc0c61038');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(79, 'L-02E', 'IMM76L', 'ro.lge.swversion', 'L02E10e');
+  INSERT INTO device_address(device_id, name, value) VALUES(79, 'perf_swevent_enabled', '0xc0c61038');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(80, 'L-01E', 'JZO54K', 'ro.lge.swversion', 'L01E20b');
   INSERT INTO device_address(device_id, name, value) VALUES(80, 'prepare_kernel_cred', '0xc009c310');
@@ -430,6 +481,7 @@ INSERT INTO supported_devices(device_id, device, build_id, check_property_name, 
   INSERT INTO device_address(device_id, name, value) VALUES(81, 'remap_pfn_range', '0xc01269e0');
   INSERT INTO device_address(device_id, name, value) VALUES(81, 'vmalloc_exec', '0xc01344fc');
   INSERT INTO device_address(device_id, name, value) VALUES(81, 'ptmx_fops', '0xc0d926e0');
+  INSERT INTO device_address(device_id, name, value) VALUES(81, 'perf_swevent_enabled', '0xc0d744ec');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(82, 'L-05D', 'JZO54K', 'ro.lge.swversion', 'L05D20c');
   INSERT INTO device_address(device_id, name, value) VALUES(82, 'prepare_kernel_cred', '0xc00a2278');
@@ -438,8 +490,10 @@ INSERT INTO supported_devices(device_id, device, build_id, check_property_name, 
   INSERT INTO device_address(device_id, name, value) VALUES(82, 'ptmx_fops', '0xc0d885a8');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(83, 'L-06D', 'IMM76D', 'ro.lge.swversion', 'L06D-V10h-JUL-19-2012');
+  INSERT INTO device_address(device_id, name, value) VALUES(83, 'perf_swevent_enabled', '0xc12effa8');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(84, 'L-06D', 'IMM76D', 'ro.lge.swversion', 'L06D-V10k-OCT-17-2012');
+  INSERT INTO device_address(device_id, name, value) VALUES(84, 'perf_swevent_enabled', '0xc12f00e8');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(85, 'L-06D', 'IMM76D', 'ro.lge.swversion', 'L06D-V10p-OCT-09-2013');
 
@@ -448,30 +502,35 @@ INSERT INTO supported_devices(device_id, device, build_id, check_property_name, 
   INSERT INTO device_address(device_id, name, value) VALUES(86, 'commit_creds', '0xc00a0b6c');
   INSERT INTO device_address(device_id, name, value) VALUES(86, 'remap_pfn_range', '0xc0116598');
   INSERT INTO device_address(device_id, name, value) VALUES(86, 'ptmx_fops', '0xc0f9da70');
+  INSERT INTO device_address(device_id, name, value) VALUES(86, 'perf_swevent_enabled', '0xc0f84234');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(87, 'LT28h', '6.2.B.0.211', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(87, 'prepare_kernel_cred', '0xc00c94f8');
   INSERT INTO device_address(device_id, name, value) VALUES(87, 'commit_creds', '0xc00c901c');
   INSERT INTO device_address(device_id, name, value) VALUES(87, 'remap_pfn_range', '0xc014d170');
   INSERT INTO device_address(device_id, name, value) VALUES(87, 'ptmx_fops', '0xc117e328');
+  INSERT INTO device_address(device_id, name, value) VALUES(87, 'perf_swevent_enabled', '0xc1169ef4');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(88, 'LT28i', '6.2.B.0.211', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(88, 'prepare_kernel_cred', '0xc00c94f8');
   INSERT INTO device_address(device_id, name, value) VALUES(88, 'commit_creds', '0xc00c901c');
   INSERT INTO device_address(device_id, name, value) VALUES(88, 'remap_pfn_range', '0xc014d170');
   INSERT INTO device_address(device_id, name, value) VALUES(88, 'ptmx_fops', '0xc117e328');
+  INSERT INTO device_address(device_id, name, value) VALUES(88, 'perf_swevent_enabled', '0xc1169ef4');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(89, 'LT26i', '6.2.B.0.200', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(89, 'prepare_kernel_cred', '0xc00b19c8');
   INSERT INTO device_address(device_id, name, value) VALUES(89, 'commit_creds', '0xc00b14ec');
   INSERT INTO device_address(device_id, name, value) VALUES(89, 'remap_pfn_range', '0xc0135640');
   INSERT INTO device_address(device_id, name, value) VALUES(89, 'ptmx_fops', '0xc0cc37e8');
+  INSERT INTO device_address(device_id, name, value) VALUES(89, 'perf_swevent_enabled', '0xc0caf3b4');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(90, 'LT26i', '6.2.B.0.211', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(90, 'prepare_kernel_cred', '0xc00b19d8');
   INSERT INTO device_address(device_id, name, value) VALUES(90, 'commit_creds', '0xc00b14fc');
   INSERT INTO device_address(device_id, name, value) VALUES(90, 'remap_pfn_range', '0xc0135650');
   INSERT INTO device_address(device_id, name, value) VALUES(90, 'ptmx_fops', '0xc0cc37e8');
+  INSERT INTO device_address(device_id, name, value) VALUES(90, 'perf_swevent_enabled', '0xc0caf3b4');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(91, 'LT26i', '6.2.B.1.96', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(91, 'prepare_kernel_cred', '0xc00acc54');
@@ -485,12 +544,14 @@ INSERT INTO supported_devices(device_id, device, build_id, check_property_name, 
   INSERT INTO device_address(device_id, name, value) VALUES(92, 'commit_creds', '0xc00b14ec');
   INSERT INTO device_address(device_id, name, value) VALUES(92, 'remap_pfn_range', '0xc0135640');
   INSERT INTO device_address(device_id, name, value) VALUES(92, 'ptmx_fops', '0xc0cc37e8');
+  INSERT INTO device_address(device_id, name, value) VALUES(92, 'perf_swevent_enabled', '0xc0caf3b4');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(93, 'LT26ii', '6.2.B.0.211', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(93, 'prepare_kernel_cred', '0xc00b19d8');
   INSERT INTO device_address(device_id, name, value) VALUES(93, 'commit_creds', '0xc00b14fc');
   INSERT INTO device_address(device_id, name, value) VALUES(93, 'remap_pfn_range', '0xc0135650');
   INSERT INTO device_address(device_id, name, value) VALUES(93, 'ptmx_fops', '0xc0cc37e8');
+  INSERT INTO device_address(device_id, name, value) VALUES(93, 'perf_swevent_enabled', '0xc0caf3b4');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(94, 'LT26w', '6.2.B.0.200', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(94, 'prepare_kernel_cred', '0xc00b261c');
@@ -498,18 +559,21 @@ INSERT INTO supported_devices(device_id, device, build_id, check_property_name, 
   INSERT INTO device_address(device_id, name, value) VALUES(94, 'remap_pfn_range', '0xc0136294');
   INSERT INTO device_address(device_id, name, value) VALUES(94, 'vmalloc_exec', '0xc0143f98');
   INSERT INTO device_address(device_id, name, value) VALUES(94, 'ptmx_fops', '0xc0cc3dc0');
+  INSERT INTO device_address(device_id, name, value) VALUES(94, 'perf_swevent_enabled', '0xc0cafa74');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(95, 'LT26w', '6.2.B.0.211', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(95, 'prepare_kernel_cred', '0xc00b262c');
   INSERT INTO device_address(device_id, name, value) VALUES(95, 'commit_creds', '0xc00b2150');
   INSERT INTO device_address(device_id, name, value) VALUES(95, 'remap_pfn_range', '0xc01362a4');
   INSERT INTO device_address(device_id, name, value) VALUES(95, 'ptmx_fops', '0xc0cc3dc0');
+  INSERT INTO device_address(device_id, name, value) VALUES(95, 'perf_swevent_enabled', '0xc0cafa74');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(96, 'LT22i', '6.2.A.1.100', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(96, 'prepare_kernel_cred', '0xc00c37c8');
   INSERT INTO device_address(device_id, name, value) VALUES(96, 'commit_creds', '0xc00c33f8');
   INSERT INTO device_address(device_id, name, value) VALUES(96, 'remap_pfn_range', '0xc0136358');
   INSERT INTO device_address(device_id, name, value) VALUES(96, 'ptmx_fops', '0xc09dbed8');
+  INSERT INTO device_address(device_id, name, value) VALUES(96, 'perf_swevent_enabled', '0xc09d4110');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(97, 'P-02E', '10.0657', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(97, 'prepare_kernel_cred', '0xc009b868');
@@ -558,54 +622,63 @@ INSERT INTO supported_devices(device_id, device, build_id, check_property_name, 
   INSERT INTO device_address(device_id, name, value) VALUES(103, 'commit_creds', '0xc00cda94');
   INSERT INTO device_address(device_id, name, value) VALUES(103, 'remap_pfn_range', '0xc01124bc');
   INSERT INTO device_address(device_id, name, value) VALUES(103, 'ptmx_fops', '0xc095a46c');
+  INSERT INTO device_address(device_id, name, value) VALUES(103, 'perf_swevent_enabled', '0xc09500cc');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(104, 'ST23i', '11.0.A.5.8', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(104, 'prepare_kernel_cred', '0xc00cd94c');
   INSERT INTO device_address(device_id, name, value) VALUES(104, 'commit_creds', '0xc00cda94');
   INSERT INTO device_address(device_id, name, value) VALUES(104, 'remap_pfn_range', '0xc01124bc');
   INSERT INTO device_address(device_id, name, value) VALUES(104, 'ptmx_fops', '0xc095846c');
+  INSERT INTO device_address(device_id, name, value) VALUES(104, 'perf_swevent_enabled', '0xc094e0cc');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(105, 'ST27i', '6.2.A.1.100', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(105, 'prepare_kernel_cred', '0xc00c314c');
   INSERT INTO device_address(device_id, name, value) VALUES(105, 'commit_creds', '0xc00c2d7c');
   INSERT INTO device_address(device_id, name, value) VALUES(105, 'remap_pfn_range', '0xc01366ec');
   INSERT INTO device_address(device_id, name, value) VALUES(105, 'ptmx_fops', '0xc09b98e0');
+  INSERT INTO device_address(device_id, name, value) VALUES(105, 'perf_swevent_enabled', '0xc09b1a70');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(106, 'ST27a', '6.2.A.1.100', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(106, 'prepare_kernel_cred', '0xc00c314c');
   INSERT INTO device_address(device_id, name, value) VALUES(106, 'commit_creds', '0xc00c2d7c');
   INSERT INTO device_address(device_id, name, value) VALUES(106, 'remap_pfn_range', '0xc01366ec');
   INSERT INTO device_address(device_id, name, value) VALUES(106, 'ptmx_fops', '0xc09b98e0');
+  INSERT INTO device_address(device_id, name, value) VALUES(106, 'perf_swevent_enabled', '0xc09b1a70');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(107, 'ST26i', '11.2.A.0.21', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(107, 'prepare_kernel_cred', '0xc00af59c');
   INSERT INTO device_address(device_id, name, value) VALUES(107, 'commit_creds', '0xc00af25c');
   INSERT INTO device_address(device_id, name, value) VALUES(107, 'remap_pfn_range', '0xc00fa38c');
   INSERT INTO device_address(device_id, name, value) VALUES(107, 'ptmx_fops', '0xc09b36dc');
+  INSERT INTO device_address(device_id, name, value) VALUES(107, 'perf_swevent_enabled', '0xc09ac210');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(108, 'ST26a', '11.2.A.0.21', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(108, 'prepare_kernel_cred', '0xc00af59c');
   INSERT INTO device_address(device_id, name, value) VALUES(108, 'commit_creds', '0xc00af25c');
   INSERT INTO device_address(device_id, name, value) VALUES(108, 'remap_pfn_range', '0xc00fa38c');
   INSERT INTO device_address(device_id, name, value) VALUES(108, 'ptmx_fops', '0xc09b36dc');
+  INSERT INTO device_address(device_id, name, value) VALUES(108, 'perf_swevent_enabled', '0xc09ac210');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(109, 'ST26i', '11.2.A.0.31', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(109, 'prepare_kernel_cred', '0xc00af58c');
   INSERT INTO device_address(device_id, name, value) VALUES(109, 'commit_creds', '0xc00af24c');
   INSERT INTO device_address(device_id, name, value) VALUES(109, 'remap_pfn_range', '0xc00fa37c');
   INSERT INTO device_address(device_id, name, value) VALUES(109, 'ptmx_fops', '0xc098365c');
+  INSERT INTO device_address(device_id, name, value) VALUES(109, 'perf_swevent_enabled', '0xc097c1d0');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(110, 'ST26a', '11.2.A.0.31', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(110, 'prepare_kernel_cred', '0xc00af58c');
   INSERT INTO device_address(device_id, name, value) VALUES(110, 'commit_creds', '0xc00af24c');
   INSERT INTO device_address(device_id, name, value) VALUES(110, 'remap_pfn_range', '0xc00fa37c');
   INSERT INTO device_address(device_id, name, value) VALUES(110, 'ptmx_fops', '0xc098365c');
+  INSERT INTO device_address(device_id, name, value) VALUES(110, 'perf_swevent_enabled', '0xc097c1d0');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(111, 'N-02E', 'A3002501', NULL, NULL);
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(112, 'N-02E', 'A3002601', NULL, NULL);
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(113, 'N-02E', 'A5000331', NULL, NULL);
+  INSERT INTO device_address(device_id, name, value) VALUES(113, 'perf_swevent_enabled', '0xc0f3d3a0');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(114, 'N-02E', 'A5002501', NULL, NULL);
 
@@ -622,6 +695,7 @@ INSERT INTO supported_devices(device_id, device, build_id, check_property_name, 
   INSERT INTO device_address(device_id, name, value) VALUES(117, 'commit_creds', '0xc01aadc8');
   INSERT INTO device_address(device_id, name, value) VALUES(117, 'remap_pfn_range', '0xc020d9ac');
   INSERT INTO device_address(device_id, name, value) VALUES(117, 'ptmx_fops', '0xc0f702fc');
+  INSERT INTO device_address(device_id, name, value) VALUES(117, 'perf_swevent_enabled', '0xc0f619c4');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(118, 'N-03E', 'A7002001', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(118, 'prepare_kernel_cred', '0xc01ab5b8');
@@ -648,6 +722,7 @@ INSERT INTO supported_devices(device_id, device, build_id, check_property_name, 
   INSERT INTO device_address(device_id, name, value) VALUES(121, 'commit_creds', '0xc0093ebc');
   INSERT INTO device_address(device_id, name, value) VALUES(121, 'remap_pfn_range', '0xc0105800');
   INSERT INTO device_address(device_id, name, value) VALUES(121, 'ptmx_fops', '0xc0f58700');
+  INSERT INTO device_address(device_id, name, value) VALUES(121, 'perf_swevent_enabled', '0xc0f408f4');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(122, 'SC-01E', 'IMM76D.SC01EOMALJ3', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(122, 'prepare_kernel_cred', '0xc01244b8');
@@ -655,12 +730,14 @@ INSERT INTO supported_devices(device_id, device, build_id, check_property_name, 
   INSERT INTO device_address(device_id, name, value) VALUES(122, 'remap_pfn_range', '0xc0192124');
   INSERT INTO device_address(device_id, name, value) VALUES(122, 'ptmx_fops', '0xc10a5a48');
   INSERT INTO device_address(device_id, name, value) VALUES(122, 'delayed_rsp_id', '0xc0bdfae0');
+  INSERT INTO device_address(device_id, name, value) VALUES(122, 'perf_swevent_enabled', '0xc1096fc8');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(123, 'SC-01E', 'IMM76D.SC01EOMAMF2', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(123, 'prepare_kernel_cred', '0xc01244d0');
   INSERT INTO device_address(device_id, name, value) VALUES(123, 'commit_creds', '0xc0123d84');
   INSERT INTO device_address(device_id, name, value) VALUES(123, 'remap_pfn_range', '0xc019215c');
   INSERT INTO device_address(device_id, name, value) VALUES(123, 'ptmx_fops', '0xc10a5a48');
+  INSERT INTO device_address(device_id, name, value) VALUES(123, 'perf_swevent_enabled', '0xc1096fc8');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(124, 'SC-04E', 'JDQ39.SC04EOMUAMDI', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(124, 'prepare_kernel_cred', '0xc0096068');
@@ -668,6 +745,7 @@ INSERT INTO supported_devices(device_id, device, build_id, check_property_name, 
   INSERT INTO device_address(device_id, name, value) VALUES(124, 'remap_pfn_range', '0xc011383c');
   INSERT INTO device_address(device_id, name, value) VALUES(124, 'vmalloc_exec', '0xc01206d8');
   INSERT INTO device_address(device_id, name, value) VALUES(124, 'ptmx_fops', '0xc1169808');
+  INSERT INTO device_address(device_id, name, value) VALUES(124, 'perf_swevent_enabled', '0xc11489d4');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(125, 'SC-04E', 'JDQ39.SC04EOMUAMF1', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(125, 'prepare_kernel_cred', '0xc00960d0');
@@ -675,6 +753,7 @@ INSERT INTO supported_devices(device_id, device, build_id, check_property_name, 
   INSERT INTO device_address(device_id, name, value) VALUES(125, 'remap_pfn_range', '0xc01138a4');
   INSERT INTO device_address(device_id, name, value) VALUES(125, 'vmalloc_exec', '0xc0120740');
   INSERT INTO device_address(device_id, name, value) VALUES(125, 'ptmx_fops', '0xc1169848');
+  INSERT INTO device_address(device_id, name, value) VALUES(125, 'perf_swevent_enabled', '0xc1148a14');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(126, 'SC-04E', 'JDQ39.SC04EOMUAMF2', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(126, 'prepare_kernel_cred', '0xc00960cc');
@@ -682,6 +761,7 @@ INSERT INTO supported_devices(device_id, device, build_id, check_property_name, 
   INSERT INTO device_address(device_id, name, value) VALUES(126, 'remap_pfn_range', '0xc01138a0');
   INSERT INTO device_address(device_id, name, value) VALUES(126, 'vmalloc_exec', '0xc012073c');
   INSERT INTO device_address(device_id, name, value) VALUES(126, 'ptmx_fops', '0xc1169848');
+  INSERT INTO device_address(device_id, name, value) VALUES(126, 'perf_swevent_enabled', '0xc1148a14');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(127, 'SC-04E', 'JDQ39.SC04EOMUAMG2', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(127, 'prepare_kernel_cred', '0xc00960cc');
@@ -702,36 +782,42 @@ INSERT INTO supported_devices(device_id, device, build_id, check_property_name, 
   INSERT INTO device_address(device_id, name, value) VALUES(130, 'commit_creds', '0xc0093c48');
   INSERT INTO device_address(device_id, name, value) VALUES(130, 'remap_pfn_range', '0xc0109be4');
   INSERT INTO device_address(device_id, name, value) VALUES(130, 'ptmx_fops', '0xc0d36740');
+  INSERT INTO device_address(device_id, name, value) VALUES(130, 'perf_swevent_enabled', '0xc0d1f134');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(131, 'SGP312', '10.1.C.0.370', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(131, 'prepare_kernel_cred', '0xc009363c');
   INSERT INTO device_address(device_id, name, value) VALUES(131, 'commit_creds', '0xc0093160');
   INSERT INTO device_address(device_id, name, value) VALUES(131, 'remap_pfn_range', '0xc01090fc');
   INSERT INTO device_address(device_id, name, value) VALUES(131, 'ptmx_fops', '0xc0d35ca8');
+  INSERT INTO device_address(device_id, name, value) VALUES(131, 'perf_swevent_enabled', '0xc0d1e6b4');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(132, 'SGP311', '10.1.C.0.370', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(132, 'prepare_kernel_cred', '0xc009363c');
   INSERT INTO device_address(device_id, name, value) VALUES(132, 'commit_creds', '0xc0093160');
   INSERT INTO device_address(device_id, name, value) VALUES(132, 'remap_pfn_range', '0xc01090fc');
   INSERT INTO device_address(device_id, name, value) VALUES(132, 'ptmx_fops', '0xc0d35ca8');
+  INSERT INTO device_address(device_id, name, value) VALUES(132, 'perf_swevent_enabled', '0xc0d1e6b4');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(133, 'LT30p', '9.1.A.1.141', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(133, 'prepare_kernel_cred', '0xc0094878');
   INSERT INTO device_address(device_id, name, value) VALUES(133, 'commit_creds', '0xc009439c');
   INSERT INTO device_address(device_id, name, value) VALUES(133, 'remap_pfn_range', '0xc01096e4');
   INSERT INTO device_address(device_id, name, value) VALUES(133, 'ptmx_fops', '0xc0d02b00');
+  INSERT INTO device_address(device_id, name, value) VALUES(133, 'perf_swevent_enabled', '0xc0cedaf4');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(134, 'LT30p', '9.1.A.1.142', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(134, 'prepare_kernel_cred', '0xc0094878');
   INSERT INTO device_address(device_id, name, value) VALUES(134, 'commit_creds', '0xc009439c');
   INSERT INTO device_address(device_id, name, value) VALUES(134, 'remap_pfn_range', '0xc01096e4');
   INSERT INTO device_address(device_id, name, value) VALUES(134, 'ptmx_fops', '0xc0d02b00');
+  INSERT INTO device_address(device_id, name, value) VALUES(134, 'perf_swevent_enabled', '0xc0cedaf4');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(135, 'LT30p', '9.1.A.1.145', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(135, 'prepare_kernel_cred', '0xc0094888');
   INSERT INTO device_address(device_id, name, value) VALUES(135, 'commit_creds', '0xc00943ac');
   INSERT INTO device_address(device_id, name, value) VALUES(135, 'remap_pfn_range', '0xc01096f4');
   INSERT INTO device_address(device_id, name, value) VALUES(135, 'ptmx_fops', '0xc0d02b00');
+  INSERT INTO device_address(device_id, name, value) VALUES(135, 'perf_swevent_enabled', '0xc0cedaf4');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(136, 'LT29i', '9.1.B.0.411', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(136, 'prepare_kernel_cred', '0xc0095dec');
@@ -739,30 +825,35 @@ INSERT INTO supported_devices(device_id, device, build_id, check_property_name, 
   INSERT INTO device_address(device_id, name, value) VALUES(136, 'remap_pfn_range', '0xc010ac30');
   INSERT INTO device_address(device_id, name, value) VALUES(136, 'vmalloc_exec', '0xc01177e0');
   INSERT INTO device_address(device_id, name, value) VALUES(136, 'ptmx_fops', '0xc0d01f60');
+  INSERT INTO device_address(device_id, name, value) VALUES(136, 'perf_swevent_enabled', '0xc0cecd74');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(137, 'LT29i', '9.1.B.1.67', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(137, 'prepare_kernel_cred', '0xc0095ca4');
   INSERT INTO device_address(device_id, name, value) VALUES(137, 'commit_creds', '0xc00957c8');
   INSERT INTO device_address(device_id, name, value) VALUES(137, 'remap_pfn_range', '0xc010aaec');
   INSERT INTO device_address(device_id, name, value) VALUES(137, 'ptmx_fops', '0xc0d01f60');
+  INSERT INTO device_address(device_id, name, value) VALUES(137, 'perf_swevent_enabled', '0xc0cecd74');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(138, 'LT25i', '9.1.A.1.140', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(138, 'prepare_kernel_cred', '0xc0097f20');
   INSERT INTO device_address(device_id, name, value) VALUES(138, 'commit_creds', '0xc0097a44');
   INSERT INTO device_address(device_id, name, value) VALUES(138, 'remap_pfn_range', '0xc010dcfc');
   INSERT INTO device_address(device_id, name, value) VALUES(138, 'ptmx_fops', '0xc0d032f8');
+  INSERT INTO device_address(device_id, name, value) VALUES(138, 'perf_swevent_enabled', '0xc0cee1f4');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(139, 'LT25i', '9.1.A.1.142', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(139, 'prepare_kernel_cred', '0xc0097dd8');
   INSERT INTO device_address(device_id, name, value) VALUES(139, 'commit_creds', '0xc00978fc');
   INSERT INTO device_address(device_id, name, value) VALUES(139, 'remap_pfn_range', '0xc010dbb4');
   INSERT INTO device_address(device_id, name, value) VALUES(139, 'ptmx_fops', '0xc0d032b8');
+  INSERT INTO device_address(device_id, name, value) VALUES(139, 'perf_swevent_enabled', '0xc0cee1b4');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(140, 'LT25i', '9.1.A.1.145', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(140, 'prepare_kernel_cred', '0xc0097de8');
   INSERT INTO device_address(device_id, name, value) VALUES(140, 'commit_creds', '0xc009790c');
   INSERT INTO device_address(device_id, name, value) VALUES(140, 'remap_pfn_range', '0xc010dbc4');
   INSERT INTO device_address(device_id, name, value) VALUES(140, 'ptmx_fops', '0xc0d032b8');
+  INSERT INTO device_address(device_id, name, value) VALUES(140, 'perf_swevent_enabled', '0xc0cee1b4');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(141, 'SBM203SH', 'S0024', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(141, 'kernel_physical_offset', '0x80208000');
@@ -790,6 +881,7 @@ INSERT INTO supported_devices(device_id, device, build_id, check_property_name, 
   INSERT INTO device_address(device_id, name, value) VALUES(144, 'remap_pfn_range', '0xc00e458c');
   INSERT INTO device_address(device_id, name, value) VALUES(144, 'vmalloc_exec', '0xc00f10d4');
   INSERT INTO device_address(device_id, name, value) VALUES(144, 'ptmx_fops', '0xc0eed190');
+  INSERT INTO device_address(device_id, name, value) VALUES(144, 'perf_swevent_enabled', '0xc0ed41ec');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(145, 'SH-04E', '01.00.03', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(145, 'kernel_physical_offset', '0x80208000');
@@ -798,6 +890,7 @@ INSERT INTO supported_devices(device_id, device, build_id, check_property_name, 
   INSERT INTO device_address(device_id, name, value) VALUES(145, 'remap_pfn_range', '0xc00e46bc');
   INSERT INTO device_address(device_id, name, value) VALUES(145, 'vmalloc_exec', '0xc00f1204');
   INSERT INTO device_address(device_id, name, value) VALUES(145, 'ptmx_fops', '0xc0eed190');
+  INSERT INTO device_address(device_id, name, value) VALUES(145, 'perf_swevent_enabled', '0xc0ed41ec');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(146, 'SH-04E', '01.00.04', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(146, 'kernel_physical_offset', '0x80208000');
@@ -886,63 +979,74 @@ INSERT INTO supported_devices(device_id, device, build_id, check_property_name, 
   INSERT INTO device_address(device_id, name, value) VALUES(156, 'remap_pfn_range', '0xc00e29e0');
   INSERT INTO device_address(device_id, name, value) VALUES(156, 'vmalloc_exec', '0xc00ef528');
   INSERT INTO device_address(device_id, name, value) VALUES(156, 'ptmx_fops', '0xc0dd8810');
+  INSERT INTO device_address(device_id, name, value) VALUES(156, 'perf_swevent_enabled', '0xc0dbc96c');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(157, 'SO-01E', '9.1.C.0.473', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(157, 'prepare_kernel_cred', '0xc009843c');
   INSERT INTO device_address(device_id, name, value) VALUES(157, 'commit_creds', '0xc0097f60');
   INSERT INTO device_address(device_id, name, value) VALUES(157, 'remap_pfn_range', '0xc010e1f4');
   INSERT INTO device_address(device_id, name, value) VALUES(157, 'ptmx_fops', '0xc0d03208');
+  INSERT INTO device_address(device_id, name, value) VALUES(157, 'perf_swevent_enabled', '0xc0cee0f4');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(158, 'SO-01E', '9.1.C.1.103', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(158, 'prepare_kernel_cred', '0xc009844c');
   INSERT INTO device_address(device_id, name, value) VALUES(158, 'commit_creds', '0xc0097f70');
   INSERT INTO device_address(device_id, name, value) VALUES(158, 'remap_pfn_range', '0xc010e238');
   INSERT INTO device_address(device_id, name, value) VALUES(158, 'ptmx_fops', '0xc0d03288');
+  INSERT INTO device_address(device_id, name, value) VALUES(158, 'perf_swevent_enabled', '0xc0cee174');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(159, 'SO-02E', '10.1.D.0.343', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(159, 'prepare_kernel_cred', '0xc009ca34');
   INSERT INTO device_address(device_id, name, value) VALUES(159, 'commit_creds', '0xc009c558');
   INSERT INTO device_address(device_id, name, value) VALUES(159, 'remap_pfn_range', '0xc01124f4');
   INSERT INTO device_address(device_id, name, value) VALUES(159, 'ptmx_fops', '0xc0e38620');
+  INSERT INTO device_address(device_id, name, value) VALUES(159, 'perf_swevent_enabled', '0xc0e20d74');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(160, 'SO-03E', '10.1.E.0.265', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(160, 'prepare_kernel_cred', '0xc00938a0');
   INSERT INTO device_address(device_id, name, value) VALUES(160, 'commit_creds', '0xc00933c4');
   INSERT INTO device_address(device_id, name, value) VALUES(160, 'remap_pfn_range', '0xc0109360');
   INSERT INTO device_address(device_id, name, value) VALUES(160, 'ptmx_fops', '0xc0d36aa8');
+  INSERT INTO device_address(device_id, name, value) VALUES(160, 'perf_swevent_enabled', '0xc0d1f4b4');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(161, 'SO-03E', '10.1.E.0.269', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(161, 'prepare_kernel_cred', '0xc00938b0');
   INSERT INTO device_address(device_id, name, value) VALUES(161, 'commit_creds', '0xc00933d4');
   INSERT INTO device_address(device_id, name, value) VALUES(161, 'remap_pfn_range', '0xc0109370');
   INSERT INTO device_address(device_id, name, value) VALUES(161, 'ptmx_fops', '0xc0d36aa8');
+  INSERT INTO device_address(device_id, name, value) VALUES(161, 'perf_swevent_enabled', '0xc0d1f4b4');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(162, 'SO-04D', '7.0.D.1.137', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(162, 'ptmx_fops', '0xc0c9d8a0');
+  INSERT INTO device_address(device_id, name, value) VALUES(162, 'perf_swevent_enabled', '0xc0c91ea0');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(163, 'SO-04D', '9.1.C.0.475', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(163, 'prepare_kernel_cred', '0xc0095cb0');
   INSERT INTO device_address(device_id, name, value) VALUES(163, 'commit_creds', '0xc00957d4');
   INSERT INTO device_address(device_id, name, value) VALUES(163, 'remap_pfn_range', '0xc010aaf8');
   INSERT INTO device_address(device_id, name, value) VALUES(163, 'ptmx_fops', '0xc0d024a0');
+  INSERT INTO device_address(device_id, name, value) VALUES(163, 'perf_swevent_enabled', '0xc0ced2b4');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(164, 'SO-04D', '9.1.C.1.103', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(164, 'prepare_kernel_cred', '0xc0095cc0');
   INSERT INTO device_address(device_id, name, value) VALUES(164, 'commit_creds', '0xc00957e4');
   INSERT INTO device_address(device_id, name, value) VALUES(164, 'remap_pfn_range', '0xc010ab3c');
   INSERT INTO device_address(device_id, name, value) VALUES(164, 'ptmx_fops', '0xc0d024a0');
+  INSERT INTO device_address(device_id, name, value) VALUES(164, 'perf_swevent_enabled', '0xc0ced2b4');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(165, 'SO-04E', '10.1.1.D.0.179', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(165, 'prepare_kernel_cred', '0xc009d500');
   INSERT INTO device_address(device_id, name, value) VALUES(165, 'commit_creds', '0xc009d024');
   INSERT INTO device_address(device_id, name, value) VALUES(165, 'remap_pfn_range', '0xc0112fc0');
   INSERT INTO device_address(device_id, name, value) VALUES(165, 'ptmx_fops', '0xc0f392d8');
+  INSERT INTO device_address(device_id, name, value) VALUES(165, 'perf_swevent_enabled', '0xc0f21af4');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(166, 'SO-04E', '10.1.1.D.2.26', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(166, 'prepare_kernel_cred', '0xc009d510');
   INSERT INTO device_address(device_id, name, value) VALUES(166, 'commit_creds', '0xc009d034');
   INSERT INTO device_address(device_id, name, value) VALUES(166, 'remap_pfn_range', '0xc0112fd0');
   INSERT INTO device_address(device_id, name, value) VALUES(166, 'ptmx_fops', '0xc0f392d8');
+  INSERT INTO device_address(device_id, name, value) VALUES(166, 'perf_swevent_enabled', '0xc0f21af4');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(167, 'SO-05D', '7.0.D.1.117', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(167, 'delayed_rsp_id', '0xc0b8840c');
@@ -954,15 +1058,18 @@ INSERT INTO supported_devices(device_id, device, build_id, check_property_name, 
   INSERT INTO device_address(device_id, name, value) VALUES(169, 'commit_creds', '0xc00953d0');
   INSERT INTO device_address(device_id, name, value) VALUES(169, 'remap_pfn_range', '0xc010a6f4');
   INSERT INTO device_address(device_id, name, value) VALUES(169, 'ptmx_fops', '0xc0d01e50');
+  INSERT INTO device_address(device_id, name, value) VALUES(169, 'perf_swevent_enabled', '0xc0cece34');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(170, 'SO-05D', '9.1.C.1.103', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(170, 'prepare_kernel_cred', '0xc00958bc');
   INSERT INTO device_address(device_id, name, value) VALUES(170, 'commit_creds', '0xc00953e0');
   INSERT INTO device_address(device_id, name, value) VALUES(170, 'remap_pfn_range', '0xc010a738');
   INSERT INTO device_address(device_id, name, value) VALUES(170, 'ptmx_fops', '0xc0d01e90');
+  INSERT INTO device_address(device_id, name, value) VALUES(170, 'perf_swevent_enabled', '0xc0cece74');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(171, 'SOL21', '9.0.F.0.226', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(171, 'ptmx_fops', '0xc0cffe78');
+  INSERT INTO device_address(device_id, name, value) VALUES(171, 'perf_swevent_enabled', '0xc0cf3360');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(172, 'SOL21', '9.1.D.0.395', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(172, 'prepare_kernel_cred', '0xc0098584');
@@ -970,18 +1077,21 @@ INSERT INTO supported_devices(device_id, device, build_id, check_property_name, 
   INSERT INTO device_address(device_id, name, value) VALUES(172, 'remap_pfn_range', '0xc010e33c');
   INSERT INTO device_address(device_id, name, value) VALUES(172, 'vmalloc_exec', '0xc011aeec');
   INSERT INTO device_address(device_id, name, value) VALUES(172, 'ptmx_fops', '0xc0d030c8');
+  INSERT INTO device_address(device_id, name, value) VALUES(172, 'perf_swevent_enabled', '0xc0cedfb4');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(173, 'SOL21', '9.1.D.0.401', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(173, 'prepare_kernel_cred', '0xc0098594');
   INSERT INTO device_address(device_id, name, value) VALUES(173, 'commit_creds', '0xc00980b8');
   INSERT INTO device_address(device_id, name, value) VALUES(173, 'remap_pfn_range', '0xc010e34c');
   INSERT INTO device_address(device_id, name, value) VALUES(173, 'ptmx_fops', '0xc0d030c8');
+  INSERT INTO device_address(device_id, name, value) VALUES(173, 'perf_swevent_enabled', '0xc0cedfb4');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(174, 'SOL22', '10.2.F.3.43', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(174, 'prepare_kernel_cred', '0xc009d3f8');
   INSERT INTO device_address(device_id, name, value) VALUES(174, 'commit_creds', '0xc009cf1c');
   INSERT INTO device_address(device_id, name, value) VALUES(174, 'remap_pfn_range', '0xc0112230');
   INSERT INTO device_address(device_id, name, value) VALUES(174, 'ptmx_fops', '0xc0e389b0');
+  INSERT INTO device_address(device_id, name, value) VALUES(174, 'perf_swevent_enabled', '0xc0e20ff4');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(175, 'SOL22', '10.2.F.3.81', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(175, 'prepare_kernel_cred', '0xc009d408');
@@ -992,9 +1102,11 @@ INSERT INTO supported_devices(device_id, device, build_id, check_property_name, 
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(176, 'Sony Tablet P', 'TISU0144', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(176, 'ptmx_fops', '0xc06e6da0');
+  INSERT INTO device_address(device_id, name, value) VALUES(176, 'perf_swevent_enabled', '0xc06dd794');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(177, 'Sony Tablet S', 'TISU0143', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(177, 'ptmx_fops', '0xc06e4d18');
+  INSERT INTO device_address(device_id, name, value) VALUES(177, 'perf_swevent_enabled', '0xc06db714');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(178, 'T-02D', 'V10R36A', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(178, 'prepare_kernel_cred', '0xc009c72c');
@@ -1008,54 +1120,63 @@ INSERT INTO supported_devices(device_id, device, build_id, check_property_name, 
   INSERT INTO device_address(device_id, name, value) VALUES(179, 'commit_creds', '0xc0089678');
   INSERT INTO device_address(device_id, name, value) VALUES(179, 'remap_pfn_range', '0xc00f8114');
   INSERT INTO device_address(device_id, name, value) VALUES(179, 'ptmx_fops', '0xc0ef72f0');
+  INSERT INTO device_address(device_id, name, value) VALUES(179, 'perf_swevent_enabled', '0xc0ee0070');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(180, 'Galaxy Nexus', 'JOP40C', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(180, 'prepare_kernel_cred', '0xc00cdef0');
   INSERT INTO device_address(device_id, name, value) VALUES(180, 'commit_creds', '0xc00cdbb8');
   INSERT INTO device_address(device_id, name, value) VALUES(180, 'remap_pfn_range', '0xc01350b0');
   INSERT INTO device_address(device_id, name, value) VALUES(180, 'ptmx_fops', '0xc08b5344');
+  INSERT INTO device_address(device_id, name, value) VALUES(180, 'perf_swevent_enabled', '0xc089b280');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(181, 'NEC-101T', '112.55.12.2.02.01', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(181, 'prepare_kernel_cred', '0xc00fa134');
   INSERT INTO device_address(device_id, name, value) VALUES(181, 'commit_creds', '0xc00fa28c');
   INSERT INTO device_address(device_id, name, value) VALUES(181, 'remap_pfn_range', '0xc013cccc');
   INSERT INTO device_address(device_id, name, value) VALUES(181, 'ptmx_fops', '0xc02c6da8');
+  INSERT INTO device_address(device_id, name, value) VALUES(181, 'perf_swevent_enabled', '0xc011e8b8');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(182, 'Galaxy Nexus', 'JZO54K', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(182, 'prepare_kernel_cred', '0xc00cdee0');
   INSERT INTO device_address(device_id, name, value) VALUES(182, 'commit_creds', '0xc00cdba8');
   INSERT INTO device_address(device_id, name, value) VALUES(182, 'remap_pfn_range', '0xc013509c');
   INSERT INTO device_address(device_id, name, value) VALUES(182, 'ptmx_fops', '0xc08b3224');
+  INSERT INTO device_address(device_id, name, value) VALUES(182, 'perf_swevent_enabled', '0xc0899160');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(183, 'C5503', '10.1.1.A.1.310', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(183, 'prepare_kernel_cred', '0xc0093cd8');
   INSERT INTO device_address(device_id, name, value) VALUES(183, 'commit_creds', '0xc00937fc');
   INSERT INTO device_address(device_id, name, value) VALUES(183, 'remap_pfn_range', '0xc0109798');
   INSERT INTO device_address(device_id, name, value) VALUES(183, 'ptmx_fops', '0xc0d37a98');
+  INSERT INTO device_address(device_id, name, value) VALUES(183, 'perf_swevent_enabled', '0xc0d202b4');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(184, 'C5502', '10.1.1.A.1.310', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(184, 'prepare_kernel_cred', '0xc0093cd8');
   INSERT INTO device_address(device_id, name, value) VALUES(184, 'commit_creds', '0xc00937fc');
   INSERT INTO device_address(device_id, name, value) VALUES(184, 'remap_pfn_range', '0xc0109798');
   INSERT INTO device_address(device_id, name, value) VALUES(184, 'ptmx_fops', '0xc0d37a98');
+  INSERT INTO device_address(device_id, name, value) VALUES(184, 'perf_swevent_enabled', '0xc0d202b4');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(185, 'M36h', '10.1.1.A.1.310', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(185, 'prepare_kernel_cred', '0xc0093cd8');
   INSERT INTO device_address(device_id, name, value) VALUES(185, 'commit_creds', '0xc00937fc');
   INSERT INTO device_address(device_id, name, value) VALUES(185, 'remap_pfn_range', '0xc0109798');
   INSERT INTO device_address(device_id, name, value) VALUES(185, 'ptmx_fops', '0xc0d37a98');
+  INSERT INTO device_address(device_id, name, value) VALUES(185, 'perf_swevent_enabled', '0xc0d202b4');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(186, 'ASUS Pad TF300T', 'JRO03C.JP_epad-10.4.2.20-20121228', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(186, 'prepare_kernel_cred', '0xc0095f0c');
   INSERT INTO device_address(device_id, name, value) VALUES(186, 'commit_creds', '0xc0095bd8');
   INSERT INTO device_address(device_id, name, value) VALUES(186, 'remap_pfn_range', '0xc0100f68');
   INSERT INTO device_address(device_id, name, value) VALUES(186, 'ptmx_fops', '0xc0a706d8');
+  INSERT INTO device_address(device_id, name, value) VALUES(186, 'perf_swevent_enabled', '0xc0a67914');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(187, 'SCH-I545', 'JDQ39.I545VRUAME7', NULL, NULL);
   INSERT INTO device_address(device_id, name, value) VALUES(187, 'prepare_kernel_cred', '0xc0095d1c');
   INSERT INTO device_address(device_id, name, value) VALUES(187, 'commit_creds', '0xc0095808');
   INSERT INTO device_address(device_id, name, value) VALUES(187, 'remap_pfn_range', '0xc011358c');
   INSERT INTO device_address(device_id, name, value) VALUES(187, 'ptmx_fops', '0xc1067b48');
+  INSERT INTO device_address(device_id, name, value) VALUES(187, 'perf_swevent_enabled', '0xc1048d54');
 
 INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(188, 'HTL21', 'JRO03C', 'ro.aa.romver', '1.39.970.3');
   INSERT INTO device_address(device_id, name, value) VALUES(188, 'prepare_kernel_cred', '0xc00abeac');
