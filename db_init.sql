@@ -1436,4 +1436,9 @@ INSERT INTO supported_devices(device_id, device, build_id, check_property_name, 
   INSERT INTO device_address(device_id, name, value) VALUES(193, 'vmalloc_exec', '0xc0119104');
   INSERT INTO device_address(device_id, name, value) VALUES(193, 'ptmx_fops', '0xc0f26100');
 
+INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(194, '201K','117.1.1c00', NULL, NULL);
+  INSERT INTO device_address(device_id, name, value) VALUES(194, 'prepare_kernel_cred', '0xc008dab4');
+  INSERT INTO device_address(device_id, name, value) VALUES(194, 'commit_creds', '0xc008d5a0');
+  INSERT INTO device_address(device_id, name, value) VALUES(194, 'ptmx_fops', '0xc0f17a60');
+
 COMMIT;
