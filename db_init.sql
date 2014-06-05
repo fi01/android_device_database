@@ -1441,4 +1441,11 @@ INSERT INTO supported_devices(device_id, device, build_id, check_property_name, 
   INSERT INTO device_address(device_id, name, value) VALUES(194, 'commit_creds', '0xc008d5a0');
   INSERT INTO device_address(device_id, name, value) VALUES(194, 'ptmx_fops', '0xc0f17a60');
 
+INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(195, 'P-03E', '10.1010', NULL, NULL);
+  INSERT INTO device_address(device_id, name, value) VALUES(195, 'prepare_kernel_cred', '0xc00a50f4');
+  INSERT INTO device_address(device_id, name, value) VALUES(195, 'commit_creds', '0xc00a4c18');
+  INSERT INTO device_address(device_id, name, value) VALUES(195, 'remap_pfn_range', '0xc011bcfc');
+  INSERT INTO device_address(device_id, name, value) VALUES(195, 'vmalloc_exec', '0xc01281a0');
+  INSERT INTO device_address(device_id, name, value) VALUES(195, 'ptmx_fops', '0xc11b3574');
+
 COMMIT;
