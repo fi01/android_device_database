@@ -2,6 +2,9 @@
 #define __ANDROID_DEVICE_DATABASE_H__
 
 #include <stdbool.h>
+#include <sys/system_properties.h>
+
+#define __system_property_get device_getprop
 
 typedef enum {
   DEVICE_NOT_SUPPORTED = 0,
@@ -211,5 +214,7 @@ extern device_id_t detect_device(void);
 extern unsigned long int device_get_symbol_address(device_symbol_t);
 extern bool device_set_symbol_address(device_symbol_t, unsigned long int);
 extern void print_reason_device_not_supported(void);
+
+extern int device_getprop(const char *name, char *value);
 
 #endif /* __ANDROID_DEVICE_DATABASE_H__ */

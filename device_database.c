@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include <sys/wait.h>
 #include <sys/system_properties.h>
 #include "sqlite3.h"
 #include "device_database.h"
@@ -494,4 +495,65 @@ print_reason_device_not_supported(void)
   }
 
   sqlite3_finalize(st);
+}
+
+#undef __system_property_get
+
+int
+device_getprop(const char *name, char *value)
+{
+  if (value == NULL) {
+    return 0;
+  }
+
+  *value = '\0';
+
+  if (name == NULL || name[0] == '\0') {
+    return 0;
+  }
+
+  __system_property_get(name, value);
+
+  if (*value == '\0') {
+    char buf[1024];
+    size_t len;
+    int pipefd[2];
+    pid_t pid;
+    int status;
+
+    pipe(pipefd);
+
+    pid = fork();
+    if (pid == 0) {
+      dup2(pipefd[1], 1);
+
+      close(pipefd[0]);
+      close(pipefd[1]);
+
+      execlp("getprop", "getprop", name, NULL);
+      exit(1);
+    }
+
+    close(pipefd[1]);
+
+    len = read(pipefd[0], buf, sizeof buf);
+
+    close(pipefd[0]);
+
+
+    if (waitpid(pid, &status, 0) == pid
+     && WIFEXITED(status)
+     && WEXITSTATUS(status) == 0) {
+      if (len) {
+	char *token, *next;
+
+	token = strtok_r(buf, "\r\n", &next);
+	if (token && strlen(token) < PROP_VALUE_MAX) {
+	  strcpy(value, token);
+	}
+      }
+    }
+  }
+
+  return 0;
 }
