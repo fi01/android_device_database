@@ -1467,4 +1467,11 @@ INSERT INTO supported_devices(device_id, device, build_id, check_property_name, 
   INSERT INTO device_address(device_id, name, value) VALUES(198, 'remap_pfn_range', '0xc00e26a4');
   INSERT INTO device_address(device_id, name, value) VALUES(198, 'vmalloc_exec', '0xc00ef1ec');
 
+INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(199, 'Nexus 5', 'KTU84P', NULL, NULL);
+  INSERT INTO device_address(device_id, name, value) VALUES(199, 'prepare_kernel_cred', '0xc01bb44c');
+  INSERT INTO device_address(device_id, name, value) VALUES(199, 'commit_creds', '0xc01bac5c');
+  INSERT INTO device_address(device_id, name, value) VALUES(199, 'ptmx_fops', '0xc1235dd0');
+  INSERT INTO device_address(device_id, name, value) VALUES(199, 'remap_pfn_range', '0xc024dafc');
+  INSERT INTO device_address(device_id, name, value) VALUES(199, 'vmalloc_exec', '0xc025a0f8');
+
 COMMIT;
