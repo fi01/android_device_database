@@ -1474,7 +1474,7 @@ INSERT INTO supported_devices(device_id, device, build_id, check_property_name, 
   INSERT INTO device_address(device_id, name, value) VALUES(199, 'remap_pfn_range', '0xc024dafc');
   INSERT INTO device_address(device_id, name, value) VALUES(199, 'vmalloc_exec', '0xc025a0f8');
 
-INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(200, 'LGL22', 'KOT49I.LGL2220d', NULL, NULL);
+INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(200, 'LGL22', 'KOT49I', 'ro.lge.swversion', 'LGL2220d');
   INSERT INTO device_address(device_id, name, value) VALUES(200, 'prepare_kernel_cred', '0xc01c65e8');
   INSERT INTO device_address(device_id, name, value) VALUES(200, 'commit_creds', '0xc01c6098');
   INSERT INTO device_address(device_id, name, value) VALUES(200, 'ptmx_fops', '0xc12532a0');
