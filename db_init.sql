@@ -1481,4 +1481,9 @@ INSERT INTO supported_devices(device_id, device, build_id, check_property_name, 
   INSERT INTO device_address(device_id, name, value) VALUES(200, 'remap_pfn_range', '0xc0251abc');
   INSERT INTO device_address(device_id, name, value) VALUES(200, 'vmalloc_exec', '0xc025f168');
 
+INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(201, '204HW', 'Y300-J1V100R001C111B121', NULL, NULL);
+  INSERT INTO device_address(device_id, name, value) VALUES(201, 'prepare_kernel_cred', '0xc00bd3a8');
+  INSERT INTO device_address(device_id, name, value) VALUES(201, 'commit_creds', '0xc00bcfe0');
+  INSERT INTO device_address(device_id, name, value) VALUES(201, 'ptmx_fops', '0xc0b0b130');
+
 COMMIT;
