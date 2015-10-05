@@ -396,7 +396,7 @@ device_set_symbol_address(device_symbol_t symbol, unsigned long int address)
   }
 
   if (old) {
-    printf("Duplicate symbol \"%s\": old = 0x%08x, new = 0x%08x\n", symbol, old, address);
+    printf("Duplicate symbol \"%s\": old = 0x%08lx, new = 0x%08lx\n", symbol, old, address);
     return false;
   }
 
