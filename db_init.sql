@@ -1486,11 +1486,11 @@ INSERT INTO supported_devices(device_id, device, build_id, check_property_name, 
   INSERT INTO device_address(device_id, name, value) VALUES(201, 'commit_creds', '0xc00bcfe0');
   INSERT INTO device_address(device_id, name, value) VALUES(201, 'ptmx_fops', '0xc0b0b130');
 
-INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(201, 'F-05E', 'V11R35A', NULL, NULL);
-  INSERT INTO device_address(device_id, name, value) VALUES(201, 'ptmx_fops', '0xc0b1e948');
-  INSERT INTO device_address(device_id, name, value) VALUES(201, 'prepare_kernel_cred', '0xc0090d78');
-  INSERT INTO device_address(device_id, name, value) VALUES(201, 'commit_creds', '0xc0090734');
-  INSERT INTO device_address(device_id, name, value) VALUES(201, 'remap_pfn_range', '0xc00e2064');
+INSERT INTO supported_devices(device_id, device, build_id, check_property_name, check_property_value) VALUES(202, 'F-05E', 'V11R35A', NULL, NULL);
+  INSERT INTO device_address(device_id, name, value) VALUES(202, 'ptmx_fops', '0xc0b1e948');
+  INSERT INTO device_address(device_id, name, value) VALUES(202, 'prepare_kernel_cred', '0xc0090d78');
+  INSERT INTO device_address(device_id, name, value) VALUES(202, 'commit_creds', '0xc0090734');
+  INSERT INTO device_address(device_id, name, value) VALUES(202, 'remap_pfn_range', '0xc00e2064');
 
 
 COMMIT;
